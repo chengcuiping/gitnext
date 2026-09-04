@@ -12,7 +12,13 @@ GitNext requires Python 3.10 or newer. Its only runtime dependencies are Pydanti
 python -m pip install gitnext
 ```
 
-The project is not published by this repository's CI. For development from a clone:
+The repository includes a manually triggered, `main`-only TestPyPI workflow for release-candidate validation. It
+publishes the exact audited build artifact with OIDC Trusted Publishing and has no PyPI token or password. It does
+not publish to production PyPI, and adding the workflow does not mean that a package has been published. The
+`testpypi` GitHub environment and matching TestPyPI Trusted Publisher must be configured separately before a manual
+run can succeed.
+
+For development from a clone:
 
 ```bash
 python -m venv .venv
@@ -84,7 +90,7 @@ CI covers Python 3.10 through 3.14 on Ubuntu, plus installation and CLI smoke te
 - Required-check configuration is not fetched, so requiredness stays `UNKNOWN`.
 - Reviews and source availability can be permission-dependent; unavailable evidence lowers confidence or causes a conservative fallback.
 - Only GitHub-provided explicit links and exact supported labels establish relationships.
-- The package performs no GitHub writes and contains no publishing automation.
+- The package performs no GitHub writes and contains no runtime publishing functionality.
 
 See [contracts/v1/known-limitations.md](contracts/v1/known-limitations.md) for the frozen contract limitations.
 
