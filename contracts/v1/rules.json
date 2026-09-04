@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "gitnext-rule-contract/1",
+  "contractVersion": "1.0.0",
+  "priorityDirection": "ascending",
+  "pullRequestRules": [
+    {
+      "priority": 1,
+      "ruleId": "PR_001_MERGED",
+      "trigger": "Explicitly merged",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 2,
+      "ruleId": "PR_002_CLOSED_UNMERGED",
+      "trigger": "Closed and explicitly unmerged",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 3,
+      "ruleId": "PR_003_REPOSITORY_INACTIVE",
+      "trigger": "Repository archived or disabled",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 4,
+      "ruleId": "PR_004_DRAFT",
+      "trigger": "Pull request is a draft",
+      "verdict": "AUTHOR_ACTION_REQUIRED",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 5,
+      "ruleId": "PR_005_BRANCH_CONFLICT",
+      "trigger": "mergeable=false or mergeStateStatus is DIRTY/CONFLICTING",
+      "verdict": "SYNC_OR_FIX_BRANCH",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 6,
+      "ruleId": "PR_006_CHECK_FAILURE",
+      "trigger": "At least one latest observed check failed",
+      "verdict": "AUTHOR_ACTION_REQUIRED",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 7,
+      "ruleId": "PR_007_CHANGES_REQUESTED",
+      "trigger": "Current reliable review state requests changes",
+      "verdict": "AUTHOR_ACTION_REQUIRED",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 8,
+      "ruleId": "PR_008_UNRESOLVED_THREAD",
+      "trigger": "At least one explicitly unresolved review thread",
+      "verdict": "AUTHOR_ACTION_REQUIRED",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 9,
+      "ruleId": "PR_009_CHECK_PENDING",
+      "trigger": "At least one latest observed check is pending",
+      "verdict": "WAIT",
+      "responsibleParty": "CI"
+    },
+    {
+      "priority": 10,
+      "ruleId": "PR_010_REVIEW_REQUIRED",
+      "trigger": "GraphQL reviewDecision is REVIEW_REQUIRED",
+      "verdict": "WAIT",
+      "responsibleParty": "REVIEWER"
+    },
+    {
+      "priority": 11,
+      "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+      "trigger": "Open non-draft PR with reliable positive evidence and no known author blocker",
+      "verdict": "WAIT",
+      "responsibleParty": "MAINTAINER"
+    },
+    {
+      "priority": 12,
+      "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+      "trigger": "No higher-priority conclusion is justified",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "responsibleParty": "UNKNOWN"
+    }
+  ],
+  "issueRules": [
+    {
+      "priority": 1,
+      "ruleId": "ISSUE_001_CLOSED",
+      "trigger": "Issue is closed",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 2,
+      "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+      "trigger": "Repository archived or disabled",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 3,
+      "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+      "trigger": "Exact normalized duplicate label",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 4,
+      "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+      "trigger": "GitHub-explicit closing pull request is merged",
+      "verdict": "DONE_OR_STOP",
+      "responsibleParty": "NONE"
+    },
+    {
+      "priority": 5,
+      "ruleId": "ISSUE_005_NEEDS_INFO",
+      "trigger": "Exact normalized needs-info or needs-reproduction label",
+      "verdict": "AUTHOR_ACTION_REQUIRED",
+      "responsibleParty": "AUTHOR"
+    },
+    {
+      "priority": 6,
+      "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+      "trigger": "GitHub-explicit linked pull request is open",
+      "verdict": "WAIT",
+      "responsibleParty": "ASSIGNEE_OR_CONTRIBUTOR"
+    },
+    {
+      "priority": 7,
+      "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+      "trigger": "No higher-priority conclusion is justified",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "responsibleParty": "UNKNOWN"
+    }
+  ],
+  "conflictGuard": "mergeable=null and behindBy>0 alone do not indicate a conflict",
+  "compatibilityAliases": []
+}

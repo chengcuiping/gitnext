@@ -1,0 +1,682 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "08-closed-mnemom-docs-443",
+  "url": "https://github.com/mnemom/docs/pull/443",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:11:42Z",
+        "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:11:42.000Z",
+        "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:11:42Z",
+        "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:11:42Z",
+        "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:11:42Z",
+        "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "c917e2899c3c4bb7841ab9182bccb911eadd5b5318ac333be131061a0d7222ec",
+    "decisionSha256": "702b3b6aa9f43c0f0270bd28e84b9ff2060be783c02b64cae04203fd0fd2b51b"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:44:21.538Z",
+    "source": {
+      "originalUrl": "https://github.com/mnemom/docs/pull/443",
+      "canonicalUrl": "https://github.com/mnemom/docs/pull/443",
+      "owner": "mnemom",
+      "repo": "docs",
+      "number": 443,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/mnemom/docs"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "chore(deps): bump fast-uri from 3.1.2 to 3.1.5",
+      "authorLogin": "dependabot[bot]",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2026-08-05T17:38:36.000Z",
+      "updatedAt": "2026-09-03T03:11:42.000Z",
+      "closedAt": "2026-09-03T03:11:40.000Z",
+      "labels": [
+        "dependencies",
+        "javascript"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 2,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "main",
+      "headRef": "dependabot/npm_and_yarn/fast-uri-3.1.5",
+      "baseSha": "fb72e42aa8c4734fd6e7887ea6a2ea0d72ef6c6a",
+      "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "CLEAN"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "dependabot/npm_and_yarn/fast-uri-3.1.5",
+      "baseSha": "fb72e42aa8c4734fd6e7887ea6a2ea0d72ef6c6a",
+      "headSha": "07a5efb78339d91e553bb697a9b98d24bb94220f",
+      "aheadBy": 1,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "CLEAN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:Block internal-reference leakage",
+          "name": "Block internal-reference leakage",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030978536/job/92391310971",
+          "updatedAt": "2026-08-05T17:38:59.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ablock%20internal-reference%20leakage.status"
+        },
+        {
+          "key": "check-run:github-actions:Docs quality validators",
+          "name": "Docs quality validators",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030979475/job/92391313872",
+          "updatedAt": "2026-08-05T17:38:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adocs%20quality%20validators.status"
+        },
+        {
+          "key": "check-run:github-actions:docs↔code conformance (Engine A)",
+          "name": "docs↔code conformance (Engine A)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030978274/job/92391310030",
+          "updatedAt": "2026-08-05T17:38:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adocs%E2%86%94code%20conformance%20(engine%20a).status"
+        },
+        {
+          "key": "check-run:github-actions:enforce-docs-gate.sh self-test (fixtures)",
+          "name": "enforce-docs-gate.sh self-test (fixtures)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030978274/job/92391310011",
+          "updatedAt": "2026-08-05T17:38:47.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aenforce-docs-gate.sh%20self-test%20(fixtures).status"
+        },
+        {
+          "key": "check-run:github-actions:feedback",
+          "name": "feedback",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030978983/job/92391343299",
+          "updatedAt": "2026-08-05T17:38:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Afeedback.status"
+        },
+        {
+          "key": "check-run:github-actions:gate",
+          "name": "gate",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391318074",
+          "updatedAt": "2026-08-05T17:38:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Agate.status"
+        },
+        {
+          "key": "check-run:github-actions:sweep",
+          "name": "sweep",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391358618",
+          "updatedAt": "2026-08-05T17:38:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Asweep.status"
+        },
+        {
+          "key": "check-run:github-actions:Validate Mintlify Docs",
+          "name": "Validate Mintlify Docs",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030978918/job/92391312412",
+          "updatedAt": "2026-08-05T17:39:50.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Avalidate%20mintlify%20docs.status"
+        },
+        {
+          "key": "check-run:github-actions:Validate spec-page YAML / JSON examples",
+          "name": "Validate spec-page YAML / JSON examples",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030979082/job/92391312628",
+          "updatedAt": "2026-08-05T17:39:11.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Avalidate%20spec-page%20yaml%20%2F%20json%20examples.status"
+        },
+        {
+          "key": "check-run:github-actions:Walk MDX curl examples vs openapi.json",
+          "name": "Walk MDX curl examples vs openapi.json",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030979186/job/92391312886",
+          "updatedAt": "2026-08-05T17:39:12.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Awalk%20mdx%20curl%20examples%20vs%20openapi.json.status"
+        },
+        {
+          "key": "check-run:github-actions:zte",
+          "name": "zte",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391317914",
+          "updatedAt": "2026-08-05T17:38:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azte.status"
+        },
+        {
+          "key": "check-run:github-advanced-security:CodeQL",
+          "name": "CodeQL",
+          "provider": "CHECK_RUN",
+          "status": "NEUTRAL",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/mnemom/docs/runs/92391294000",
+          "updatedAt": "2026-08-05T17:38:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-advanced-security%3Acodeql.status"
+        },
+        {
+          "key": "check-run:mintlify:Mintlify Deployment",
+          "name": "Mintlify Deployment",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://mintlify.com",
+          "updatedAt": "2026-08-05T17:39:31.000Z",
+          "evidenceId": "check.check-run%3Amintlify%3Amintlify%20deployment.status"
+        },
+        {
+          "key": "check-run:mintlify:Mintlify Validation (mnemomllc) - link-rot",
+          "name": "Mintlify Validation (mnemomllc) - link-rot",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://mintlify.com",
+          "updatedAt": "2026-08-05T17:39:00.000Z",
+          "evidenceId": "check.check-run%3Amintlify%3Amintlify%20validation%20(mnemomllc)%20-%20link-rot.status"
+        },
+        {
+          "key": "check-run:mintlify:Mintlify Validation (mnemomllc) - vale-spellcheck",
+          "name": "Mintlify Validation (mnemomllc) - vale-spellcheck",
+          "provider": "CHECK_RUN",
+          "status": "NEUTRAL",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://mintlify.com",
+          "updatedAt": "2026-08-05T17:39:37.000Z",
+          "evidenceId": "check.check-run%3Amintlify%3Amintlify%20validation%20(mnemomllc)%20-%20vale-spellcheck.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 9,
+        "skippedCount": 4,
+        "neutralCount": 2,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 15,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T03:11:39.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-08-05T17:38:34.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "07a5efb78339d91e553bb697a9b98d24bb94220f",
+          "url": "https://github.com/mnemom/docs/commit/07a5efb78339d91e553bb697a9b98d24bb94220f",
+          "evidenceId": "commit.07a5efb78339d91e553bb697a9b98d24bb94220f"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4792
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/mnemom/docs",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/mnemom/docs",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "label.dependencies",
+        "category": "label",
+        "claim": "GitHub label: dependencies",
+        "value": "dependencies",
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "label.javascript",
+        "category": "label",
+        "claim": "GitHub label: javascript",
+        "value": "javascript",
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "CLEAN",
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 1,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ablock%20internal-reference%20leakage.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Block internal-reference leakage",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030978536/job/92391310971",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adocs%20quality%20validators.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Docs quality validators",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030979475/job/92391313872",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adocs%E2%86%94code%20conformance%20(engine%20a).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:docs↔code conformance (Engine A)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030978274/job/92391310030",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aenforce-docs-gate.sh%20self-test%20(fixtures).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:enforce-docs-gate.sh self-test (fixtures)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030978274/job/92391310011",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Afeedback.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:feedback",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030978983/job/92391343299",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Agate.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:gate",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391318074",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Asweep.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:sweep",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391358618",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Avalidate%20mintlify%20docs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Validate Mintlify Docs",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030978918/job/92391312412",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Avalidate%20spec-page%20yaml%20%2F%20json%20examples.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Validate spec-page YAML / JSON examples",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030979082/job/92391312628",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Awalk%20mdx%20curl%20examples%20vs%20openapi.json.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Walk MDX curl examples vs openapi.json",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030979186/job/92391312886",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azte.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zte",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/mnemom/docs/actions/runs/31030980175/job/92391317914",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-advanced-security%3Acodeql.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-advanced-security:CodeQL",
+        "value": "NEUTRAL",
+        "sourceUrl": "https://github.com/mnemom/docs/runs/92391294000",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Amintlify%3Amintlify%20deployment.status",
+        "category": "check",
+        "claim": "Latest status for check-run:mintlify:Mintlify Deployment",
+        "value": "SUCCESS",
+        "sourceUrl": "https://mintlify.com",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Amintlify%3Amintlify%20validation%20(mnemomllc)%20-%20link-rot.status",
+        "category": "check",
+        "claim": "Latest status for check-run:mintlify:Mintlify Validation (mnemomllc) - link-rot",
+        "value": "SUCCESS",
+        "sourceUrl": "https://mintlify.com",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "check.check-run%3Amintlify%3Amintlify%20validation%20(mnemomllc)%20-%20vale-spellcheck.status",
+        "category": "check",
+        "claim": "Latest status for check-run:mintlify:Mintlify Validation (mnemomllc) - vale-spellcheck",
+        "value": "NEUTRAL",
+        "sourceUrl": "https://mintlify.com",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 9,
+          "skippedCount": 4,
+          "neutralCount": 2,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 15,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/mnemom/docs/pull/443",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      },
+      {
+        "id": "commit.07a5efb78339d91e553bb697a9b98d24bb94220f",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 07a5efb78339d91e553bb697a9b98d24bb94220f",
+        "value": "07a5efb78339d91e553bb697a9b98d24bb94220f",
+        "sourceUrl": "https://github.com/mnemom/docs/commit/07a5efb78339d91e553bb697a9b98d24bb94220f",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:44:21.538Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_002_CLOSED_UNMERGED",
+    "reasonCode": "PR_CLOSED_UNMERGED",
+    "evidenceIds": [
+      "item.state",
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_OR_REASSESS",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": true,
+        "reasonCode": "PR_CLOSED_UNMERGED"
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

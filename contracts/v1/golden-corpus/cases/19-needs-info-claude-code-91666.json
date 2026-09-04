@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "19-needs-info-claude-code-91666",
+  "url": "https://github.com/anthropics/claude-code/issues/91666",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T01:53:22Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T01:53:22.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T01:53:22Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T01:53:22Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "f253a8ad0377df26a5199215c5febe6d33edb4eada30f5bf6959d1602db2b8c6",
+    "decisionSha256": "dded5d32be0a2c55f5a74674736d96db62045ecdef9baebcdcb0e9d129bd7dae"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:52:39.030Z",
+    "source": {
+      "originalUrl": "https://github.com/anthropics/claude-code/issues/91666",
+      "canonicalUrl": "https://github.com/anthropics/claude-code/issues/91666",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "number": 91666,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/anthropics/claude-code"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "[Bug] Anthropic API Error: Safeguard flag triggered on internal development request",
+      "authorLogin": "BattleCalc",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-09-03T01:51:58.000Z",
+      "updatedAt": "2026-09-03T01:53:22.000Z",
+      "closedAt": null,
+      "labels": [
+        "bug",
+        "platform:windows",
+        "area:model",
+        "needs-info"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 0,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T01:51:58.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [],
+      "linkedCommits": null,
+      "closingPullRequests": [],
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4972
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": null,
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/anthropics/claude-code",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/anthropics/claude-code",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "label.bug",
+        "category": "label",
+        "claim": "GitHub label: bug",
+        "value": "bug",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "label.platform%3Awindows",
+        "category": "label",
+        "claim": "GitHub label: platform:windows",
+        "value": "platform:windows",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "label.area%3Amodel",
+        "category": "label",
+        "claim": "GitHub label: area:model",
+        "value": "area:model",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "label.needs-info",
+        "category": "label",
+        "claim": "GitHub label: needs-info",
+        "value": "needs-info",
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/anthropics/claude-code/issues/91666",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:52:39.030Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "AUTHOR_ACTION_REQUIRED",
+    "ruleId": "ISSUE_005_NEEDS_INFO",
+    "reasonCode": "ISSUE_NEEDS_INFORMATION",
+    "evidenceIds": [
+      "label.needs-info"
+    ],
+    "nextActionCode": "PROVIDE_REQUESTED_INFORMATION",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": true,
+        "reasonCode": "ISSUE_NEEDS_INFORMATION"
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

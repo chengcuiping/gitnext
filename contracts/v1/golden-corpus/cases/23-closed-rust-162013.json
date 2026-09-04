@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "23-closed-rust-162013",
+  "url": "https://github.com/rust-lang/rust/issues/162013",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-02T16:42:39Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-02T16:42:39.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-02T16:42:39Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-02T16:42:39Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "3f627050ec35815cc818d6123eee5ca16e0da74f2108a1068d8af3cfaddc798c",
+    "decisionSha256": "86d98671c0550ffc5357309036091742a0401b482c705ec4938fe52631e6cc43"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:53:52.504Z",
+    "source": {
+      "originalUrl": "https://github.com/rust-lang/rust/issues/162013",
+      "canonicalUrl": "https://github.com/rust-lang/rust/issues/162013",
+      "owner": "rust-lang",
+      "repo": "rust",
+      "number": 162013,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/rust-lang/rust"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": "completed",
+      "title": "`rustc --print=sysroot` gives SIGSEGV on nightly",
+      "authorLogin": "Zeophlite",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-08-30T14:23:55.000Z",
+      "updatedAt": "2026-09-02T16:42:39.000Z",
+      "closedAt": "2026-09-02T16:23:26.000Z",
+      "labels": [
+        "A-linkage",
+        "I-crash",
+        "A-LLVM",
+        "T-compiler",
+        "C-gub"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 6,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-02T16:42:39.000Z",
+      "lastMaintainerActivityAt": "2026-09-02T16:23:26.000Z",
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [],
+      "linkedCommits": null,
+      "closingPullRequests": [],
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4960
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": "completed",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/rust-lang/rust",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/rust-lang/rust",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "label.a-linkage",
+        "category": "label",
+        "claim": "GitHub label: A-linkage",
+        "value": "A-linkage",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "label.i-crash",
+        "category": "label",
+        "claim": "GitHub label: I-crash",
+        "value": "I-crash",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "label.a-llvm",
+        "category": "label",
+        "claim": "GitHub label: A-LLVM",
+        "value": "A-LLVM",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "label.t-compiler",
+        "category": "label",
+        "claim": "GitHub label: T-compiler",
+        "value": "T-compiler",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "label.c-gub",
+        "category": "label",
+        "claim": "GitHub label: C-gub",
+        "value": "C-gub",
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/rust-lang/rust/issues/162013",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:53:52.504Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "ISSUE_001_CLOSED",
+    "reasonCode": "ISSUE_CLOSED",
+    "evidenceIds": [
+      "item.state"
+    ],
+    "nextActionCode": "STOP_ISSUE_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": true,
+        "reasonCode": "ISSUE_CLOSED"
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

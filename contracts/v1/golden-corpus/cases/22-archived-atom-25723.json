@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "22-archived-atom-25723",
+  "url": "https://github.com/atom/atom/issues/25723",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2022-12-15T18:44:43Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2022-12-15T18:44:43.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2022-12-15T18:44:43Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2022-12-15T18:44:43Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "e60d32056eb0fd99d787286f6889126d328b34641a130e69b8e061ad9cd8d062",
+    "decisionSha256": "55d8062151bf6bb368c931f34f3d51b0f324ee679dc8d19c6ebe3a1eb4cf6edc"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:53:31.770Z",
+    "source": {
+      "originalUrl": "https://github.com/atom/atom/issues/25723",
+      "canonicalUrl": "https://github.com/atom/atom/issues/25723",
+      "owner": "atom",
+      "repo": "atom",
+      "number": 25723,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "master",
+      "archived": true,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/atom/atom"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Totally broken",
+      "authorLogin": "mjrodgers",
+      "authorAssociation": "NONE",
+      "createdAt": "2022-11-29T07:23:00.000Z",
+      "updatedAt": "2022-12-15T18:44:43.000Z",
+      "closedAt": null,
+      "labels": [],
+      "assignees": [],
+      "locked": true,
+      "commentsCount": 4,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2022-11-29T07:23:00.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [],
+      "linkedCommits": null,
+      "closingPullRequests": [],
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4963
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/atom/atom/issues/25723",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:53:31.770Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": null,
+        "sourceUrl": "https://github.com/atom/atom/issues/25723",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:53:31.770Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": true,
+        "sourceUrl": "https://github.com/atom/atom",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:53:31.770Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/atom/atom",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:53:31.770Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/atom/atom/issues/25723",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:53:31.770Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+    "reasonCode": "REPOSITORY_ARCHIVED",
+    "evidenceIds": [
+      "repository.archived"
+    ],
+    "nextActionCode": "STOP_REPOSITORY_INACTIVE",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": true,
+        "reasonCode": "REPOSITORY_ARCHIVED"
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

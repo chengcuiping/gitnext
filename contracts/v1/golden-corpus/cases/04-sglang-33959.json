@@ -1,0 +1,2200 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "04-sglang-33959",
+  "url": "https://github.com/sgl-project/sglang/pull/33959",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-01T08:56:24Z",
+        "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-01T08:56:24.000Z",
+        "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-01T08:56:24Z",
+        "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-01T08:56:24Z",
+        "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-01T08:56:24Z",
+        "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping. Explained check difference categories: E. These differences do not affect the verdict; the reviewer accepts the documented limitation."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "46b66639af65dd2c4d0837c4bf168463df28c2fc352cda48b6dde76992911431",
+    "decisionSha256": "1b4cddbd8b53fad7c4d81d1917c1dc648650bbb24d7e54b5f732225217133660"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:40:38.034Z",
+    "source": {
+      "originalUrl": "https://github.com/sgl-project/sglang/pull/33959",
+      "canonicalUrl": "https://github.com/sgl-project/sglang/pull/33959",
+      "owner": "sgl-project",
+      "repo": "sglang",
+      "number": 33959,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/sgl-project/sglang"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "[Router] Add bounded consistent hashing with an absolute load gap",
+      "authorLogin": "chengcuiping",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2026-08-07T06:46:55.000Z",
+      "updatedAt": "2026-09-01T08:56:24.000Z",
+      "closedAt": null,
+      "labels": [
+        "documentation",
+        "model-gateway"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 3,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "main",
+      "headRef": "feat/bounded-consistent-hashing-gap",
+      "baseSha": "6c72b49a579605c123d9e667669aee1c8919f076",
+      "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "feat/bounded-consistent-hashing-gap",
+      "baseSha": "6c72b49a579605c123d9e667669aee1c8919f076",
+      "headSha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+      "aheadBy": 10,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:base-a-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-a-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647538",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-a-test-1-gpu-small%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-a-test-1-npu-a2",
+          "name": "base-a-test-1-npu-a2",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520772",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-a-test-1-npu-a2.status"
+        },
+        {
+          "key": "check-run:github-actions:base-a-test-cpu / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-a-test-cpu / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648015",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-a-test-cpu%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-1-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-b-test-1-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648613",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-1-gpu-large%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-b-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648157",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-1-gpu-small%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-1-npu-a3",
+          "name": "base-b-test-1-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520159",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-1-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-16-npu-a3",
+          "name": "base-b-test-16-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520470",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-16-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-2-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-b-test-2-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648302",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-2-gpu-large%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-2-npu-a3",
+          "name": "base-b-test-2-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520571",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-2-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-b-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648712",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-4-gpu-b200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-4-npu-a3",
+          "name": "base-b-test-4-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519978",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-4-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-b-test-8-npu-a3",
+          "name": "base-b-test-8-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519979",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-b-test-8-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648246",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-b200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-4-gpu-gb300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-4-gpu-gb300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648790",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-gb300%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-4-gpu-h100 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-4-gpu-h100 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648279",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-h100%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-8-gpu-b300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-8-gpu-b300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648451",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-b300%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-8-gpu-h20 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-8-gpu-h20 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648808",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-h20%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-8-gpu-h200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "name": "base-c-test-8-gpu-h200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648021",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-h200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-acc-16-npu-a3",
+          "name": "base-c-test-acc-16-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520132",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-acc-16-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-acc-2-npu-a3",
+          "name": "base-c-test-acc-2-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520507",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-acc-2-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-acc-4-npu-a3",
+          "name": "base-c-test-acc-4-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520462",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-acc-4-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-acc-8-npu-a3",
+          "name": "base-c-test-acc-8-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520148",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-acc-8-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-perf-16-npu-a3",
+          "name": "base-c-test-perf-16-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797521792",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-perf-16-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-perf-2-npu-a3",
+          "name": "base-c-test-perf-2-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520770",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-perf-2-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-perf-4-npu-a3",
+          "name": "base-c-test-perf-4-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797521651",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-perf-4-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:base-c-test-perf-8-npu-a3",
+          "name": "base-c-test-perf-8-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520983",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abase-c-test-perf-8-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:Benchmark - ${{ matrix.name }}",
+          "name": "Benchmark - ${{ matrix.name }}",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527307/job/99797484887",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abenchmark%20-%20%24%7B%7B%20matrix.name%20%7D%7D.status"
+        },
+        {
+          "key": "check-run:github-actions:build-test",
+          "name": "build-test",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797527958",
+          "updatedAt": "2026-09-01T08:55:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild-test.status"
+        },
+        {
+          "key": "check-run:github-actions:build-wheel",
+          "name": "build-wheel",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452357",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild-wheel.status"
+        },
+        {
+          "key": "check-run:github-actions:call-gate",
+          "name": "call-gate",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559370",
+          "updatedAt": "2026-09-01T08:55:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-gate.status"
+        },
+        {
+          "key": "check-run:github-actions:call-gate / pr-gate",
+          "name": "call-gate / pr-gate",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797547508",
+          "updatedAt": "2026-09-01T08:55:55.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-gate%20%2F%20pr-gate.status"
+        },
+        {
+          "key": "check-run:github-actions:call-jit-kernel-tests",
+          "name": "call-jit-kernel-tests",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647653",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-jit-kernel-tests.status"
+        },
+        {
+          "key": "check-run:github-actions:call-multimodal-gen-tests",
+          "name": "call-multimodal-gen-tests",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648059",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-multimodal-gen-tests.status"
+        },
+        {
+          "key": "check-run:github-actions:call-pr-test-extra",
+          "name": "call-pr-test-extra",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797456414",
+          "updatedAt": "2026-09-01T08:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-pr-test-extra.status"
+        },
+        {
+          "key": "check-run:github-actions:call-sgl-kernel-tests",
+          "name": "call-sgl-kernel-tests",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647689",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acall-sgl-kernel-tests.status"
+        },
+        {
+          "key": "check-run:github-actions:check-changes",
+          "name": "check-changes",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797452225",
+          "updatedAt": "2026-09-01T08:55:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck-changes.status"
+        },
+        {
+          "key": "check-run:github-actions:check-changes / check-changes",
+          "name": "check-changes / check-changes",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797455250",
+          "updatedAt": "2026-09-01T08:55:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck-changes%20%2F%20check-changes.status"
+        },
+        {
+          "key": "check-run:github-actions:docker-build-test",
+          "name": "docker-build-test",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797489457",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adocker-build-test.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-1-gpu-large",
+          "name": "extra-a-test-1-gpu-large",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588565",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-large.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-1-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+          "name": "extra-a-test-1-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797495420",
+          "updatedAt": "2026-09-01T08:55:35.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-large-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-1gpu-sglang).status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-1-gpu-small",
+          "name": "extra-a-test-1-gpu-small",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588637",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-small.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-1-gpu-small-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+          "name": "extra-a-test-1-gpu-small-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494909",
+          "updatedAt": "2026-09-01T08:55:35.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-small-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-1gpu-sglang).status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-2-gpu-large",
+          "name": "extra-a-test-2-gpu-large",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588092",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-2-gpu-large.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-a-test-2-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-2gpu-sglang)",
+          "name": "extra-a-test-2-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-2gpu-sglang)",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494490",
+          "updatedAt": "2026-09-01T08:55:35.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-a-test-2-gpu-large-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-2gpu-sglang).status"
+        },
+        {
+          "key": "check-run:github-actions:extra-b-test-4-gpu-b200",
+          "name": "extra-b-test-4-gpu-b200",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587969",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-b-test-4-gpu-b200.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-b-test-4-gpu-h100",
+          "name": "extra-b-test-4-gpu-h100",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587999",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-b-test-4-gpu-h100.status"
+        },
+        {
+          "key": "check-run:github-actions:extra-b-test-8-gpu-h200",
+          "name": "extra-b-test-8-gpu-h200",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588307",
+          "updatedAt": "2026-09-01T08:55:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aextra-b-test-8-gpu-h200.status"
+        },
+        {
+          "key": "check-run:github-actions:finish",
+          "name": "finish",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797509443",
+          "updatedAt": "2026-09-01T08:55:46.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Afinish.status"
+        },
+        {
+          "key": "check-run:github-actions:k8s-integration",
+          "name": "k8s-integration",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797484877",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ak8s-integration.status"
+        },
+        {
+          "key": "check-run:github-actions:matrix.name",
+          "name": "matrix.name",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452934",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amatrix.name.status"
+        },
+        {
+          "key": "check-run:github-actions:mori-pd",
+          "name": "mori-pd",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527131/job/99797493353",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amori-pd.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-layer-unit-test-musa",
+          "name": "multimodal-gen-layer-unit-test-musa",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512477",
+          "updatedAt": "2026-09-01T08:55:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-layer-unit-test-musa.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-test-1-gpu-musa",
+          "name": "multimodal-gen-test-1-gpu-musa",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512380",
+          "updatedAt": "2026-09-01T08:55:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-gpu-musa.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-test-1-gpu-xpu",
+          "name": "multimodal-gen-test-1-gpu-xpu",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797515102",
+          "updatedAt": "2026-09-01T08:55:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-gpu-xpu.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-test-1-npu-a3",
+          "name": "multimodal-gen-test-1-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520165",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-test-2-gpu-musa",
+          "name": "multimodal-gen-test-2-gpu-musa",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512628",
+          "updatedAt": "2026-09-01T08:55:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-2-gpu-musa.status"
+        },
+        {
+          "key": "check-run:github-actions:multimodal-gen-test-2-npu-a3",
+          "name": "multimodal-gen-test-2-npu-a3",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519920",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-2-npu-a3.status"
+        },
+        {
+          "key": "check-run:github-actions:notify-pr-states",
+          "name": "notify-pr-states",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797673409",
+          "updatedAt": "2026-09-01T08:56:13.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Anotify-pr-states.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-gate",
+          "name": "pr-gate",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797527709",
+          "updatedAt": "2026-09-01T08:55:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-gate.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-amd-extra-finish",
+          "name": "pr-test-amd-extra-finish",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494194",
+          "updatedAt": "2026-09-01T08:55:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-amd-extra-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-extra-finish",
+          "name": "pr-test-extra-finish",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588033",
+          "updatedAt": "2026-09-01T08:56:04.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-extra-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-finish",
+          "name": "pr-test-finish",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647997",
+          "updatedAt": "2026-09-01T08:56:13.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-mlx-finish",
+          "name": "pr-test-mlx-finish",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797522860",
+          "updatedAt": "2026-09-01T08:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-mlx-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-musa-finish",
+          "name": "pr-test-musa-finish",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797511790",
+          "updatedAt": "2026-09-01T08:55:47.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-musa-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:pr-test-npu-finish",
+          "name": "pr-test-npu-finish",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519814",
+          "updatedAt": "2026-09-01T08:55:50.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr-test-npu-finish.status"
+        },
+        {
+          "key": "check-run:github-actions:python-unit-tests",
+          "name": "python-unit-tests",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452793",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apython-unit-tests.status"
+        },
+        {
+          "key": "check-run:github-actions:rust-ext-build",
+          "name": "rust-ext-build",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587365",
+          "updatedAt": "2026-09-01T08:55:55.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arust-ext-build.status"
+        },
+        {
+          "key": "check-run:github-actions:rust-ext-build / Build Rust Ext",
+          "name": "rust-ext-build / Build Rust Ext",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647115",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arust-ext-build%20%2F%20build%20rust%20ext.status"
+        },
+        {
+          "key": "check-run:github-actions:rust-ext-build / Restore Rust Ext",
+          "name": "rust-ext-build / Restore Rust Ext",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797558124",
+          "updatedAt": "2026-09-01T08:56:08.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arust-ext-build%20%2F%20restore%20rust%20ext.status"
+        },
+        {
+          "key": "check-run:github-actions:set-image-config",
+          "name": "set-image-config",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797451814",
+          "updatedAt": "2026-09-01T08:55:31.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aset-image-config.status"
+        },
+        {
+          "key": "check-run:github-actions:sgl-kernel-build-wheels",
+          "name": "sgl-kernel-build-wheels",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797586950",
+          "updatedAt": "2026-09-01T08:55:55.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Asgl-kernel-build-wheels.status"
+        },
+        {
+          "key": "check-run:github-actions:sgl-kernel-build-wheels-arm",
+          "name": "sgl-kernel-build-wheels-arm",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559681",
+          "updatedAt": "2026-09-01T08:55:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Asgl-kernel-build-wheels-arm.status"
+        },
+        {
+          "key": "check-run:github-actions:sgl-kernel-unit-test-musa",
+          "name": "sgl-kernel-unit-test-musa",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512125",
+          "updatedAt": "2026-09-01T08:55:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Asgl-kernel-unit-test-musa.status"
+        },
+        {
+          "key": "check-run:github-actions:stage-a-test-1-gpu-xpu",
+          "name": "stage-a-test-1-gpu-xpu",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797514996",
+          "updatedAt": "2026-09-01T08:55:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Astage-a-test-1-gpu-xpu.status"
+        },
+        {
+          "key": "check-run:github-actions:stage-a-unit-test-mlx",
+          "name": "stage-a-unit-test-mlx",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797523769",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Astage-a-unit-test-mlx.status"
+        },
+        {
+          "key": "check-run:github-actions:stage-b-e2e-test-mlx",
+          "name": "stage-b-e2e-test-mlx",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797523255",
+          "updatedAt": "2026-09-01T08:55:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Astage-b-e2e-test-mlx.status"
+        },
+        {
+          "key": "check-run:github-actions:stage-b-test-1-gpu-xpu",
+          "name": "stage-b-test-1-gpu-xpu",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797516146",
+          "updatedAt": "2026-09-01T08:55:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Astage-b-test-1-gpu-xpu.status"
+        },
+        {
+          "key": "check-run:github-actions:summarize-benchmarks",
+          "name": "summarize-benchmarks",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452917",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Asummarize-benchmarks.status"
+        },
+        {
+          "key": "check-run:github-actions:tier-1 — lint",
+          "name": "tier-1 — lint",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797508963",
+          "updatedAt": "2026-09-01T08:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atier-1%20%E2%80%94%20lint.status"
+        },
+        {
+          "key": "check-run:github-actions:tier-2 — build + test",
+          "name": "tier-2 — build + test",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797509668",
+          "updatedAt": "2026-09-01T08:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atier-2%20%E2%80%94%20build%20%2B%20test.status"
+        },
+        {
+          "key": "check-run:github-actions:tier-3 — docker (placeholder)",
+          "name": "tier-3 — docker (placeholder)",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510216",
+          "updatedAt": "2026-09-01T08:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20docker%20(placeholder).status"
+        },
+        {
+          "key": "check-run:github-actions:tier-3 — e2e",
+          "name": "tier-3 — e2e",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510383",
+          "updatedAt": "2026-09-01T08:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20e2e.status"
+        },
+        {
+          "key": "check-run:github-actions:tier-3 — k8s integration",
+          "name": "tier-3 — k8s integration",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510132",
+          "updatedAt": "2026-09-01T08:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20k8s%20integration.status"
+        },
+        {
+          "key": "check-run:github-actions:unit-tests",
+          "name": "unit-tests",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797451990",
+          "updatedAt": "2026-09-01T08:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aunit-tests.status"
+        },
+        {
+          "key": "check-run:github-actions:wait-for-base-a",
+          "name": "wait-for-base-a",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559727",
+          "updatedAt": "2026-09-01T08:55:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Await-for-base-a.status"
+        },
+        {
+          "key": "check-run:github-actions:wait-for-base-b",
+          "name": "wait-for-base-b",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797560477",
+          "updatedAt": "2026-09-01T08:55:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Await-for-base-b.status"
+        },
+        {
+          "key": "check-run:github-actions:wait-for-stage-a",
+          "name": "wait-for-stage-a",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797515703",
+          "updatedAt": "2026-09-01T08:55:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Await-for-stage-a.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 3,
+        "pendingCount": 0,
+        "successCount": 9,
+        "skippedCount": 75,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 87,
+        "collectionComplete": false,
+        "truncated": true
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "REVIEW_REQUIRED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-01T08:55:41.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-09-01T08:55:19.000Z"
+    },
+    "links": {
+      "linkedIssues": [
+        {
+          "owner": "sgl-project",
+          "repo": "sglang",
+          "number": 33625,
+          "url": "https://github.com/sgl-project/sglang/issues/33625",
+          "state": "OPEN",
+          "merged": null,
+          "evidenceId": "link.issue.sgl-project%2Fsglang%2333625"
+        }
+      ],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "c26cd496599487dbf719af01cc987a2bd379f2e7",
+          "url": "https://github.com/sgl-project/sglang/commit/c26cd496599487dbf719af01cc987a2bd379f2e7",
+          "evidenceId": "commit.c26cd496599487dbf719af01cc987a2bd379f2e7"
+        },
+        {
+          "sha": "287a0f762ed60591577a538ae702c0e5231db7fc",
+          "url": "https://github.com/sgl-project/sglang/commit/287a0f762ed60591577a538ae702c0e5231db7fc",
+          "evidenceId": "commit.287a0f762ed60591577a538ae702c0e5231db7fc"
+        },
+        {
+          "sha": "923310c995159e52e8717b5e2b0afd66f6f76d80",
+          "url": "https://github.com/sgl-project/sglang/commit/923310c995159e52e8717b5e2b0afd66f6f76d80",
+          "evidenceId": "commit.923310c995159e52e8717b5e2b0afd66f6f76d80"
+        },
+        {
+          "sha": "10a3b95f510584174d8b8c661c7974b97d72291a",
+          "url": "https://github.com/sgl-project/sglang/commit/10a3b95f510584174d8b8c661c7974b97d72291a",
+          "evidenceId": "commit.10a3b95f510584174d8b8c661c7974b97d72291a"
+        },
+        {
+          "sha": "75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+          "url": "https://github.com/sgl-project/sglang/commit/75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+          "evidenceId": "commit.75b73b0c5adc8c92b648caf984cd0cb28ab42877"
+        },
+        {
+          "sha": "356299712d1bc649efed655dc610838096b80d3a",
+          "url": "https://github.com/sgl-project/sglang/commit/356299712d1bc649efed655dc610838096b80d3a",
+          "evidenceId": "commit.356299712d1bc649efed655dc610838096b80d3a"
+        },
+        {
+          "sha": "b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+          "url": "https://github.com/sgl-project/sglang/commit/b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+          "evidenceId": "commit.b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d"
+        },
+        {
+          "sha": "7423152786a53d30702a42cc667413357bcbc96b",
+          "url": "https://github.com/sgl-project/sglang/commit/7423152786a53d30702a42cc667413357bcbc96b",
+          "evidenceId": "commit.7423152786a53d30702a42cc667413357bcbc96b"
+        },
+        {
+          "sha": "d2bff07e439c4f36b383b500300524541ae11e40",
+          "url": "https://github.com/sgl-project/sglang/commit/d2bff07e439c4f36b383b500300524541ae11e40",
+          "evidenceId": "commit.d2bff07e439c4f36b383b500300524541ae11e40"
+        },
+        {
+          "sha": "a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+          "url": "https://github.com/sgl-project/sglang/commit/a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+          "evidenceId": "commit.a0da4a329a146044dbfeb78b7247ffcb4acb3915"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "TRUNCATED",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4836
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/sgl-project/sglang",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/sgl-project/sglang",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "label.documentation",
+        "category": "label",
+        "claim": "GitHub label: documentation",
+        "value": "documentation",
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "label.model-gateway",
+        "category": "label",
+        "claim": "GitHub label: model-gateway",
+        "value": "model-gateway",
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "BLOCKED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 10,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-a-test-1-gpu-small%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-a-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647538",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-a-test-1-npu-a2.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-a-test-1-npu-a2",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520772",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-a-test-cpu%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-a-test-cpu / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648015",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-1-gpu-large%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-1-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648613",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-1-gpu-small%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-1-gpu-small / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648157",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-1-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-1-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520159",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-16-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-16-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520470",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-2-gpu-large%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-2-gpu-large / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648302",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-2-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-2-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520571",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-4-gpu-b200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648712",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-4-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-4-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519978",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-b-test-8-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-b-test-8-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519979",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-b200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-4-gpu-b200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648246",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-gb300%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-4-gpu-gb300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648790",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-4-gpu-h100%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-4-gpu-h100 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648279",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-b300%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-8-gpu-b300 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648451",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-h20%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-8-gpu-h20 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648808",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-8-gpu-h200%20%2F%20%24%7B%7B%20inputs.self_name%20%7D%7D%20(%24%7B%7B%20matrix.partition%20%7D%7D).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-8-gpu-h200 / ${{ inputs.self_name }} (${{ matrix.partition }})",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648021",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-acc-16-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-acc-16-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520132",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-acc-2-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-acc-2-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520507",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-acc-4-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-acc-4-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520462",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-acc-8-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-acc-8-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520148",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-perf-16-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-perf-16-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797521792",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-perf-2-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-perf-2-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520770",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-perf-4-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-perf-4-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797521651",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abase-c-test-perf-8-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:base-c-test-perf-8-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520983",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abenchmark%20-%20%24%7B%7B%20matrix.name%20%7D%7D.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Benchmark - ${{ matrix.name }}",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527307/job/99797484887",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild-test.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:build-test",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797527958",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild-wheel.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:build-wheel",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452357",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-gate.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-gate",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559370",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-gate%20%2F%20pr-gate.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-gate / pr-gate",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797547508",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-jit-kernel-tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-jit-kernel-tests",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647653",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-multimodal-gen-tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-multimodal-gen-tests",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797648059",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-pr-test-extra.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-pr-test-extra",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797456414",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acall-sgl-kernel-tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:call-sgl-kernel-tests",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647689",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck-changes.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:check-changes",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797452225",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck-changes%20%2F%20check-changes.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:check-changes / check-changes",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797455250",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adocker-build-test.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:docker-build-test",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797489457",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-large.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-1-gpu-large",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588565",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-large-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-1gpu-sglang).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-1-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797495420",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-small.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-1-gpu-small",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588637",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-1-gpu-small-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-1gpu-sglang).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-1-gpu-small-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-1gpu-sglang)",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494909",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-2-gpu-large.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-2-gpu-large",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588092",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-a-test-2-gpu-large-amd%20(%24%7B%7B%20(inputs.rocm_version%20%7C%7C%20'rocm724')%20%7D%7D%2C%20linux-%24%7B%7B%20(inputs.runner_arch%20%7C%7C%20'mi300')%20%7D%7D-2gpu-sglang).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-a-test-2-gpu-large-amd (${{ (inputs.rocm_version || 'rocm724') }}, linux-${{ (inputs.runner_arch || 'mi300') }}-2gpu-sglang)",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494490",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-b-test-4-gpu-b200.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-b-test-4-gpu-b200",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587969",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-b-test-4-gpu-h100.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-b-test-4-gpu-h100",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587999",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aextra-b-test-8-gpu-h200.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:extra-b-test-8-gpu-h200",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588307",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Afinish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:finish",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797509443",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ak8s-integration.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:k8s-integration",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797484877",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amatrix.name.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:matrix.name",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452934",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amori-pd.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:mori-pd",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527131/job/99797493353",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-layer-unit-test-musa.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-layer-unit-test-musa",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512477",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-gpu-musa.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-test-1-gpu-musa",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512380",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-gpu-xpu.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-test-1-gpu-xpu",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797515102",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-1-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-test-1-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797520165",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-2-gpu-musa.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-test-2-gpu-musa",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512628",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amultimodal-gen-test-2-npu-a3.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:multimodal-gen-test-2-npu-a3",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519920",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Anotify-pr-states.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:notify-pr-states",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797673409",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-gate.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-gate",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527698/job/99797527709",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-amd-extra-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-amd-extra-finish",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527500/job/99797494194",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-extra-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-extra-finish",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797588033",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-finish",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647997",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-mlx-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-mlx-finish",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797522860",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-musa-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-musa-finish",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797511790",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr-test-npu-finish.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pr-test-npu-finish",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797519814",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apython-unit-tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:python-unit-tests",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452793",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arust-ext-build.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:rust-ext-build",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797587365",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arust-ext-build%20%2F%20build%20rust%20ext.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:rust-ext-build / Build Rust Ext",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797647115",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arust-ext-build%20%2F%20restore%20rust%20ext.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:rust-ext-build / Restore Rust Ext",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797558124",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aset-image-config.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:set-image-config",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527407/job/99797451814",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Asgl-kernel-build-wheels.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:sgl-kernel-build-wheels",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527729/job/99797586950",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Asgl-kernel-build-wheels-arm.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:sgl-kernel-build-wheels-arm",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559681",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Asgl-kernel-unit-test-musa.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:sgl-kernel-unit-test-musa",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527670/job/99797512125",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Astage-a-test-1-gpu-xpu.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:stage-a-test-1-gpu-xpu",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797514996",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Astage-a-unit-test-mlx.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:stage-a-unit-test-mlx",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797523769",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Astage-b-e2e-test-mlx.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:stage-b-e2e-test-mlx",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527559/job/99797523255",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Astage-b-test-1-gpu-xpu.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:stage-b-test-1-gpu-xpu",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797516146",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Asummarize-benchmarks.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:summarize-benchmarks",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797452917",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atier-1%20%E2%80%94%20lint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:tier-1 — lint",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797508963",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atier-2%20%E2%80%94%20build%20%2B%20test.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:tier-2 — build + test",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797509668",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20docker%20(placeholder).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:tier-3 — docker (placeholder)",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510216",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20e2e.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:tier-3 — e2e",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510383",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atier-3%20%E2%80%94%20k8s%20integration.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:tier-3 — k8s integration",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527149/job/99797510132",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aunit-tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:unit-tests",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527245/job/99797451990",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Await-for-base-a.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:wait-for-base-a",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797559727",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Await-for-base-b.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:wait-for-base-b",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527894/job/99797560477",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Await-for-stage-a.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:wait-for-stage-a",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/actions/runs/33489527505/job/99797515703",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 3,
+          "pendingCount": 0,
+          "successCount": 9,
+          "skippedCount": 75,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 87,
+          "collectionComplete": false,
+          "truncated": true
+        },
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "REVIEW_REQUIRED",
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/sgl-project/sglang/pull/33959",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "link.issue.sgl-project%2Fsglang%2333625",
+        "category": "links",
+        "claim": "GitHub explicitly linked issue sgl-project/sglang#33625",
+        "value": {
+          "state": "OPEN",
+          "merged": null
+        },
+        "sourceUrl": "https://github.com/sgl-project/sglang/issues/33625",
+        "apiSource": "GraphQL.pullRequest.closingIssuesReferences",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.c26cd496599487dbf719af01cc987a2bd379f2e7",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c26cd496599487dbf719af01cc987a2bd379f2e7",
+        "value": "c26cd496599487dbf719af01cc987a2bd379f2e7",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/c26cd496599487dbf719af01cc987a2bd379f2e7",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.287a0f762ed60591577a538ae702c0e5231db7fc",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 287a0f762ed60591577a538ae702c0e5231db7fc",
+        "value": "287a0f762ed60591577a538ae702c0e5231db7fc",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/287a0f762ed60591577a538ae702c0e5231db7fc",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.923310c995159e52e8717b5e2b0afd66f6f76d80",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 923310c995159e52e8717b5e2b0afd66f6f76d80",
+        "value": "923310c995159e52e8717b5e2b0afd66f6f76d80",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/923310c995159e52e8717b5e2b0afd66f6f76d80",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.10a3b95f510584174d8b8c661c7974b97d72291a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 10a3b95f510584174d8b8c661c7974b97d72291a",
+        "value": "10a3b95f510584174d8b8c661c7974b97d72291a",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/10a3b95f510584174d8b8c661c7974b97d72291a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+        "value": "75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/75b73b0c5adc8c92b648caf984cd0cb28ab42877",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.356299712d1bc649efed655dc610838096b80d3a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 356299712d1bc649efed655dc610838096b80d3a",
+        "value": "356299712d1bc649efed655dc610838096b80d3a",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/356299712d1bc649efed655dc610838096b80d3a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+        "value": "b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/b7c7305c489da7cc3f13dc4f50f0b7d4cc6ceb2d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.7423152786a53d30702a42cc667413357bcbc96b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7423152786a53d30702a42cc667413357bcbc96b",
+        "value": "7423152786a53d30702a42cc667413357bcbc96b",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/7423152786a53d30702a42cc667413357bcbc96b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.d2bff07e439c4f36b383b500300524541ae11e40",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d2bff07e439c4f36b383b500300524541ae11e40",
+        "value": "d2bff07e439c4f36b383b500300524541ae11e40",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/d2bff07e439c4f36b383b500300524541ae11e40",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      },
+      {
+        "id": "commit.a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+        "value": "a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/a0da4a329a146044dbfeb78b7247ffcb4acb3915",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:40:38.034Z"
+      }
+    ],
+    "limitations": [
+      "Check runs pagination was capped at 100 records.",
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "AUTHOR_ACTION_REQUIRED",
+    "ruleId": "PR_006_CHECK_FAILURE",
+    "reasonCode": "LATEST_CHECK_FAILED",
+    "evidenceIds": [
+      "check.check-run%3Agithub-actions%3Acall-gate%20%2F%20pr-gate.status",
+      "check.check-run%3Agithub-actions%3Apr-test-amd-extra-finish.status",
+      "check.check-run%3Agithub-actions%3Apr-test-extra-finish.status"
+    ],
+    "nextActionCode": "FIX_FAILED_CHECKS",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": true,
+        "reasonCode": "LATEST_CHECK_FAILED"
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": true,
+        "reasonCode": "REVIEW_REQUIRED"
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

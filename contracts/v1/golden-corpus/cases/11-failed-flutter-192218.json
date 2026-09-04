@@ -1,0 +1,664 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "11-failed-flutter-192218",
+  "url": "https://github.com/flutter/flutter/pull/192218",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T06:16:44Z",
+        "headSha": "1e9e737db784095ed1447b2238910428165d4e57"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T06:16:44.000Z",
+        "headSha": "1e9e737db784095ed1447b2238910428165d4e57"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T06:16:44Z",
+        "headSha": "1e9e737db784095ed1447b2238910428165d4e57"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T06:16:44Z",
+        "headSha": "1e9e737db784095ed1447b2238910428165d4e57"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T06:16:44Z",
+        "headSha": "1e9e737db784095ed1447b2238910428165d4e57"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "d3be1c848bd7b1e88e732108bb9d843f5c71ca8fe9c49ad700a81470610a5b7f",
+    "decisionSha256": "7e1535ea1882426310333f3b88d27f417b1c7b460068c0a6c181ea7b2887a867"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:47:06.749Z",
+    "source": {
+      "originalUrl": "https://github.com/flutter/flutter/pull/192218",
+      "canonicalUrl": "https://github.com/flutter/flutter/pull/192218",
+      "owner": "flutter",
+      "repo": "flutter",
+      "number": 192218,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "master",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/flutter/flutter"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Fix physical path leakage in dart_plugin_registrant URI",
+      "authorLogin": "criskell",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-09-03T03:03:54.000Z",
+      "updatedAt": "2026-09-03T06:16:44.000Z",
+      "closedAt": null,
+      "labels": [
+        "tool"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 2,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "master",
+      "headRef": "fix-dart-plugin-registrant-leak",
+      "baseSha": "0c2d270c5a93ad5c4b7c7000959c75de84bb6144",
+      "headSha": "1e9e737db784095ed1447b2238910428165d4e57",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "branches": {
+      "baseRef": "master",
+      "headRef": "fix-dart-plugin-registrant-leak",
+      "baseSha": "0c2d270c5a93ad5c4b7c7000959c75de84bb6144",
+      "headSha": "1e9e737db784095ed1447b2238910428165d4e57",
+      "aheadBy": 3,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:flutter-dashboard:Awaiting CICD label",
+          "name": "Awaiting CICD label",
+          "provider": "CHECK_RUN",
+          "status": "PENDING",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://flutter-dashboard.appspot.com",
+          "updatedAt": "2026-09-03T06:16:46.000Z",
+          "evidenceId": "check.check-run%3Aflutter-dashboard%3Aawaiting%20cicd%20label.status"
+        },
+        {
+          "key": "check-run:flutter-roll-on-borg:Google testing",
+          "name": "Google testing",
+          "provider": "CHECK_RUN",
+          "status": "PENDING",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "http://go/frob_pr/192218",
+          "updatedAt": "2026-09-03T06:16:47.000Z",
+          "evidenceId": "check.check-run%3Aflutter-roll-on-borg%3Agoogle%20testing.status"
+        },
+        {
+          "key": "check-run:github-actions:Check Code Freeze",
+          "name": "Check Code Freeze",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495397/job/100544366523",
+          "updatedAt": "2026-09-03T06:16:55.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20code%20freeze.status"
+        },
+        {
+          "key": "check-run:github-actions:check-changes",
+          "name": "check-changes",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544366214",
+          "updatedAt": "2026-09-03T06:17:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck-changes.status"
+        },
+        {
+          "key": "check-run:github-actions:reject-main-prs",
+          "name": "reject-main-prs",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495333/job/100544365970",
+          "updatedAt": "2026-09-03T06:16:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Areject-main-prs.status"
+        },
+        {
+          "key": "check-run:github-actions:triage",
+          "name": "triage",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495492/job/100544366875",
+          "updatedAt": "2026-09-03T06:16:57.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atriage.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-config",
+          "name": "zizmor-config",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545396",
+          "updatedAt": "2026-09-03T06:17:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-config.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-output",
+          "name": "zizmor-output",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545978",
+          "updatedAt": "2026-09-03T06:17:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-output.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-scan",
+          "name": "zizmor-scan",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545322",
+          "updatedAt": "2026-09-03T06:17:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-scan.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-upload",
+          "name": "zizmor-upload",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545877",
+          "updatedAt": "2026-09-03T06:17:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-upload.status"
+        },
+        {
+          "key": "check-run:google-cla:cla/google",
+          "name": "cla/google",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://cla.developers.google.com/about",
+          "updatedAt": "2026-09-03T06:16:47.000Z",
+          "evidenceId": "check.check-run%3Agoogle-cla%3Acla%2Fgoogle.status"
+        },
+        {
+          "key": "commit-status:tree-status",
+          "name": "tree-status",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://flutter-dashboard.appspot.com/#/build?repo=flutter",
+          "updatedAt": "2026-09-03T06:17:16.000Z",
+          "evidenceId": "check.commit-status%3Atree-status.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 2,
+        "successCount": 6,
+        "skippedCount": 4,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 12,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "REVIEW_REQUIRED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T03:03:54.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-09-03T06:16:42.000Z"
+    },
+    "links": {
+      "linkedIssues": [
+        {
+          "owner": "flutter",
+          "repo": "flutter",
+          "number": 148461,
+          "url": "https://github.com/flutter/flutter/issues/148461",
+          "state": "OPEN",
+          "merged": null,
+          "evidenceId": "link.issue.flutter%2Fflutter%23148461"
+        }
+      ],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "c486bb9211cc791aa8de5467965e6618d32417e1",
+          "url": "https://github.com/flutter/flutter/commit/c486bb9211cc791aa8de5467965e6618d32417e1",
+          "evidenceId": "commit.c486bb9211cc791aa8de5467965e6618d32417e1"
+        },
+        {
+          "sha": "8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+          "url": "https://github.com/flutter/flutter/commit/8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+          "evidenceId": "commit.8c7b919504e7421606adbab06c2ad0092f7d6e1f"
+        },
+        {
+          "sha": "1e9e737db784095ed1447b2238910428165d4e57",
+          "url": "https://github.com/flutter/flutter/commit/1e9e737db784095ed1447b2238910428165d4e57",
+          "evidenceId": "commit.1e9e737db784095ed1447b2238910428165d4e57"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4758
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/flutter/flutter",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/flutter/flutter",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "label.tool",
+        "category": "label",
+        "claim": "GitHub label: tool",
+        "value": "tool",
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "BLOCKED",
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 3,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Aflutter-dashboard%3Aawaiting%20cicd%20label.status",
+        "category": "check",
+        "claim": "Latest status for check-run:flutter-dashboard:Awaiting CICD label",
+        "value": "PENDING",
+        "sourceUrl": "https://flutter-dashboard.appspot.com",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Aflutter-roll-on-borg%3Agoogle%20testing.status",
+        "category": "check",
+        "claim": "Latest status for check-run:flutter-roll-on-borg:Google testing",
+        "value": "PENDING",
+        "sourceUrl": "http://go/frob_pr/192218",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20code%20freeze.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check Code Freeze",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495397/job/100544366523",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck-changes.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:check-changes",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544366214",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Areject-main-prs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:reject-main-prs",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495333/job/100544365970",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atriage.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:triage",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495492/job/100544366875",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-config.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-config",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545396",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-output.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-output",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545978",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-scan.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-scan",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545322",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-upload.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-upload",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/flutter/flutter/actions/runs/33722495354/job/100544545877",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.check-run%3Agoogle-cla%3Acla%2Fgoogle.status",
+        "category": "check",
+        "claim": "Latest status for check-run:google-cla:cla/google",
+        "value": "SUCCESS",
+        "sourceUrl": "https://cla.developers.google.com/about",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "check.commit-status%3Atree-status.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:tree-status",
+        "value": "SUCCESS",
+        "sourceUrl": "https://flutter-dashboard.appspot.com/#/build?repo=flutter",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 2,
+          "successCount": 6,
+          "skippedCount": 4,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 12,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "REVIEW_REQUIRED",
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/flutter/flutter/pull/192218",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "link.issue.flutter%2Fflutter%23148461",
+        "category": "links",
+        "claim": "GitHub explicitly linked issue flutter/flutter#148461",
+        "value": {
+          "state": "OPEN",
+          "merged": null
+        },
+        "sourceUrl": "https://github.com/flutter/flutter/issues/148461",
+        "apiSource": "GraphQL.pullRequest.closingIssuesReferences",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "commit.c486bb9211cc791aa8de5467965e6618d32417e1",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c486bb9211cc791aa8de5467965e6618d32417e1",
+        "value": "c486bb9211cc791aa8de5467965e6618d32417e1",
+        "sourceUrl": "https://github.com/flutter/flutter/commit/c486bb9211cc791aa8de5467965e6618d32417e1",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "commit.8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+        "value": "8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+        "sourceUrl": "https://github.com/flutter/flutter/commit/8c7b919504e7421606adbab06c2ad0092f7d6e1f",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      },
+      {
+        "id": "commit.1e9e737db784095ed1447b2238910428165d4e57",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1e9e737db784095ed1447b2238910428165d4e57",
+        "value": "1e9e737db784095ed1447b2238910428165d4e57",
+        "sourceUrl": "https://github.com/flutter/flutter/commit/1e9e737db784095ed1447b2238910428165d4e57",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:47:06.749Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "WAIT",
+    "ruleId": "PR_009_CHECK_PENDING",
+    "reasonCode": "WAITING_FOR_CI",
+    "evidenceIds": [
+      "checks.summary"
+    ],
+    "nextActionCode": "WAIT_FOR_CI",
+    "responsibleParty": "CI",
+    "confidence": "MEDIUM",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": true,
+        "reasonCode": "WAITING_FOR_CI"
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": true,
+        "reasonCode": "REVIEW_REQUIRED"
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "AUTHOR_ACTION_REQUIRED",
+        "SYNC_OR_FIX_BRANCH",
+        "WAIT",
+        "DONE_OR_STOP",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "ruleId": {
+      "type": "string"
+    },
+    "reasonCode": {
+      "type": "string"
+    },
+    "evidenceIds": {
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nextActionCode": {
+      "type": "string"
+    },
+    "responsibleParty": {
+      "type": "string",
+      "enum": [
+        "AUTHOR",
+        "MAINTAINER",
+        "REVIEWER",
+        "CI",
+        "ASSIGNEE_OR_CONTRIBUTOR",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ruleId": {
+            "type": "string"
+          },
+          "matched": {
+            "type": "boolean"
+          },
+          "reasonCode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "ruleId",
+          "matched",
+          "reasonCode"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "verdict",
+    "ruleId",
+    "reasonCode",
+    "evidenceIds",
+    "nextActionCode",
+    "responsibleParty",
+    "confidence",
+    "limitations",
+    "trace"
+  ],
+  "additionalProperties": false,
+  "$id": "https://gitnext.local/contracts/v1/decision.schema.json",
+  "title": "GitNext Decision v1",
+  "description": "Frozen deterministic next-step decision contract; it is not a mergeability or merge-readiness determination."
+}

@@ -1,0 +1,631 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "01-vllm-54166",
+  "url": "https://github.com/vllm-project/vllm/pull/54166",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-02T05:10:37Z",
+        "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-02T05:10:37.000Z",
+        "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-02T05:10:37Z",
+        "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-02T05:10:37Z",
+        "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-02T05:10:37Z",
+        "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "e7a6e8a94576b6099da6e032da2bcaa3cd8bca583490792fc6289afcb433b05b",
+    "decisionSha256": "9ebd71c8844fe96a1252f0c097e8d6f772f6f183ff92bb623e0ca4e2def3360a"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:37:35.551Z",
+    "source": {
+      "originalUrl": "https://github.com/vllm-project/vllm/pull/54166",
+      "canonicalUrl": "https://github.com/vllm-project/vllm/pull/54166",
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "number": 54166,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/vllm-project/vllm"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "[Feature][Spec Decode] Support sampling mask replay for MRV2 MTP",
+      "authorLogin": "chengcuiping",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-08-28T06:44:59.000Z",
+      "updatedAt": "2026-09-02T05:10:37.000Z",
+      "closedAt": null,
+      "labels": [
+        "speculative-decoding",
+        "mrv2"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 12,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "main",
+      "headRef": "feat/spec-decode-sampling-mask-replay-mtp",
+      "baseSha": "12b9573c98c32932e83fdb22e22c152b248c8c88",
+      "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "feat/spec-decode-sampling-mask-replay-mtp",
+      "baseSha": "12b9573c98c32932e83fdb22e22c152b248c8c88",
+      "headSha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+      "aheadBy": 3,
+      "behindBy": 3,
+      "compareStatus": "DIVERGED",
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:dco:DCO",
+          "name": "DCO",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://probot.github.io/apps/dco/",
+          "updatedAt": "2026-09-02T03:35:00.000Z",
+          "evidenceId": "check.check-run%3Adco%3Adco.status"
+        },
+        {
+          "key": "check-run:github-actions:approved",
+          "name": "approved",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/vllm-project/vllm/actions/runs/33588815011/job/100118436537",
+          "updatedAt": "2026-09-02T03:54:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aapproved.status"
+        },
+        {
+          "key": "check-run:github-actions:Check format",
+          "name": "Check format",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/vllm-project/vllm/actions/runs/33587714050/job/100115241044",
+          "updatedAt": "2026-09-02T03:37:05.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20format.status"
+        },
+        {
+          "key": "check-run:github-actions:pre-commit",
+          "name": "pre-commit",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/vllm-project/vllm/actions/runs/33587586706/job/100114866190",
+          "updatedAt": "2026-09-02T03:35:09.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apre-commit.status"
+        },
+        {
+          "key": "check-run:github-actions:pre-run-check",
+          "name": "pre-run-check",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/vllm-project/vllm/actions/runs/33587586706/job/100114842490",
+          "updatedAt": "2026-09-02T03:35:09.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apre-run-check.status"
+        },
+        {
+          "key": "check-run:mergify:Summary",
+          "name": "Summary",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=54166&login=vllm-project&repository=vllm",
+          "updatedAt": "2026-09-02T18:56:01.000Z",
+          "evidenceId": "check.check-run%3Amergify%3Asummary.status"
+        },
+        {
+          "key": "check-run:meta-codesync:Meta Internal-Only Changes Check",
+          "name": "Meta Internal-Only Changes Check",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://code.facebook.com",
+          "updatedAt": "2026-09-02T03:35:03.000Z",
+          "evidenceId": "check.check-run%3Ameta-codesync%3Ameta%20internal-only%20changes%20check.status"
+        },
+        {
+          "key": "commit-status:docs/readthedocs.org:vllm",
+          "name": "docs/readthedocs.org:vllm",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://app.readthedocs.org/projects/vllm/builds/34345432/",
+          "updatedAt": "2026-09-02T03:35:11.000Z",
+          "evidenceId": "check.commit-status%3Adocs%2Freadthedocs.org%3Avllm.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 1,
+        "pendingCount": 0,
+        "successCount": 4,
+        "skippedCount": 3,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 8,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "REVIEW_REQUIRED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "chengcuiping",
+          "state": "COMMENTED",
+          "submittedAt": "2026-09-02T03:54:46.000Z",
+          "authorAssociation": "NONE",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5085398554",
+          "evidenceId": "review.chengcuiping.latest"
+        },
+        {
+          "reviewerLogin": "claude[bot]",
+          "state": "COMMENTED",
+          "submittedAt": "2026-08-28T06:45:02.000Z",
+          "authorAssociation": "NONE",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5048558820",
+          "evidenceId": "review.claude%5Bbot%5D.latest"
+        },
+        {
+          "reviewerLogin": "TheEpicDolphin",
+          "state": "COMMENTED",
+          "submittedAt": "2026-09-01T18:44:49.000Z",
+          "authorAssociation": "COLLABORATOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5081705043",
+          "evidenceId": "review.theepicdolphin.latest"
+        }
+      ],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 2,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-02T03:37:43.000Z",
+      "lastMaintainerActivityAt": "2026-09-01T18:44:49.000Z",
+      "lastReviewActivityAt": "2026-09-02T03:54:46.000Z",
+      "lastCommitAt": "2026-09-02T03:20:05.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "7c7383a5c795f99057bb2ccebf75d37edd74595b",
+          "url": "https://github.com/vllm-project/vllm/commit/7c7383a5c795f99057bb2ccebf75d37edd74595b",
+          "evidenceId": "commit.7c7383a5c795f99057bb2ccebf75d37edd74595b"
+        },
+        {
+          "sha": "5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+          "url": "https://github.com/vllm-project/vllm/commit/5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+          "evidenceId": "commit.5db1db8e9c11c9d8646bcbd565b305f91227f1c4"
+        },
+        {
+          "sha": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+          "url": "https://github.com/vllm-project/vllm/commit/24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+          "evidenceId": "commit.24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4868
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/vllm-project/vllm",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/vllm-project/vllm",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "label.speculative-decoding",
+        "category": "label",
+        "claim": "GitHub label: speculative-decoding",
+        "value": "speculative-decoding",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "label.mrv2",
+        "category": "label",
+        "claim": "GitHub label: mrv2",
+        "value": "mrv2",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "BLOCKED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 3,
+          "behindBy": 3,
+          "compareStatus": "DIVERGED"
+        },
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Adco%3Adco.status",
+        "category": "check",
+        "claim": "Latest status for check-run:dco:DCO",
+        "value": "SUCCESS",
+        "sourceUrl": "https://probot.github.io/apps/dco/",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aapproved.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:approved",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/actions/runs/33588815011/job/100118436537",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20format.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check format",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/actions/runs/33587714050/job/100115241044",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apre-commit.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pre-commit",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/actions/runs/33587586706/job/100114866190",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apre-run-check.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:pre-run-check",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/vllm-project/vllm/actions/runs/33587586706/job/100114842490",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Amergify%3Asummary.status",
+        "category": "check",
+        "claim": "Latest status for check-run:mergify:Summary",
+        "value": "SUCCESS",
+        "sourceUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=54166&login=vllm-project&repository=vllm",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.check-run%3Ameta-codesync%3Ameta%20internal-only%20changes%20check.status",
+        "category": "check",
+        "claim": "Latest status for check-run:meta-codesync:Meta Internal-Only Changes Check",
+        "value": "SUCCESS",
+        "sourceUrl": "https://code.facebook.com",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "check.commit-status%3Adocs%2Freadthedocs.org%3Avllm.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:docs/readthedocs.org:vllm",
+        "value": "SUCCESS",
+        "sourceUrl": "https://app.readthedocs.org/projects/vllm/builds/34345432/",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 1,
+          "pendingCount": 0,
+          "successCount": 4,
+          "skippedCount": 3,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 8,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "review.chengcuiping.latest",
+        "category": "review",
+        "claim": "Latest effective review by chengcuiping",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5085398554",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "review.claude%5Bbot%5D.latest",
+        "category": "review",
+        "claim": "Latest effective review by claude[bot]",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5048558820",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "review.theepicdolphin.latest",
+        "category": "review",
+        "claim": "Latest effective review by TheEpicDolphin",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166#pullrequestreview-5081705043",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "REVIEW_REQUIRED",
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 2,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/vllm-project/vllm/pull/54166",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "commit.7c7383a5c795f99057bb2ccebf75d37edd74595b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7c7383a5c795f99057bb2ccebf75d37edd74595b",
+        "value": "7c7383a5c795f99057bb2ccebf75d37edd74595b",
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/7c7383a5c795f99057bb2ccebf75d37edd74595b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "commit.5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+        "value": "5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/5db1db8e9c11c9d8646bcbd565b305f91227f1c4",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      },
+      {
+        "id": "commit.24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+        "value": "24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/24b03ef7fbb9e8a65d59af3ef6bca7a96943bb8c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:37:35.551Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "AUTHOR_ACTION_REQUIRED",
+    "ruleId": "PR_006_CHECK_FAILURE",
+    "reasonCode": "LATEST_CHECK_FAILED",
+    "evidenceIds": [
+      "check.check-run%3Agithub-actions%3Apre-run-check.status"
+    ],
+    "nextActionCode": "FIX_FAILED_CHECKS",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": true,
+        "reasonCode": "LATEST_CHECK_FAILED"
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": true,
+        "reasonCode": "UNRESOLVED_REVIEW_THREADS"
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": true,
+        "reasonCode": "REVIEW_REQUIRED"
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

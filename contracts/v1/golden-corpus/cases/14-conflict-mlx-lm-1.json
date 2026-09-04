@@ -1,0 +1,1537 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "14-conflict-mlx-lm-1",
+  "url": "https://github.com/M-I/mlx-lm/pull/1",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T06:38:38Z",
+        "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T06:38:38.000Z",
+        "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T06:38:38Z",
+        "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T06:38:38Z",
+        "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T06:38:38Z",
+        "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "b28e7f09d9e9b08f65e8614355a9d5233c073a0f15536e55357e74e622b51daf",
+    "decisionSha256": "d76c27ae4d6c8bcb5396f5e0059f9f816fb81016e34b941c6faac13a4ecfb4da"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:50:28.552Z",
+    "source": {
+      "originalUrl": "https://github.com/M-I/mlx-lm/pull/1",
+      "canonicalUrl": "https://github.com/M-I/mlx-lm/pull/1",
+      "owner": "M-I",
+      "repo": "mlx-lm",
+      "number": 1,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": true,
+      "htmlUrl": "https://github.com/M-I/mlx-lm"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Resolve merge conflicts in slow-storage",
+      "authorLogin": "M-I",
+      "authorAssociation": "OWNER",
+      "createdAt": "2026-04-29T13:45:44.000Z",
+      "updatedAt": "2026-09-03T06:38:38.000Z",
+      "closedAt": null,
+      "labels": [],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 0,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "slow-storage",
+      "headRef": "main",
+      "baseSha": "8f1c067a4517c38a1caef3200ad701ed9d396692",
+      "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd",
+      "headRepositoryAvailable": true,
+      "mergeable": false,
+      "mergeStateStatus": "DIRTY"
+    },
+    "branches": {
+      "baseRef": "slow-storage",
+      "headRef": "main",
+      "baseSha": "8f1c067a4517c38a1caef3200ad701ed9d396692",
+      "headSha": "741e80b04523a2ee51539d84acc82b1a04733ebd",
+      "aheadBy": 84,
+      "behindBy": 7,
+      "compareStatus": "DIVERGED",
+      "mergeable": false,
+      "mergeStateStatus": "DIRTY"
+    },
+    "checks": {
+      "items": [],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 0,
+        "skippedCount": 0,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 0,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-04-29T13:45:44.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-09-03T06:38:35.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "62f38aeb51da77f595be7161ba7caa119ca5234a",
+          "url": "https://github.com/M-I/mlx-lm/commit/62f38aeb51da77f595be7161ba7caa119ca5234a",
+          "evidenceId": "commit.62f38aeb51da77f595be7161ba7caa119ca5234a"
+        },
+        {
+          "sha": "aa4f880fb35007359fdbe8c0168e1c558994d99c",
+          "url": "https://github.com/M-I/mlx-lm/commit/aa4f880fb35007359fdbe8c0168e1c558994d99c",
+          "evidenceId": "commit.aa4f880fb35007359fdbe8c0168e1c558994d99c"
+        },
+        {
+          "sha": "6d114686e5b3b770ed3c8cea765bc685597d7002",
+          "url": "https://github.com/M-I/mlx-lm/commit/6d114686e5b3b770ed3c8cea765bc685597d7002",
+          "evidenceId": "commit.6d114686e5b3b770ed3c8cea765bc685597d7002"
+        },
+        {
+          "sha": "a40173094136fbcbfb41966889a22530c83bd86e",
+          "url": "https://github.com/M-I/mlx-lm/commit/a40173094136fbcbfb41966889a22530c83bd86e",
+          "evidenceId": "commit.a40173094136fbcbfb41966889a22530c83bd86e"
+        },
+        {
+          "sha": "e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+          "url": "https://github.com/M-I/mlx-lm/commit/e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+          "evidenceId": "commit.e92138cb012ee2e30cd617dff0dc1f0eeb96a470"
+        },
+        {
+          "sha": "a9856b485d7789ccdee1d40d4643e20a9f61f750",
+          "url": "https://github.com/M-I/mlx-lm/commit/a9856b485d7789ccdee1d40d4643e20a9f61f750",
+          "evidenceId": "commit.a9856b485d7789ccdee1d40d4643e20a9f61f750"
+        },
+        {
+          "sha": "f39cb8e93448e41190d544445a87550bba09b995",
+          "url": "https://github.com/M-I/mlx-lm/commit/f39cb8e93448e41190d544445a87550bba09b995",
+          "evidenceId": "commit.f39cb8e93448e41190d544445a87550bba09b995"
+        },
+        {
+          "sha": "e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+          "url": "https://github.com/M-I/mlx-lm/commit/e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+          "evidenceId": "commit.e1c24b323761175fdcaa6d835eab9cb6a59e0189"
+        },
+        {
+          "sha": "f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+          "url": "https://github.com/M-I/mlx-lm/commit/f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+          "evidenceId": "commit.f3bb10c14192b7f025985c91b804e07dc2d9bd6b"
+        },
+        {
+          "sha": "2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+          "url": "https://github.com/M-I/mlx-lm/commit/2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+          "evidenceId": "commit.2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b"
+        },
+        {
+          "sha": "3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+          "url": "https://github.com/M-I/mlx-lm/commit/3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+          "evidenceId": "commit.3cd9a52df261edbcfd74ba8f72ca345380bb1bbd"
+        },
+        {
+          "sha": "4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+          "url": "https://github.com/M-I/mlx-lm/commit/4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+          "evidenceId": "commit.4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952"
+        },
+        {
+          "sha": "ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+          "url": "https://github.com/M-I/mlx-lm/commit/ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+          "evidenceId": "commit.ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd"
+        },
+        {
+          "sha": "df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+          "url": "https://github.com/M-I/mlx-lm/commit/df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+          "evidenceId": "commit.df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae"
+        },
+        {
+          "sha": "2edfb81491659413dcbc1b627a2f82fdd1359a03",
+          "url": "https://github.com/M-I/mlx-lm/commit/2edfb81491659413dcbc1b627a2f82fdd1359a03",
+          "evidenceId": "commit.2edfb81491659413dcbc1b627a2f82fdd1359a03"
+        },
+        {
+          "sha": "fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+          "url": "https://github.com/M-I/mlx-lm/commit/fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+          "evidenceId": "commit.fe468f92a18c68689a4eba1b6c0aab70295eb15c"
+        },
+        {
+          "sha": "8239c72de5a0e42c539e30489021db73c7fe258c",
+          "url": "https://github.com/M-I/mlx-lm/commit/8239c72de5a0e42c539e30489021db73c7fe258c",
+          "evidenceId": "commit.8239c72de5a0e42c539e30489021db73c7fe258c"
+        },
+        {
+          "sha": "04a19108d4a7fd6606319784d07c5be3017b073a",
+          "url": "https://github.com/M-I/mlx-lm/commit/04a19108d4a7fd6606319784d07c5be3017b073a",
+          "evidenceId": "commit.04a19108d4a7fd6606319784d07c5be3017b073a"
+        },
+        {
+          "sha": "d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+          "url": "https://github.com/M-I/mlx-lm/commit/d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+          "evidenceId": "commit.d39cfec103a2a7f9ff9779c9f15c9eb9709bba01"
+        },
+        {
+          "sha": "bdb77dae5389d193dcc333bed891d33f6b668285",
+          "url": "https://github.com/M-I/mlx-lm/commit/bdb77dae5389d193dcc333bed891d33f6b668285",
+          "evidenceId": "commit.bdb77dae5389d193dcc333bed891d33f6b668285"
+        },
+        {
+          "sha": "e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+          "url": "https://github.com/M-I/mlx-lm/commit/e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+          "evidenceId": "commit.e476a22246b86fb6e2a8d35c81953293ebf86a0f"
+        },
+        {
+          "sha": "39c4019f67402c6448eba0d789b5d834460046dd",
+          "url": "https://github.com/M-I/mlx-lm/commit/39c4019f67402c6448eba0d789b5d834460046dd",
+          "evidenceId": "commit.39c4019f67402c6448eba0d789b5d834460046dd"
+        },
+        {
+          "sha": "df48987708fc90b8fac72fb6db7538c5dbb1077d",
+          "url": "https://github.com/M-I/mlx-lm/commit/df48987708fc90b8fac72fb6db7538c5dbb1077d",
+          "evidenceId": "commit.df48987708fc90b8fac72fb6db7538c5dbb1077d"
+        },
+        {
+          "sha": "bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+          "url": "https://github.com/M-I/mlx-lm/commit/bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+          "evidenceId": "commit.bfa25a16f9c5285257e3494fc05e9f8d009a422a"
+        },
+        {
+          "sha": "c89c93c33db9b213de9abcfff57c89ed2817a361",
+          "url": "https://github.com/M-I/mlx-lm/commit/c89c93c33db9b213de9abcfff57c89ed2817a361",
+          "evidenceId": "commit.c89c93c33db9b213de9abcfff57c89ed2817a361"
+        },
+        {
+          "sha": "2c008fd0252b2c569227d12568356ab88ab0560a",
+          "url": "https://github.com/M-I/mlx-lm/commit/2c008fd0252b2c569227d12568356ab88ab0560a",
+          "evidenceId": "commit.2c008fd0252b2c569227d12568356ab88ab0560a"
+        },
+        {
+          "sha": "2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+          "url": "https://github.com/M-I/mlx-lm/commit/2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+          "evidenceId": "commit.2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5"
+        },
+        {
+          "sha": "ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+          "url": "https://github.com/M-I/mlx-lm/commit/ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+          "evidenceId": "commit.ab1806e8f5d6aa035973af194a1b9198ab4754dc"
+        },
+        {
+          "sha": "4128c000f423fe3a44edd651af8822078d1e5d08",
+          "url": "https://github.com/M-I/mlx-lm/commit/4128c000f423fe3a44edd651af8822078d1e5d08",
+          "evidenceId": "commit.4128c000f423fe3a44edd651af8822078d1e5d08"
+        },
+        {
+          "sha": "86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+          "url": "https://github.com/M-I/mlx-lm/commit/86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+          "evidenceId": "commit.86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd"
+        },
+        {
+          "sha": "a790972f0f844d81067ed45c28b524220a10c019",
+          "url": "https://github.com/M-I/mlx-lm/commit/a790972f0f844d81067ed45c28b524220a10c019",
+          "evidenceId": "commit.a790972f0f844d81067ed45c28b524220a10c019"
+        },
+        {
+          "sha": "15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+          "url": "https://github.com/M-I/mlx-lm/commit/15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+          "evidenceId": "commit.15b522f593b7ca5fbc0cac6f7572d40859d2d8fe"
+        },
+        {
+          "sha": "7661de1fb6907c1d0d15618703a0757274cbf0fe",
+          "url": "https://github.com/M-I/mlx-lm/commit/7661de1fb6907c1d0d15618703a0757274cbf0fe",
+          "evidenceId": "commit.7661de1fb6907c1d0d15618703a0757274cbf0fe"
+        },
+        {
+          "sha": "cf10f962b7a20e63a6df43dbf0faf06070153d40",
+          "url": "https://github.com/M-I/mlx-lm/commit/cf10f962b7a20e63a6df43dbf0faf06070153d40",
+          "evidenceId": "commit.cf10f962b7a20e63a6df43dbf0faf06070153d40"
+        },
+        {
+          "sha": "e5baded8c1d286754edb479ffbde4655a68e2758",
+          "url": "https://github.com/M-I/mlx-lm/commit/e5baded8c1d286754edb479ffbde4655a68e2758",
+          "evidenceId": "commit.e5baded8c1d286754edb479ffbde4655a68e2758"
+        },
+        {
+          "sha": "00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+          "url": "https://github.com/M-I/mlx-lm/commit/00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+          "evidenceId": "commit.00aeaead48668ee6eac0827cc7781c7fa6a8a1ea"
+        },
+        {
+          "sha": "254d153fdeb6f150edd4fc5a54f9828638481fa8",
+          "url": "https://github.com/M-I/mlx-lm/commit/254d153fdeb6f150edd4fc5a54f9828638481fa8",
+          "evidenceId": "commit.254d153fdeb6f150edd4fc5a54f9828638481fa8"
+        },
+        {
+          "sha": "7283fb342e2e127dd50609c185107ab41a1f98a3",
+          "url": "https://github.com/M-I/mlx-lm/commit/7283fb342e2e127dd50609c185107ab41a1f98a3",
+          "evidenceId": "commit.7283fb342e2e127dd50609c185107ab41a1f98a3"
+        },
+        {
+          "sha": "30108106fb95aafaadeb30199c819cd48e6e3bcf",
+          "url": "https://github.com/M-I/mlx-lm/commit/30108106fb95aafaadeb30199c819cd48e6e3bcf",
+          "evidenceId": "commit.30108106fb95aafaadeb30199c819cd48e6e3bcf"
+        },
+        {
+          "sha": "4eeaf20979bdc84813278fa82b7713e611f162ae",
+          "url": "https://github.com/M-I/mlx-lm/commit/4eeaf20979bdc84813278fa82b7713e611f162ae",
+          "evidenceId": "commit.4eeaf20979bdc84813278fa82b7713e611f162ae"
+        },
+        {
+          "sha": "96fcc4851a06a3405c37727e42703fdaece478f8",
+          "url": "https://github.com/M-I/mlx-lm/commit/96fcc4851a06a3405c37727e42703fdaece478f8",
+          "evidenceId": "commit.96fcc4851a06a3405c37727e42703fdaece478f8"
+        },
+        {
+          "sha": "13425df69fdf066ed84d8f1bbdc8182a7576740d",
+          "url": "https://github.com/M-I/mlx-lm/commit/13425df69fdf066ed84d8f1bbdc8182a7576740d",
+          "evidenceId": "commit.13425df69fdf066ed84d8f1bbdc8182a7576740d"
+        },
+        {
+          "sha": "84946c8ad94333eef070f85f256ac41cbbcaf89a",
+          "url": "https://github.com/M-I/mlx-lm/commit/84946c8ad94333eef070f85f256ac41cbbcaf89a",
+          "evidenceId": "commit.84946c8ad94333eef070f85f256ac41cbbcaf89a"
+        },
+        {
+          "sha": "d06c5374a12e1f9384aad5fece583d7be9d2619d",
+          "url": "https://github.com/M-I/mlx-lm/commit/d06c5374a12e1f9384aad5fece583d7be9d2619d",
+          "evidenceId": "commit.d06c5374a12e1f9384aad5fece583d7be9d2619d"
+        },
+        {
+          "sha": "7c758b960f1e50967bcaef7acd9293ce29562411",
+          "url": "https://github.com/M-I/mlx-lm/commit/7c758b960f1e50967bcaef7acd9293ce29562411",
+          "evidenceId": "commit.7c758b960f1e50967bcaef7acd9293ce29562411"
+        },
+        {
+          "sha": "d53e70f7a3870b85a3262bdab10999ada307ffc8",
+          "url": "https://github.com/M-I/mlx-lm/commit/d53e70f7a3870b85a3262bdab10999ada307ffc8",
+          "evidenceId": "commit.d53e70f7a3870b85a3262bdab10999ada307ffc8"
+        },
+        {
+          "sha": "dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+          "url": "https://github.com/M-I/mlx-lm/commit/dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+          "evidenceId": "commit.dd7c91d603fa84ee59df9e488ada7f4eff4cf64a"
+        },
+        {
+          "sha": "d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+          "url": "https://github.com/M-I/mlx-lm/commit/d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+          "evidenceId": "commit.d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb"
+        },
+        {
+          "sha": "dfb5da1d61f87679b0bc060c0794551e8db0d243",
+          "url": "https://github.com/M-I/mlx-lm/commit/dfb5da1d61f87679b0bc060c0794551e8db0d243",
+          "evidenceId": "commit.dfb5da1d61f87679b0bc060c0794551e8db0d243"
+        },
+        {
+          "sha": "43032ffcd9ce96246136c98216560a7f43ffddc6",
+          "url": "https://github.com/M-I/mlx-lm/commit/43032ffcd9ce96246136c98216560a7f43ffddc6",
+          "evidenceId": "commit.43032ffcd9ce96246136c98216560a7f43ffddc6"
+        },
+        {
+          "sha": "ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+          "url": "https://github.com/M-I/mlx-lm/commit/ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+          "evidenceId": "commit.ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe"
+        },
+        {
+          "sha": "3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+          "url": "https://github.com/M-I/mlx-lm/commit/3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+          "evidenceId": "commit.3412b2dec6590c5c1eb45f5ce22aedde5b0d7445"
+        },
+        {
+          "sha": "9acef5f7628e33a40f84dddbbb552c03c7fae556",
+          "url": "https://github.com/M-I/mlx-lm/commit/9acef5f7628e33a40f84dddbbb552c03c7fae556",
+          "evidenceId": "commit.9acef5f7628e33a40f84dddbbb552c03c7fae556"
+        },
+        {
+          "sha": "e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+          "url": "https://github.com/M-I/mlx-lm/commit/e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+          "evidenceId": "commit.e03e45edc5af6a895bfb386ddc0e79fd072763d0"
+        },
+        {
+          "sha": "11a6ce75589f59809d6d79b28efa03c50896c18b",
+          "url": "https://github.com/M-I/mlx-lm/commit/11a6ce75589f59809d6d79b28efa03c50896c18b",
+          "evidenceId": "commit.11a6ce75589f59809d6d79b28efa03c50896c18b"
+        },
+        {
+          "sha": "d78bf58e217c904ec282ed8da9b947491f78c022",
+          "url": "https://github.com/M-I/mlx-lm/commit/d78bf58e217c904ec282ed8da9b947491f78c022",
+          "evidenceId": "commit.d78bf58e217c904ec282ed8da9b947491f78c022"
+        },
+        {
+          "sha": "cc8521569694a3240b52c98acffd100d59b4c755",
+          "url": "https://github.com/M-I/mlx-lm/commit/cc8521569694a3240b52c98acffd100d59b4c755",
+          "evidenceId": "commit.cc8521569694a3240b52c98acffd100d59b4c755"
+        },
+        {
+          "sha": "8397555ffb7e84992543208a09d2237746ca5ff8",
+          "url": "https://github.com/M-I/mlx-lm/commit/8397555ffb7e84992543208a09d2237746ca5ff8",
+          "evidenceId": "commit.8397555ffb7e84992543208a09d2237746ca5ff8"
+        },
+        {
+          "sha": "9e6acca691e64d6d8bb808c328fcdea459099cca",
+          "url": "https://github.com/M-I/mlx-lm/commit/9e6acca691e64d6d8bb808c328fcdea459099cca",
+          "evidenceId": "commit.9e6acca691e64d6d8bb808c328fcdea459099cca"
+        },
+        {
+          "sha": "5c13170d8b3f724ce137caad2d7554de38e6f65b",
+          "url": "https://github.com/M-I/mlx-lm/commit/5c13170d8b3f724ce137caad2d7554de38e6f65b",
+          "evidenceId": "commit.5c13170d8b3f724ce137caad2d7554de38e6f65b"
+        },
+        {
+          "sha": "b09d076f0fc0835c5ae64bd1144028884f1279e6",
+          "url": "https://github.com/M-I/mlx-lm/commit/b09d076f0fc0835c5ae64bd1144028884f1279e6",
+          "evidenceId": "commit.b09d076f0fc0835c5ae64bd1144028884f1279e6"
+        },
+        {
+          "sha": "e2f2fb2aef987f86878d17638446183cffe21fe4",
+          "url": "https://github.com/M-I/mlx-lm/commit/e2f2fb2aef987f86878d17638446183cffe21fe4",
+          "evidenceId": "commit.e2f2fb2aef987f86878d17638446183cffe21fe4"
+        },
+        {
+          "sha": "74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+          "url": "https://github.com/M-I/mlx-lm/commit/74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+          "evidenceId": "commit.74e7cf931e84ef7c2f63e875adf414e20decc1c5"
+        },
+        {
+          "sha": "e9308d7b0854105386a587db52c2f1a635196165",
+          "url": "https://github.com/M-I/mlx-lm/commit/e9308d7b0854105386a587db52c2f1a635196165",
+          "evidenceId": "commit.e9308d7b0854105386a587db52c2f1a635196165"
+        },
+        {
+          "sha": "44df29a238720b268a0c370529874531c580de81",
+          "url": "https://github.com/M-I/mlx-lm/commit/44df29a238720b268a0c370529874531c580de81",
+          "evidenceId": "commit.44df29a238720b268a0c370529874531c580de81"
+        },
+        {
+          "sha": "94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+          "url": "https://github.com/M-I/mlx-lm/commit/94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+          "evidenceId": "commit.94ecd0ad10b4fa57ff982fcace604e836db5d27b"
+        },
+        {
+          "sha": "ff8289c67a4661b232e30466b231b34dbac3428b",
+          "url": "https://github.com/M-I/mlx-lm/commit/ff8289c67a4661b232e30466b231b34dbac3428b",
+          "evidenceId": "commit.ff8289c67a4661b232e30466b231b34dbac3428b"
+        },
+        {
+          "sha": "96830a6f4c2a0e2dea59505707460840cfb30bba",
+          "url": "https://github.com/M-I/mlx-lm/commit/96830a6f4c2a0e2dea59505707460840cfb30bba",
+          "evidenceId": "commit.96830a6f4c2a0e2dea59505707460840cfb30bba"
+        },
+        {
+          "sha": "1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+          "url": "https://github.com/M-I/mlx-lm/commit/1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+          "evidenceId": "commit.1f9883c91ab726c6a44fc0249adbfea283ca0b33"
+        },
+        {
+          "sha": "ff1bca24bd1ffd323400f19a56cd7856997102f2",
+          "url": "https://github.com/M-I/mlx-lm/commit/ff1bca24bd1ffd323400f19a56cd7856997102f2",
+          "evidenceId": "commit.ff1bca24bd1ffd323400f19a56cd7856997102f2"
+        },
+        {
+          "sha": "f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+          "url": "https://github.com/M-I/mlx-lm/commit/f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+          "evidenceId": "commit.f8f0f874ff24110a59389a4e5af701b2b7f44eb1"
+        },
+        {
+          "sha": "6a2202210104f10dd031e095a22a7aa105450479",
+          "url": "https://github.com/M-I/mlx-lm/commit/6a2202210104f10dd031e095a22a7aa105450479",
+          "evidenceId": "commit.6a2202210104f10dd031e095a22a7aa105450479"
+        },
+        {
+          "sha": "77c33b14373ac70d7abd6f82af15962852adadbb",
+          "url": "https://github.com/M-I/mlx-lm/commit/77c33b14373ac70d7abd6f82af15962852adadbb",
+          "evidenceId": "commit.77c33b14373ac70d7abd6f82af15962852adadbb"
+        },
+        {
+          "sha": "acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+          "url": "https://github.com/M-I/mlx-lm/commit/acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+          "evidenceId": "commit.acb0240394dfc17ffd6db77a3ccecbdbde522ef9"
+        },
+        {
+          "sha": "fa6cb55e7e3b21861263df0fc5d235552670dda7",
+          "url": "https://github.com/M-I/mlx-lm/commit/fa6cb55e7e3b21861263df0fc5d235552670dda7",
+          "evidenceId": "commit.fa6cb55e7e3b21861263df0fc5d235552670dda7"
+        },
+        {
+          "sha": "28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+          "url": "https://github.com/M-I/mlx-lm/commit/28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+          "evidenceId": "commit.28dbbabfbc7b06608554ae9192cee4ee5ea47881"
+        },
+        {
+          "sha": "4441135d54a3930d4f1a843bae99e15a2a6cead6",
+          "url": "https://github.com/M-I/mlx-lm/commit/4441135d54a3930d4f1a843bae99e15a2a6cead6",
+          "evidenceId": "commit.4441135d54a3930d4f1a843bae99e15a2a6cead6"
+        },
+        {
+          "sha": "44b42cc137763309b0662284ce12d7a95b8c5d99",
+          "url": "https://github.com/M-I/mlx-lm/commit/44b42cc137763309b0662284ce12d7a95b8c5d99",
+          "evidenceId": "commit.44b42cc137763309b0662284ce12d7a95b8c5d99"
+        },
+        {
+          "sha": "e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+          "url": "https://github.com/M-I/mlx-lm/commit/e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+          "evidenceId": "commit.e93eaf7f491a756eafcfef2e607ff7f5210fe51a"
+        },
+        {
+          "sha": "f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+          "url": "https://github.com/M-I/mlx-lm/commit/f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+          "evidenceId": "commit.f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5"
+        },
+        {
+          "sha": "7ace4ae09aa007caf46c66694c673a6ad3a83293",
+          "url": "https://github.com/M-I/mlx-lm/commit/7ace4ae09aa007caf46c66694c673a6ad3a83293",
+          "evidenceId": "commit.7ace4ae09aa007caf46c66694c673a6ad3a83293"
+        },
+        {
+          "sha": "db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+          "url": "https://github.com/M-I/mlx-lm/commit/db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+          "evidenceId": "commit.db0cfc29cf06a7b3671933b140a4082ff4a74df6"
+        },
+        {
+          "sha": "588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+          "url": "https://github.com/M-I/mlx-lm/commit/588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+          "evidenceId": "commit.588b4c0f6fdfccd631ae4c7149f5efbe4a744449"
+        },
+        {
+          "sha": "741e80b04523a2ee51539d84acc82b1a04733ebd",
+          "url": "https://github.com/M-I/mlx-lm/commit/741e80b04523a2ee51539d84acc82b1a04733ebd",
+          "evidenceId": "commit.741e80b04523a2ee51539d84acc82b1a04733ebd"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4728
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/M-I/mlx-lm",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/M-I/mlx-lm",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": false,
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "DIRTY",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 84,
+          "behindBy": 7,
+          "compareStatus": "DIVERGED"
+        },
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 0,
+          "skippedCount": 0,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 0,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/M-I/mlx-lm/pull/1",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.62f38aeb51da77f595be7161ba7caa119ca5234a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 62f38aeb51da77f595be7161ba7caa119ca5234a",
+        "value": "62f38aeb51da77f595be7161ba7caa119ca5234a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/62f38aeb51da77f595be7161ba7caa119ca5234a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.aa4f880fb35007359fdbe8c0168e1c558994d99c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: aa4f880fb35007359fdbe8c0168e1c558994d99c",
+        "value": "aa4f880fb35007359fdbe8c0168e1c558994d99c",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/aa4f880fb35007359fdbe8c0168e1c558994d99c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.6d114686e5b3b770ed3c8cea765bc685597d7002",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 6d114686e5b3b770ed3c8cea765bc685597d7002",
+        "value": "6d114686e5b3b770ed3c8cea765bc685597d7002",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/6d114686e5b3b770ed3c8cea765bc685597d7002",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.a40173094136fbcbfb41966889a22530c83bd86e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a40173094136fbcbfb41966889a22530c83bd86e",
+        "value": "a40173094136fbcbfb41966889a22530c83bd86e",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/a40173094136fbcbfb41966889a22530c83bd86e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+        "value": "e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e92138cb012ee2e30cd617dff0dc1f0eeb96a470",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.a9856b485d7789ccdee1d40d4643e20a9f61f750",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a9856b485d7789ccdee1d40d4643e20a9f61f750",
+        "value": "a9856b485d7789ccdee1d40d4643e20a9f61f750",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/a9856b485d7789ccdee1d40d4643e20a9f61f750",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.f39cb8e93448e41190d544445a87550bba09b995",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f39cb8e93448e41190d544445a87550bba09b995",
+        "value": "f39cb8e93448e41190d544445a87550bba09b995",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/f39cb8e93448e41190d544445a87550bba09b995",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+        "value": "e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e1c24b323761175fdcaa6d835eab9cb6a59e0189",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+        "value": "f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/f3bb10c14192b7f025985c91b804e07dc2d9bd6b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+        "value": "2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/2f1ab85aec314c524e0831fe4cdb62ea5cd3f77b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+        "value": "3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/3cd9a52df261edbcfd74ba8f72ca345380bb1bbd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+        "value": "4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/4f5cbd2a4f8bcd2c6e702e60b1090c644e45b952",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+        "value": "ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/ed1fca4cef15a824c5f1702c80f70b4cffc8e4dd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+        "value": "df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/df1d3f3c9a7aae402dcbb8f41d4c36bcc13a50ae",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.2edfb81491659413dcbc1b627a2f82fdd1359a03",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2edfb81491659413dcbc1b627a2f82fdd1359a03",
+        "value": "2edfb81491659413dcbc1b627a2f82fdd1359a03",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/2edfb81491659413dcbc1b627a2f82fdd1359a03",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+        "value": "fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/fe468f92a18c68689a4eba1b6c0aab70295eb15c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.8239c72de5a0e42c539e30489021db73c7fe258c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8239c72de5a0e42c539e30489021db73c7fe258c",
+        "value": "8239c72de5a0e42c539e30489021db73c7fe258c",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/8239c72de5a0e42c539e30489021db73c7fe258c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.04a19108d4a7fd6606319784d07c5be3017b073a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 04a19108d4a7fd6606319784d07c5be3017b073a",
+        "value": "04a19108d4a7fd6606319784d07c5be3017b073a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/04a19108d4a7fd6606319784d07c5be3017b073a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+        "value": "d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/d39cfec103a2a7f9ff9779c9f15c9eb9709bba01",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.bdb77dae5389d193dcc333bed891d33f6b668285",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: bdb77dae5389d193dcc333bed891d33f6b668285",
+        "value": "bdb77dae5389d193dcc333bed891d33f6b668285",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/bdb77dae5389d193dcc333bed891d33f6b668285",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+        "value": "e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e476a22246b86fb6e2a8d35c81953293ebf86a0f",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.39c4019f67402c6448eba0d789b5d834460046dd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 39c4019f67402c6448eba0d789b5d834460046dd",
+        "value": "39c4019f67402c6448eba0d789b5d834460046dd",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/39c4019f67402c6448eba0d789b5d834460046dd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.df48987708fc90b8fac72fb6db7538c5dbb1077d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: df48987708fc90b8fac72fb6db7538c5dbb1077d",
+        "value": "df48987708fc90b8fac72fb6db7538c5dbb1077d",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/df48987708fc90b8fac72fb6db7538c5dbb1077d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+        "value": "bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/bfa25a16f9c5285257e3494fc05e9f8d009a422a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.c89c93c33db9b213de9abcfff57c89ed2817a361",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c89c93c33db9b213de9abcfff57c89ed2817a361",
+        "value": "c89c93c33db9b213de9abcfff57c89ed2817a361",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/c89c93c33db9b213de9abcfff57c89ed2817a361",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.2c008fd0252b2c569227d12568356ab88ab0560a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2c008fd0252b2c569227d12568356ab88ab0560a",
+        "value": "2c008fd0252b2c569227d12568356ab88ab0560a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/2c008fd0252b2c569227d12568356ab88ab0560a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+        "value": "2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/2ed22318cd6a2fcc5c2e0caa1e1fb0ddeb7cafd5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+        "value": "ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.4128c000f423fe3a44edd651af8822078d1e5d08",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4128c000f423fe3a44edd651af8822078d1e5d08",
+        "value": "4128c000f423fe3a44edd651af8822078d1e5d08",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/4128c000f423fe3a44edd651af8822078d1e5d08",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+        "value": "86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/86e9b35ea4db2c1bbaa6914c5fea56549d3e0dbd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.a790972f0f844d81067ed45c28b524220a10c019",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a790972f0f844d81067ed45c28b524220a10c019",
+        "value": "a790972f0f844d81067ed45c28b524220a10c019",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/a790972f0f844d81067ed45c28b524220a10c019",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+        "value": "15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/15b522f593b7ca5fbc0cac6f7572d40859d2d8fe",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.7661de1fb6907c1d0d15618703a0757274cbf0fe",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7661de1fb6907c1d0d15618703a0757274cbf0fe",
+        "value": "7661de1fb6907c1d0d15618703a0757274cbf0fe",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/7661de1fb6907c1d0d15618703a0757274cbf0fe",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.cf10f962b7a20e63a6df43dbf0faf06070153d40",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: cf10f962b7a20e63a6df43dbf0faf06070153d40",
+        "value": "cf10f962b7a20e63a6df43dbf0faf06070153d40",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/cf10f962b7a20e63a6df43dbf0faf06070153d40",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e5baded8c1d286754edb479ffbde4655a68e2758",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e5baded8c1d286754edb479ffbde4655a68e2758",
+        "value": "e5baded8c1d286754edb479ffbde4655a68e2758",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e5baded8c1d286754edb479ffbde4655a68e2758",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+        "value": "00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/00aeaead48668ee6eac0827cc7781c7fa6a8a1ea",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.254d153fdeb6f150edd4fc5a54f9828638481fa8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 254d153fdeb6f150edd4fc5a54f9828638481fa8",
+        "value": "254d153fdeb6f150edd4fc5a54f9828638481fa8",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/254d153fdeb6f150edd4fc5a54f9828638481fa8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.7283fb342e2e127dd50609c185107ab41a1f98a3",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7283fb342e2e127dd50609c185107ab41a1f98a3",
+        "value": "7283fb342e2e127dd50609c185107ab41a1f98a3",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/7283fb342e2e127dd50609c185107ab41a1f98a3",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.30108106fb95aafaadeb30199c819cd48e6e3bcf",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 30108106fb95aafaadeb30199c819cd48e6e3bcf",
+        "value": "30108106fb95aafaadeb30199c819cd48e6e3bcf",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/30108106fb95aafaadeb30199c819cd48e6e3bcf",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.4eeaf20979bdc84813278fa82b7713e611f162ae",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4eeaf20979bdc84813278fa82b7713e611f162ae",
+        "value": "4eeaf20979bdc84813278fa82b7713e611f162ae",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/4eeaf20979bdc84813278fa82b7713e611f162ae",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.96fcc4851a06a3405c37727e42703fdaece478f8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 96fcc4851a06a3405c37727e42703fdaece478f8",
+        "value": "96fcc4851a06a3405c37727e42703fdaece478f8",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/96fcc4851a06a3405c37727e42703fdaece478f8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.13425df69fdf066ed84d8f1bbdc8182a7576740d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 13425df69fdf066ed84d8f1bbdc8182a7576740d",
+        "value": "13425df69fdf066ed84d8f1bbdc8182a7576740d",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/13425df69fdf066ed84d8f1bbdc8182a7576740d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.84946c8ad94333eef070f85f256ac41cbbcaf89a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 84946c8ad94333eef070f85f256ac41cbbcaf89a",
+        "value": "84946c8ad94333eef070f85f256ac41cbbcaf89a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/84946c8ad94333eef070f85f256ac41cbbcaf89a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.d06c5374a12e1f9384aad5fece583d7be9d2619d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d06c5374a12e1f9384aad5fece583d7be9d2619d",
+        "value": "d06c5374a12e1f9384aad5fece583d7be9d2619d",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/d06c5374a12e1f9384aad5fece583d7be9d2619d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.7c758b960f1e50967bcaef7acd9293ce29562411",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7c758b960f1e50967bcaef7acd9293ce29562411",
+        "value": "7c758b960f1e50967bcaef7acd9293ce29562411",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/7c758b960f1e50967bcaef7acd9293ce29562411",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.d53e70f7a3870b85a3262bdab10999ada307ffc8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d53e70f7a3870b85a3262bdab10999ada307ffc8",
+        "value": "d53e70f7a3870b85a3262bdab10999ada307ffc8",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/d53e70f7a3870b85a3262bdab10999ada307ffc8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+        "value": "dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/dd7c91d603fa84ee59df9e488ada7f4eff4cf64a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+        "value": "d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/d5b6c8c49774ed7fd40c97f964b1e7f10e2f0ccb",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.dfb5da1d61f87679b0bc060c0794551e8db0d243",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: dfb5da1d61f87679b0bc060c0794551e8db0d243",
+        "value": "dfb5da1d61f87679b0bc060c0794551e8db0d243",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/dfb5da1d61f87679b0bc060c0794551e8db0d243",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.43032ffcd9ce96246136c98216560a7f43ffddc6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 43032ffcd9ce96246136c98216560a7f43ffddc6",
+        "value": "43032ffcd9ce96246136c98216560a7f43ffddc6",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/43032ffcd9ce96246136c98216560a7f43ffddc6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+        "value": "ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/ff0c1c6d1e95a562f6b73443eb789d9fc01a2cfe",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+        "value": "3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/3412b2dec6590c5c1eb45f5ce22aedde5b0d7445",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.9acef5f7628e33a40f84dddbbb552c03c7fae556",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 9acef5f7628e33a40f84dddbbb552c03c7fae556",
+        "value": "9acef5f7628e33a40f84dddbbb552c03c7fae556",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/9acef5f7628e33a40f84dddbbb552c03c7fae556",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+        "value": "e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e03e45edc5af6a895bfb386ddc0e79fd072763d0",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.11a6ce75589f59809d6d79b28efa03c50896c18b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 11a6ce75589f59809d6d79b28efa03c50896c18b",
+        "value": "11a6ce75589f59809d6d79b28efa03c50896c18b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/11a6ce75589f59809d6d79b28efa03c50896c18b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.d78bf58e217c904ec282ed8da9b947491f78c022",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d78bf58e217c904ec282ed8da9b947491f78c022",
+        "value": "d78bf58e217c904ec282ed8da9b947491f78c022",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/d78bf58e217c904ec282ed8da9b947491f78c022",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.cc8521569694a3240b52c98acffd100d59b4c755",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: cc8521569694a3240b52c98acffd100d59b4c755",
+        "value": "cc8521569694a3240b52c98acffd100d59b4c755",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/cc8521569694a3240b52c98acffd100d59b4c755",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.8397555ffb7e84992543208a09d2237746ca5ff8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8397555ffb7e84992543208a09d2237746ca5ff8",
+        "value": "8397555ffb7e84992543208a09d2237746ca5ff8",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/8397555ffb7e84992543208a09d2237746ca5ff8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.9e6acca691e64d6d8bb808c328fcdea459099cca",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 9e6acca691e64d6d8bb808c328fcdea459099cca",
+        "value": "9e6acca691e64d6d8bb808c328fcdea459099cca",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/9e6acca691e64d6d8bb808c328fcdea459099cca",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.5c13170d8b3f724ce137caad2d7554de38e6f65b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 5c13170d8b3f724ce137caad2d7554de38e6f65b",
+        "value": "5c13170d8b3f724ce137caad2d7554de38e6f65b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/5c13170d8b3f724ce137caad2d7554de38e6f65b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.b09d076f0fc0835c5ae64bd1144028884f1279e6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b09d076f0fc0835c5ae64bd1144028884f1279e6",
+        "value": "b09d076f0fc0835c5ae64bd1144028884f1279e6",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/b09d076f0fc0835c5ae64bd1144028884f1279e6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e2f2fb2aef987f86878d17638446183cffe21fe4",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e2f2fb2aef987f86878d17638446183cffe21fe4",
+        "value": "e2f2fb2aef987f86878d17638446183cffe21fe4",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e2f2fb2aef987f86878d17638446183cffe21fe4",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+        "value": "74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/74e7cf931e84ef7c2f63e875adf414e20decc1c5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e9308d7b0854105386a587db52c2f1a635196165",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e9308d7b0854105386a587db52c2f1a635196165",
+        "value": "e9308d7b0854105386a587db52c2f1a635196165",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e9308d7b0854105386a587db52c2f1a635196165",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.44df29a238720b268a0c370529874531c580de81",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 44df29a238720b268a0c370529874531c580de81",
+        "value": "44df29a238720b268a0c370529874531c580de81",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/44df29a238720b268a0c370529874531c580de81",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+        "value": "94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/94ecd0ad10b4fa57ff982fcace604e836db5d27b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.ff8289c67a4661b232e30466b231b34dbac3428b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ff8289c67a4661b232e30466b231b34dbac3428b",
+        "value": "ff8289c67a4661b232e30466b231b34dbac3428b",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/ff8289c67a4661b232e30466b231b34dbac3428b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.96830a6f4c2a0e2dea59505707460840cfb30bba",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 96830a6f4c2a0e2dea59505707460840cfb30bba",
+        "value": "96830a6f4c2a0e2dea59505707460840cfb30bba",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/96830a6f4c2a0e2dea59505707460840cfb30bba",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+        "value": "1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/1f9883c91ab726c6a44fc0249adbfea283ca0b33",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.ff1bca24bd1ffd323400f19a56cd7856997102f2",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ff1bca24bd1ffd323400f19a56cd7856997102f2",
+        "value": "ff1bca24bd1ffd323400f19a56cd7856997102f2",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/ff1bca24bd1ffd323400f19a56cd7856997102f2",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+        "value": "f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/f8f0f874ff24110a59389a4e5af701b2b7f44eb1",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.6a2202210104f10dd031e095a22a7aa105450479",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 6a2202210104f10dd031e095a22a7aa105450479",
+        "value": "6a2202210104f10dd031e095a22a7aa105450479",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/6a2202210104f10dd031e095a22a7aa105450479",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.77c33b14373ac70d7abd6f82af15962852adadbb",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 77c33b14373ac70d7abd6f82af15962852adadbb",
+        "value": "77c33b14373ac70d7abd6f82af15962852adadbb",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/77c33b14373ac70d7abd6f82af15962852adadbb",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+        "value": "acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/acb0240394dfc17ffd6db77a3ccecbdbde522ef9",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.fa6cb55e7e3b21861263df0fc5d235552670dda7",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: fa6cb55e7e3b21861263df0fc5d235552670dda7",
+        "value": "fa6cb55e7e3b21861263df0fc5d235552670dda7",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/fa6cb55e7e3b21861263df0fc5d235552670dda7",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+        "value": "28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/28dbbabfbc7b06608554ae9192cee4ee5ea47881",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.4441135d54a3930d4f1a843bae99e15a2a6cead6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4441135d54a3930d4f1a843bae99e15a2a6cead6",
+        "value": "4441135d54a3930d4f1a843bae99e15a2a6cead6",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/4441135d54a3930d4f1a843bae99e15a2a6cead6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.44b42cc137763309b0662284ce12d7a95b8c5d99",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 44b42cc137763309b0662284ce12d7a95b8c5d99",
+        "value": "44b42cc137763309b0662284ce12d7a95b8c5d99",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/44b42cc137763309b0662284ce12d7a95b8c5d99",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+        "value": "e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/e93eaf7f491a756eafcfef2e607ff7f5210fe51a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+        "value": "f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/f4f3b57971c39b0bc0bcc2e0cab27e77ea9d53f5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.7ace4ae09aa007caf46c66694c673a6ad3a83293",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7ace4ae09aa007caf46c66694c673a6ad3a83293",
+        "value": "7ace4ae09aa007caf46c66694c673a6ad3a83293",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/7ace4ae09aa007caf46c66694c673a6ad3a83293",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+        "value": "db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/db0cfc29cf06a7b3671933b140a4082ff4a74df6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+        "value": "588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/588b4c0f6fdfccd631ae4c7149f5efbe4a744449",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      },
+      {
+        "id": "commit.741e80b04523a2ee51539d84acc82b1a04733ebd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 741e80b04523a2ee51539d84acc82b1a04733ebd",
+        "value": "741e80b04523a2ee51539d84acc82b1a04733ebd",
+        "sourceUrl": "https://github.com/M-I/mlx-lm/commit/741e80b04523a2ee51539d84acc82b1a04733ebd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:50:28.552Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "SYNC_OR_FIX_BRANCH",
+    "ruleId": "PR_005_BRANCH_CONFLICT",
+    "reasonCode": "EXPLICIT_BRANCH_CONFLICT",
+    "evidenceIds": [
+      "branches.mergeable",
+      "branches.mergeStateStatus"
+    ],
+    "nextActionCode": "RESOLVE_BRANCH_CONFLICT",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": true,
+        "reasonCode": "EXPLICIT_BRANCH_CONFLICT"
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

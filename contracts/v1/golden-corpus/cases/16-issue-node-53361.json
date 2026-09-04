@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "16-issue-node-53361",
+  "url": "https://github.com/nodejs/node/issues/53361",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T02:28:32Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T02:28:32.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T02:28:32Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T02:28:32Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "350391dc8772bf076cb58a21fbf422c06d09fd3a8dc4e48a08a7694f326592d2",
+    "decisionSha256": "915174da90976091c40442ff466ac7efec72353dccc21e0d718617f60547bfb7"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:51:43.110Z",
+    "source": {
+      "originalUrl": "https://github.com/nodejs/node/issues/53361",
+      "canonicalUrl": "https://github.com/nodejs/node/issues/53361",
+      "owner": "nodejs",
+      "repo": "node",
+      "number": 53361,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/nodejs/node"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Inaccurate windows stacktrace printer",
+      "authorLogin": "legendecas",
+      "authorAssociation": "MEMBER",
+      "createdAt": "2024-06-06T12:51:13.000Z",
+      "updatedAt": "2026-09-03T02:28:32.000Z",
+      "closedAt": null,
+      "labels": [
+        "windows"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 10,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2024-11-12T12:06:17.000Z",
+      "lastMaintainerActivityAt": "2024-11-12T12:06:17.000Z",
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [],
+      "linkedCommits": null,
+      "closingPullRequests": [],
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4985
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/nodejs/node/issues/53361",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": null,
+        "sourceUrl": "https://github.com/nodejs/node/issues/53361",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/nodejs/node",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/nodejs/node",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      },
+      {
+        "id": "label.windows",
+        "category": "label",
+        "claim": "GitHub label: windows",
+        "value": "windows",
+        "sourceUrl": "https://github.com/nodejs/node/issues/53361",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/nodejs/node/issues/53361",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:51:43.110Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+    "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE",
+    "evidenceIds": [],
+    "nextActionCode": "GATHER_MORE_EVIDENCE",
+    "responsibleParty": "UNKNOWN",
+    "confidence": "LOW",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

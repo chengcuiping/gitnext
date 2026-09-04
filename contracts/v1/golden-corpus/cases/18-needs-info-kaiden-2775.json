@@ -1,0 +1,299 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "18-needs-info-kaiden-2775",
+  "url": "https://github.com/openkaiden/kaiden/issues/2775",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:18:42Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:18:42.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:18:42Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:18:42Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "b90b8d94be5835f8a3941d42f54dd765efdbcbef713100cd0c07aed6b71ad4fd",
+    "decisionSha256": "f4ad87913fd32b911c8f002b817556f9c3a2d8fd9135857d67d1ae082a3872ca"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:52:16.664Z",
+    "source": {
+      "originalUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+      "canonicalUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+      "owner": "openkaiden",
+      "repo": "kaiden",
+      "number": 2775,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/openkaiden/kaiden"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Codex Agent doesnt work with codex api",
+      "authorLogin": "bmahabirbu",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2026-09-03T00:46:38.000Z",
+      "updatedAt": "2026-09-03T03:18:42.000Z",
+      "closedAt": null,
+      "labels": [
+        "bug",
+        "area/agentic-workspace",
+        "ready-to-code"
+      ],
+      "assignees": [
+        "bmahabirbu"
+      ],
+      "locked": false,
+      "commentsCount": 5,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T03:08:03.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [
+        {
+          "owner": "openkaiden",
+          "repo": "kaiden",
+          "number": 2776,
+          "url": "https://github.com/openkaiden/kaiden/pull/2776",
+          "state": "OPEN",
+          "merged": false,
+          "evidenceId": "link.pull.openkaiden%2Fkaiden%232776"
+        }
+      ],
+      "linkedCommits": null,
+      "closingPullRequests": [
+        {
+          "owner": "openkaiden",
+          "repo": "kaiden",
+          "number": 2776,
+          "url": "https://github.com/openkaiden/kaiden/pull/2776",
+          "state": "OPEN",
+          "merged": false,
+          "evidenceId": "link.pull.openkaiden%2Fkaiden%232776"
+        }
+      ],
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4975
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": null,
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/openkaiden/kaiden",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/openkaiden/kaiden",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "label.bug",
+        "category": "label",
+        "claim": "GitHub label: bug",
+        "value": "bug",
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "label.area%2Fagentic-workspace",
+        "category": "label",
+        "claim": "GitHub label: area/agentic-workspace",
+        "value": "area/agentic-workspace",
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "label.ready-to-code",
+        "category": "label",
+        "claim": "GitHub label: ready-to-code",
+        "value": "ready-to-code",
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [
+          "bmahabirbu"
+        ],
+        "sourceUrl": "https://github.com/openkaiden/kaiden/issues/2775",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      },
+      {
+        "id": "link.pull.openkaiden%2Fkaiden%232776",
+        "category": "links",
+        "claim": "GitHub explicitly linked pull openkaiden/kaiden#2776",
+        "value": {
+          "state": "OPEN",
+          "merged": false
+        },
+        "sourceUrl": "https://github.com/openkaiden/kaiden/pull/2776",
+        "apiSource": "GraphQL.issue.closedByPullRequestsReferences",
+        "observedAt": "2026-09-03T06:52:16.664Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "WAIT",
+    "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+    "reasonCode": "OPEN_LINKED_PR_EXISTS",
+    "evidenceIds": [
+      "link.pull.openkaiden%2Fkaiden%232776"
+    ],
+    "nextActionCode": "WAIT_FOR_LINKED_PR",
+    "responsibleParty": "ASSIGNEE_OR_CONTRIBUTOR",
+    "confidence": "MEDIUM",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": true,
+        "reasonCode": "OPEN_LINKED_PR_EXISTS"
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

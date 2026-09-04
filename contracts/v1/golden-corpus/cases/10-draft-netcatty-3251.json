@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "10-draft-netcatty-3251",
+  "url": "https://github.com/binaricat/Netcatty/pull/3251",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:55:11Z",
+        "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:55:11.000Z",
+        "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:55:11Z",
+        "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:55:11Z",
+        "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:55:11Z",
+        "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping. Explained check difference categories: F. These differences do not affect the verdict; the reviewer accepts the documented limitation."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "8ffb5557d217d9df64be19ab66353d5f34c7ce582477ee54a1a32c830df51cb2",
+    "decisionSha256": "9a429be828664fbc342e7867fde60cab1e2c35cf97b4c3d1568f1e71d4424c53"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:46:20.224Z",
+    "source": {
+      "originalUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+      "canonicalUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+      "owner": "binaricat",
+      "repo": "Netcatty",
+      "number": 3251,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/binaricat/Netcatty"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "fix(ai): run Responses API turns stateless to stop rs_ item replay errors",
+      "authorLogin": "netcatty-bot",
+      "authorAssociation": "COLLABORATOR",
+      "createdAt": "2026-09-02T08:33:22.000Z",
+      "updatedAt": "2026-09-03T03:55:11.000Z",
+      "closedAt": "2026-09-03T03:55:11.000Z",
+      "labels": [
+        "automation:bot-pr",
+        "automation:codex-clean",
+        "triage"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 47,
+      "draft": false,
+      "merged": true,
+      "mergedAt": "2026-09-03T03:55:11.000Z",
+      "baseRef": "main",
+      "headRef": "ai/issue-3249-33607924553",
+      "baseSha": "a1fce3ad7cd722585662ba428058fba9699101c2",
+      "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+      "headRepositoryAvailable": true,
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "ai/issue-3249-33607924553",
+      "baseSha": "a1fce3ad7cd722585662ba428058fba9699101c2",
+      "headSha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+      "aheadBy": 24,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:Classify issue",
+          "name": "Classify issue",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635308",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aclassify%20issue.status"
+        },
+        {
+          "key": "check-run:github-actions:Claude Code smoke",
+          "name": "Claude Code smoke",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516616492",
+          "updatedAt": "2026-09-03T03:55:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aclaude%20code%20smoke.status"
+        },
+        {
+          "key": "check-run:github-actions:Clean source issue state",
+          "name": "Clean source issue state",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634143",
+          "updatedAt": "2026-09-03T03:55:37.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aclean%20source%20issue%20state.status"
+        },
+        {
+          "key": "check-run:github-actions:Clear Codex dispatch marker",
+          "name": "Clear Codex dispatch marker",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635902",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aclear%20codex%20dispatch%20marker.status"
+        },
+        {
+          "key": "check-run:github-actions:Codex review loop",
+          "name": "Codex review loop",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635065",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acodex%20review%20loop.status"
+        },
+        {
+          "key": "check-run:github-actions:Continue queued issue comments",
+          "name": "Continue queued issue comments",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516636315",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acontinue%20queued%20issue%20comments.status"
+        },
+        {
+          "key": "check-run:github-actions:External PR re-request Codex",
+          "name": "External PR re-request Codex",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634767",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aexternal%20pr%20re-request%20codex.status"
+        },
+        {
+          "key": "check-run:github-actions:Hand reopened issue to maintainers",
+          "name": "Hand reopened issue to maintainers",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635174",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ahand%20reopened%20issue%20to%20maintainers.status"
+        },
+        {
+          "key": "check-run:github-actions:Implement with Claude Code",
+          "name": "Implement with Claude Code",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635968",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aimplement%20with%20claude%20code.status"
+        },
+        {
+          "key": "check-run:github-actions:lint-and-test",
+          "name": "lint-and-test",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33712114318/job/100513699240",
+          "updatedAt": "2026-09-03T03:48:06.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint-and-test.status"
+        },
+        {
+          "key": "check-run:github-actions:Own PR re-request Codex",
+          "name": "Own PR re-request Codex",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634867",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aown%20pr%20re-request%20codex.status"
+        },
+        {
+          "key": "check-run:github-actions:Poll Codex reaction / retry",
+          "name": "Poll Codex reaction / retry",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635220",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apoll%20codex%20reaction%20%2F%20retry.status"
+        },
+        {
+          "key": "check-run:github-actions:Publish Codex fix",
+          "name": "Publish Codex fix",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635224",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apublish%20codex%20fix.status"
+        },
+        {
+          "key": "check-run:github-actions:Publish implement PR",
+          "name": "Publish implement PR",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635879",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apublish%20implement%20pr.status"
+        },
+        {
+          "key": "check-run:github-actions:Publish issue follow-up",
+          "name": "Publish issue follow-up",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635446",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apublish%20issue%20follow-up.status"
+        },
+        {
+          "key": "check-run:github-actions:Reconcile handoffs",
+          "name": "Reconcile handoffs",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516598545",
+          "updatedAt": "2026-09-03T03:55:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Areconcile%20handoffs.status"
+        },
+        {
+          "key": "check-run:github-actions:Review issue follow-up",
+          "name": "Review issue follow-up",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634998",
+          "updatedAt": "2026-09-03T03:55:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Areview%20issue%20follow-up.status"
+        },
+        {
+          "key": "check-run:github-actions:Route event",
+          "name": "Route event",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516597925",
+          "updatedAt": "2026-09-03T03:55:25.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aroute%20event.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 3,
+        "skippedCount": 15,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 18,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "binaricat",
+          "state": "COMMENTED",
+          "submittedAt": "2026-09-03T03:28:05.000Z",
+          "authorAssociation": "OWNER",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/binaricat/Netcatty/pull/3251#pullrequestreview-5097455566",
+          "evidenceId": "review.binaricat.latest"
+        },
+        {
+          "reviewerLogin": "chatgpt-codex-connector[bot]",
+          "state": "COMMENTED",
+          "submittedAt": "2026-09-03T03:20:29.000Z",
+          "authorAssociation": "NONE",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/binaricat/Netcatty/pull/3251#pullrequestreview-5097416284",
+          "evidenceId": "review.chatgpt-codex-connector%5Bbot%5D.latest"
+        }
+      ],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T03:51:48.000Z",
+      "lastMaintainerActivityAt": "2026-09-03T03:51:48.000Z",
+      "lastReviewActivityAt": "2026-09-03T03:28:05.000Z",
+      "lastCommitAt": "2026-09-03T03:38:48.000Z"
+    },
+    "links": {
+      "linkedIssues": [
+        {
+          "owner": "binaricat",
+          "repo": "Netcatty",
+          "number": 3249,
+          "url": "https://github.com/binaricat/Netcatty/issues/3249",
+          "state": "CLOSED",
+          "merged": null,
+          "evidenceId": "link.issue.binaricat%2Fnetcatty%233249"
+        }
+      ],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+          "url": "https://github.com/binaricat/Netcatty/commit/0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+          "evidenceId": "commit.0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f"
+        },
+        {
+          "sha": "2d6183c4408c2b8581bd1158e58a459b68879b6a",
+          "url": "https://github.com/binaricat/Netcatty/commit/2d6183c4408c2b8581bd1158e58a459b68879b6a",
+          "evidenceId": "commit.2d6183c4408c2b8581bd1158e58a459b68879b6a"
+        },
+        {
+          "sha": "908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+          "url": "https://github.com/binaricat/Netcatty/commit/908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+          "evidenceId": "commit.908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae"
+        },
+        {
+          "sha": "2487e954ee085f890f7a1b151832adff3101d4c6",
+          "url": "https://github.com/binaricat/Netcatty/commit/2487e954ee085f890f7a1b151832adff3101d4c6",
+          "evidenceId": "commit.2487e954ee085f890f7a1b151832adff3101d4c6"
+        },
+        {
+          "sha": "6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+          "url": "https://github.com/binaricat/Netcatty/commit/6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+          "evidenceId": "commit.6ad422b1eaf4bd4676d540ccd1cf17023394bb38"
+        },
+        {
+          "sha": "8d4fde03405f33268e499f6a0ecd202bad707cd5",
+          "url": "https://github.com/binaricat/Netcatty/commit/8d4fde03405f33268e499f6a0ecd202bad707cd5",
+          "evidenceId": "commit.8d4fde03405f33268e499f6a0ecd202bad707cd5"
+        },
+        {
+          "sha": "1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+          "url": "https://github.com/binaricat/Netcatty/commit/1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+          "evidenceId": "commit.1025d93ae3b894ef90d07b17c73756e10d6f52dd"
+        },
+        {
+          "sha": "3936d8b7f3c405b054edca953b9300ae6f2525bb",
+          "url": "https://github.com/binaricat/Netcatty/commit/3936d8b7f3c405b054edca953b9300ae6f2525bb",
+          "evidenceId": "commit.3936d8b7f3c405b054edca953b9300ae6f2525bb"
+        },
+        {
+          "sha": "89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+          "url": "https://github.com/binaricat/Netcatty/commit/89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+          "evidenceId": "commit.89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73"
+        },
+        {
+          "sha": "acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+          "url": "https://github.com/binaricat/Netcatty/commit/acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+          "evidenceId": "commit.acb29e07910a79dee0a4b4d53ea111a2b93b82a7"
+        },
+        {
+          "sha": "7e3960f561a9d519d61c96dc343fa91883c77825",
+          "url": "https://github.com/binaricat/Netcatty/commit/7e3960f561a9d519d61c96dc343fa91883c77825",
+          "evidenceId": "commit.7e3960f561a9d519d61c96dc343fa91883c77825"
+        },
+        {
+          "sha": "7440e66ea8385255536d9bfa0961ef7148af03ac",
+          "url": "https://github.com/binaricat/Netcatty/commit/7440e66ea8385255536d9bfa0961ef7148af03ac",
+          "evidenceId": "commit.7440e66ea8385255536d9bfa0961ef7148af03ac"
+        },
+        {
+          "sha": "2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+          "url": "https://github.com/binaricat/Netcatty/commit/2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+          "evidenceId": "commit.2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525"
+        },
+        {
+          "sha": "d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+          "url": "https://github.com/binaricat/Netcatty/commit/d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+          "evidenceId": "commit.d19ddce4ff389ed55f1b5c68243e5ea05faab48f"
+        },
+        {
+          "sha": "c6c769acc39169aa1cb8ce1c3eababe109204912",
+          "url": "https://github.com/binaricat/Netcatty/commit/c6c769acc39169aa1cb8ce1c3eababe109204912",
+          "evidenceId": "commit.c6c769acc39169aa1cb8ce1c3eababe109204912"
+        },
+        {
+          "sha": "c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+          "url": "https://github.com/binaricat/Netcatty/commit/c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+          "evidenceId": "commit.c0a46cc9262b6f837d60dc5242e9d7a56fd14650"
+        },
+        {
+          "sha": "8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+          "url": "https://github.com/binaricat/Netcatty/commit/8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+          "evidenceId": "commit.8e05923ca2cd1e7e810cf6dad76bca439525d2e1"
+        },
+        {
+          "sha": "02f5729ab725586f5e689804040f164edaf93220",
+          "url": "https://github.com/binaricat/Netcatty/commit/02f5729ab725586f5e689804040f164edaf93220",
+          "evidenceId": "commit.02f5729ab725586f5e689804040f164edaf93220"
+        },
+        {
+          "sha": "b28520079819aee9a213c6cd3e50c93ec49e38d0",
+          "url": "https://github.com/binaricat/Netcatty/commit/b28520079819aee9a213c6cd3e50c93ec49e38d0",
+          "evidenceId": "commit.b28520079819aee9a213c6cd3e50c93ec49e38d0"
+        },
+        {
+          "sha": "e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+          "url": "https://github.com/binaricat/Netcatty/commit/e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+          "evidenceId": "commit.e7b59ad768fbf20d867b3d49b91a4030cfe607c8"
+        },
+        {
+          "sha": "f828e0d479041e0ed238b52f20c028b7ee25f172",
+          "url": "https://github.com/binaricat/Netcatty/commit/f828e0d479041e0ed238b52f20c028b7ee25f172",
+          "evidenceId": "commit.f828e0d479041e0ed238b52f20c028b7ee25f172"
+        },
+        {
+          "sha": "d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+          "url": "https://github.com/binaricat/Netcatty/commit/d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+          "evidenceId": "commit.d607c81b5b766c578021eafbb0947dd6ef26b4b3"
+        },
+        {
+          "sha": "2308d133c2c35e6312063cd63c057777cc7ce71d",
+          "url": "https://github.com/binaricat/Netcatty/commit/2308d133c2c35e6312063cd63c057777cc7ce71d",
+          "evidenceId": "commit.2308d133c2c35e6312063cd63c057777cc7ce71d"
+        },
+        {
+          "sha": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+          "url": "https://github.com/binaricat/Netcatty/commit/efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+          "evidenceId": "commit.efaaaebd29f9b9c60c3de9373e8af95f004c56d5"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4768
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/binaricat/Netcatty",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/binaricat/Netcatty",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "label.automation%3Abot-pr",
+        "category": "label",
+        "claim": "GitHub label: automation:bot-pr",
+        "value": "automation:bot-pr",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "label.automation%3Acodex-clean",
+        "category": "label",
+        "claim": "GitHub label: automation:codex-clean",
+        "value": "automation:codex-clean",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "label.triage",
+        "category": "label",
+        "claim": "GitHub label: triage",
+        "value": "triage",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": true,
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": null,
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "UNKNOWN",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 24,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aclassify%20issue.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Classify issue",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635308",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aclaude%20code%20smoke.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Claude Code smoke",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516616492",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aclean%20source%20issue%20state.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Clean source issue state",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634143",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aclear%20codex%20dispatch%20marker.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Clear Codex dispatch marker",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635902",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acodex%20review%20loop.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Codex review loop",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635065",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acontinue%20queued%20issue%20comments.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Continue queued issue comments",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516636315",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aexternal%20pr%20re-request%20codex.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:External PR re-request Codex",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634767",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ahand%20reopened%20issue%20to%20maintainers.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Hand reopened issue to maintainers",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635174",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aimplement%20with%20claude%20code.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Implement with Claude Code",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635968",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint-and-test.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:lint-and-test",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33712114318/job/100513699240",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aown%20pr%20re-request%20codex.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Own PR re-request Codex",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634867",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apoll%20codex%20reaction%20%2F%20retry.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Poll Codex reaction / retry",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635220",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apublish%20codex%20fix.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Publish Codex fix",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635224",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apublish%20implement%20pr.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Publish implement PR",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635879",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apublish%20issue%20follow-up.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Publish issue follow-up",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516635446",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Areconcile%20handoffs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Reconcile handoffs",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516598545",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Areview%20issue%20follow-up.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Review issue follow-up",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516634998",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aroute%20event.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Route event",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/actions/runs/33713110918/job/100516597925",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 3,
+          "skippedCount": 15,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 18,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "review.binaricat.latest",
+        "category": "review",
+        "claim": "Latest effective review by binaricat",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251#pullrequestreview-5097455566",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "review.chatgpt-codex-connector%5Bbot%5D.latest",
+        "category": "review",
+        "claim": "Latest effective review by chatgpt-codex-connector[bot]",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251#pullrequestreview-5097416284",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/binaricat/Netcatty/pull/3251",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "link.issue.binaricat%2Fnetcatty%233249",
+        "category": "links",
+        "claim": "GitHub explicitly linked issue binaricat/Netcatty#3249",
+        "value": {
+          "state": "CLOSED",
+          "merged": null
+        },
+        "sourceUrl": "https://github.com/binaricat/Netcatty/issues/3249",
+        "apiSource": "GraphQL.pullRequest.closingIssuesReferences",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+        "value": "0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/0ecd06b2f6ac63a8e9aec0fffd69cf10cecf445f",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.2d6183c4408c2b8581bd1158e58a459b68879b6a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2d6183c4408c2b8581bd1158e58a459b68879b6a",
+        "value": "2d6183c4408c2b8581bd1158e58a459b68879b6a",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/2d6183c4408c2b8581bd1158e58a459b68879b6a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+        "value": "908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/908cc687cb329fcb3b8fcb3c2a1dbe5f01b47aae",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.2487e954ee085f890f7a1b151832adff3101d4c6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2487e954ee085f890f7a1b151832adff3101d4c6",
+        "value": "2487e954ee085f890f7a1b151832adff3101d4c6",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/2487e954ee085f890f7a1b151832adff3101d4c6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+        "value": "6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/6ad422b1eaf4bd4676d540ccd1cf17023394bb38",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.8d4fde03405f33268e499f6a0ecd202bad707cd5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8d4fde03405f33268e499f6a0ecd202bad707cd5",
+        "value": "8d4fde03405f33268e499f6a0ecd202bad707cd5",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/8d4fde03405f33268e499f6a0ecd202bad707cd5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+        "value": "1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/1025d93ae3b894ef90d07b17c73756e10d6f52dd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.3936d8b7f3c405b054edca953b9300ae6f2525bb",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 3936d8b7f3c405b054edca953b9300ae6f2525bb",
+        "value": "3936d8b7f3c405b054edca953b9300ae6f2525bb",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/3936d8b7f3c405b054edca953b9300ae6f2525bb",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+        "value": "89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/89dab1394daf61d8aae8ae0a6d5cc7f1bf27bf73",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+        "value": "acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/acb29e07910a79dee0a4b4d53ea111a2b93b82a7",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.7e3960f561a9d519d61c96dc343fa91883c77825",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7e3960f561a9d519d61c96dc343fa91883c77825",
+        "value": "7e3960f561a9d519d61c96dc343fa91883c77825",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/7e3960f561a9d519d61c96dc343fa91883c77825",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.7440e66ea8385255536d9bfa0961ef7148af03ac",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 7440e66ea8385255536d9bfa0961ef7148af03ac",
+        "value": "7440e66ea8385255536d9bfa0961ef7148af03ac",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/7440e66ea8385255536d9bfa0961ef7148af03ac",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+        "value": "2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/2ff47eafce3fb8fc0b8b53d7b018b0c841f1d525",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+        "value": "d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/d19ddce4ff389ed55f1b5c68243e5ea05faab48f",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.c6c769acc39169aa1cb8ce1c3eababe109204912",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c6c769acc39169aa1cb8ce1c3eababe109204912",
+        "value": "c6c769acc39169aa1cb8ce1c3eababe109204912",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/c6c769acc39169aa1cb8ce1c3eababe109204912",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+        "value": "c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/c0a46cc9262b6f837d60dc5242e9d7a56fd14650",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+        "value": "8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/8e05923ca2cd1e7e810cf6dad76bca439525d2e1",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.02f5729ab725586f5e689804040f164edaf93220",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 02f5729ab725586f5e689804040f164edaf93220",
+        "value": "02f5729ab725586f5e689804040f164edaf93220",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/02f5729ab725586f5e689804040f164edaf93220",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.b28520079819aee9a213c6cd3e50c93ec49e38d0",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b28520079819aee9a213c6cd3e50c93ec49e38d0",
+        "value": "b28520079819aee9a213c6cd3e50c93ec49e38d0",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/b28520079819aee9a213c6cd3e50c93ec49e38d0",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+        "value": "e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/e7b59ad768fbf20d867b3d49b91a4030cfe607c8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.f828e0d479041e0ed238b52f20c028b7ee25f172",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f828e0d479041e0ed238b52f20c028b7ee25f172",
+        "value": "f828e0d479041e0ed238b52f20c028b7ee25f172",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/f828e0d479041e0ed238b52f20c028b7ee25f172",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+        "value": "d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/d607c81b5b766c578021eafbb0947dd6ef26b4b3",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.2308d133c2c35e6312063cd63c057777cc7ce71d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2308d133c2c35e6312063cd63c057777cc7ce71d",
+        "value": "2308d133c2c35e6312063cd63c057777cc7ce71d",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/2308d133c2c35e6312063cd63c057777cc7ce71d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      },
+      {
+        "id": "commit.efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+        "value": "efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+        "sourceUrl": "https://github.com/binaricat/Netcatty/commit/efaaaebd29f9b9c60c3de9373e8af95f004c56d5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:46:20.224Z"
+      }
+    ],
+    "limitations": [
+      "GitHub mergeability remained UNKNOWN after bounded retries.",
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_001_MERGED",
+    "reasonCode": "PR_ALREADY_MERGED",
+    "evidenceIds": [
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_PR_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": true,
+        "reasonCode": "PR_ALREADY_MERGED"
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

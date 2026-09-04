@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "05-merged-rex-web-1606",
+  "url": "https://github.com/openstax/rex-web/pull/1606",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T06:11:34Z",
+        "headSha": "6019863f80a2d20d484c30defc07adddf5277572"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T06:11:34.000Z",
+        "headSha": "6019863f80a2d20d484c30defc07adddf5277572"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T06:11:34Z",
+        "headSha": "6019863f80a2d20d484c30defc07adddf5277572"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T06:11:34Z",
+        "headSha": "6019863f80a2d20d484c30defc07adddf5277572"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T06:11:34Z",
+        "headSha": "6019863f80a2d20d484c30defc07adddf5277572"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "315e1a5c41b54c18b61c4a35bba113db453c0fd4f23bcddec6403c6f11517c91",
+    "decisionSha256": "8736d6cf39ca40b81f554ac110277605d05f2b219630bd162b0f6596e335ca9c"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:41:38.780Z",
+    "source": {
+      "originalUrl": "https://github.com/openstax/rex-web/pull/1606",
+      "canonicalUrl": "https://github.com/openstax/rex-web/pull/1606",
+      "owner": "openstax",
+      "repo": "rex-web",
+      "number": 1606,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/openstax/rex-web"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "FE selenium test: update failing test",
+      "authorLogin": "Malar-Natarajan",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2022-06-03T16:30:39.000Z",
+      "updatedAt": "2026-09-03T06:11:34.000Z",
+      "closedAt": "2022-06-03T16:53:02.000Z",
+      "labels": [
+        "in-production"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 0,
+      "draft": false,
+      "merged": true,
+      "mergedAt": "2022-06-03T16:53:02.000Z",
+      "baseRef": "master",
+      "headRef": "test-fix-failing-tests",
+      "baseSha": "8a26a4d6bd9be12d466f1c658a6764804cbd96f2",
+      "headSha": "6019863f80a2d20d484c30defc07adddf5277572",
+      "headRepositoryAvailable": true,
+      "mergeable": false,
+      "mergeStateStatus": "DIRTY"
+    },
+    "branches": {
+      "baseRef": "master",
+      "headRef": "test-fix-failing-tests",
+      "baseSha": "8a26a4d6bd9be12d466f1c658a6764804cbd96f2",
+      "headSha": "6019863f80a2d20d484c30defc07adddf5277572",
+      "aheadBy": 1,
+      "behindBy": 5,
+      "compareStatus": "DIVERGED",
+      "mergeable": false,
+      "mergeStateStatus": "DIRTY"
+    },
+    "checks": {
+      "items": [],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 0,
+        "skippedCount": 0,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 0,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "APPROVED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "gregfitch",
+          "state": "APPROVED",
+          "submittedAt": "2022-06-03T16:33:21.000Z",
+          "authorAssociation": "MEMBER",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/openstax/rex-web/pull/1606#pullrequestreview-995182284",
+          "evidenceId": "review.gregfitch.latest"
+        }
+      ],
+      "approvedReviewers": [
+        "gregfitch"
+      ],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2022-06-03T16:30:39.000Z",
+      "lastMaintainerActivityAt": "2022-06-03T16:33:21.000Z",
+      "lastReviewActivityAt": "2022-06-03T16:33:21.000Z",
+      "lastCommitAt": "2022-06-03T16:21:50.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "6019863f80a2d20d484c30defc07adddf5277572",
+          "url": "https://github.com/openstax/rex-web/commit/6019863f80a2d20d484c30defc07adddf5277572",
+          "evidenceId": "commit.6019863f80a2d20d484c30defc07adddf5277572"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4826
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/openstax/rex-web",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/openstax/rex-web",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "label.in-production",
+        "category": "label",
+        "claim": "GitHub label: in-production",
+        "value": "in-production",
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": true,
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": false,
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "DIRTY",
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 1,
+          "behindBy": 5,
+          "compareStatus": "DIVERGED"
+        },
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 0,
+          "skippedCount": 0,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 0,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "review.gregfitch.latest",
+        "category": "review",
+        "claim": "Latest effective review by gregfitch",
+        "value": "APPROVED",
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606#pullrequestreview-995182284",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "APPROVED",
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/openstax/rex-web/pull/1606",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      },
+      {
+        "id": "commit.6019863f80a2d20d484c30defc07adddf5277572",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 6019863f80a2d20d484c30defc07adddf5277572",
+        "value": "6019863f80a2d20d484c30defc07adddf5277572",
+        "sourceUrl": "https://github.com/openstax/rex-web/commit/6019863f80a2d20d484c30defc07adddf5277572",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:41:38.780Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_001_MERGED",
+    "reasonCode": "PR_ALREADY_MERGED",
+    "evidenceIds": [
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_PR_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": true,
+        "reasonCode": "PR_ALREADY_MERGED"
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": true,
+        "reasonCode": "EXPLICIT_BRANCH_CONFLICT"
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

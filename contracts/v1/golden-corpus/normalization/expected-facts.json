@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "fetchedAt": "2026-01-03T00:00:00.000Z",
+  "source": {
+    "originalUrl": "https://github.com/example/project/pull/7?tab=checks",
+    "canonicalUrl": "https://github.com/example/project/pull/7",
+    "owner": "example",
+    "repo": "project",
+    "number": 7,
+    "kind": "PULL_REQUEST"
+  },
+  "repository": {
+    "defaultBranch": "main",
+    "archived": false,
+    "disabled": false,
+    "visibility": "public",
+    "fork": false,
+    "htmlUrl": "https://github.com/example/project"
+  },
+  "item": {
+    "state": "OPEN",
+    "stateReason": null,
+    "title": "Normalize me",
+    "authorLogin": "author",
+    "authorAssociation": "CONTRIBUTOR",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-03T00:00:00.000Z",
+    "closedAt": null,
+    "labels": [
+      "bug"
+    ],
+    "assignees": [],
+    "locked": false,
+    "commentsCount": 2,
+    "draft": false,
+    "merged": false,
+    "mergedAt": null,
+    "baseRef": "main",
+    "headRef": "feature",
+    "baseSha": "base-sha",
+    "headSha": "head-sha",
+    "headRepositoryAvailable": true,
+    "mergeable": true,
+    "mergeStateStatus": "CLEAN"
+  },
+  "branches": {
+    "baseRef": "main",
+    "headRef": "feature",
+    "baseSha": "base-sha",
+    "headSha": "head-sha",
+    "aheadBy": 2,
+    "behindBy": 3,
+    "compareStatus": "BEHIND",
+    "mergeable": true,
+    "mergeStateStatus": "CLEAN"
+  },
+  "checks": {
+    "items": [
+      {
+        "key": "check-run:actions:ci",
+        "name": "ci",
+        "provider": "CHECK_RUN",
+        "status": "SUCCESS",
+        "requiredness": "UNKNOWN",
+        "detailsUrl": "https://github.com/example/project/actions/runs/2",
+        "updatedAt": "2026-01-02T01:05:00.000Z",
+        "evidenceId": "check.check-run%3Aactions%3Aci.status"
+      },
+      {
+        "key": "commit-status:lint",
+        "name": "lint",
+        "provider": "COMMIT_STATUS",
+        "status": "PENDING",
+        "requiredness": "UNKNOWN",
+        "detailsUrl": "https://github.com/example/project/runs/11",
+        "updatedAt": "2026-01-02T02:00:00.000Z",
+        "evidenceId": "check.commit-status%3Alint.status"
+      }
+    ],
+    "requirednessKnown": false,
+    "summary": {
+      "failureCount": 0,
+      "pendingCount": 1,
+      "successCount": 1,
+      "skippedCount": 0,
+      "neutralCount": 0,
+      "cancelledCount": 0,
+      "unknownCount": 0,
+      "observedCheckCount": 2,
+      "collectionComplete": true,
+      "truncated": false
+    },
+    "summaryEvidenceId": "checks.summary"
+  },
+  "reviews": {
+    "reviewDecision": "APPROVED",
+    "reviewDecisionEvidenceId": "reviews.reviewDecision",
+    "restReviewHistoryComplete": true,
+    "latestReviewPerReviewer": [
+      {
+        "reviewerLogin": "reviewer",
+        "state": "APPROVED",
+        "submittedAt": "2026-01-02T03:00:00.000Z",
+        "authorAssociation": "MEMBER",
+        "dismissed": false,
+        "htmlUrl": "https://github.com/example/project/pull/7#pullrequestreview-21",
+        "evidenceId": "review.reviewer.latest"
+      }
+    ],
+    "approvedReviewers": [
+      "reviewer"
+    ],
+    "changesRequestedReviewers": [],
+    "dismissedReviews": [
+      {
+        "reviewerLogin": "other",
+        "state": "DISMISSED",
+        "submittedAt": "2026-01-02T04:00:00.000Z",
+        "authorAssociation": "MEMBER",
+        "dismissed": true,
+        "htmlUrl": "https://github.com/example/project/pull/7#pullrequestreview-22",
+        "evidenceId": "review.dismissed.22"
+      }
+    ],
+    "unresolvedThreadCount": 1,
+    "unresolvedThreadsAvailable": true,
+    "unresolvedThreadsComplete": true,
+    "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+  },
+  "activity": {
+    "lastAuthorActivityAt": "2026-01-02T05:00:00.000Z",
+    "lastMaintainerActivityAt": "2026-01-02T06:00:00.000Z",
+    "lastReviewActivityAt": "2026-01-02T04:00:00.000Z",
+    "lastCommitAt": "2026-01-02T07:00:00.000Z"
+  },
+  "links": {
+    "linkedIssues": [
+      {
+        "owner": "example",
+        "repo": "project",
+        "number": 3,
+        "url": "https://github.com/example/project/issues/3",
+        "state": "OPEN",
+        "merged": null,
+        "evidenceId": "link.issue.example%2Fproject%233"
+      }
+    ],
+    "linkedPullRequests": null,
+    "linkedCommits": [
+      {
+        "sha": "abc123",
+        "url": "https://github.com/example/project/commit/abc123",
+        "evidenceId": "commit.abc123"
+      }
+    ],
+    "closingPullRequests": null,
+    "explicitDuplicateLabels": []
+  },
+  "availability": {
+    "rest": "AVAILABLE",
+    "graphql": "AVAILABLE",
+    "branchComparison": "AVAILABLE",
+    "checkRuns": "AVAILABLE",
+    "commitStatuses": "AVAILABLE",
+    "pullRequestCommits": "AVAILABLE",
+    "pullRequestReviews": "AVAILABLE",
+    "reviewThreads": "AVAILABLE",
+    "comments": "AVAILABLE",
+    "rateLimitRemaining": 99
+  },
+  "evidence": [
+    {
+      "id": "item.state",
+      "category": "item",
+      "claim": "GitHub item state",
+      "value": "OPEN",
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.item.state",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "item.stateReason",
+      "category": "item",
+      "claim": "GitHub item state reason",
+      "value": null,
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.item.state_reason",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "repository.archived",
+      "category": "repository",
+      "claim": "Repository archived state",
+      "value": false,
+      "sourceUrl": "https://github.com/example/project",
+      "apiSource": "REST.repository.archived",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "repository.disabled",
+      "category": "repository",
+      "claim": "Repository disabled state",
+      "value": false,
+      "sourceUrl": "https://github.com/example/project",
+      "apiSource": "REST.repository.disabled",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "label.bug",
+      "category": "label",
+      "claim": "GitHub label: bug",
+      "value": "bug",
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.item.labels",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "item.assignees",
+      "category": "item",
+      "claim": "GitHub item assignees",
+      "value": [],
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.item.assignees",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "item.merged",
+      "category": "item",
+      "claim": "Pull request merged state",
+      "value": false,
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.pull.merged",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "item.draft",
+      "category": "item",
+      "claim": "Pull request draft state",
+      "value": false,
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.pull.draft",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "branches.mergeable",
+      "category": "branches",
+      "claim": "GitHub computed mergeability",
+      "value": true,
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.pull.mergeable",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "branches.mergeStateStatus",
+      "category": "branches",
+      "claim": "GitHub merge state status",
+      "value": "CLEAN",
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.pull.mergeable_state",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "branches.compare",
+      "category": "branches",
+      "claim": "GitHub branch comparison",
+      "value": {
+        "aheadBy": 2,
+        "behindBy": 3,
+        "compareStatus": "BEHIND"
+      },
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "REST.compare",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "check.check-run%3Aactions%3Aci.status",
+      "category": "check",
+      "claim": "Latest status for check-run:actions:ci",
+      "value": "SUCCESS",
+      "sourceUrl": "https://github.com/example/project/actions/runs/2",
+      "apiSource": "REST.check_runs",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "check.commit-status%3Alint.status",
+      "category": "check",
+      "claim": "Latest status for commit-status:lint",
+      "value": "PENDING",
+      "sourceUrl": "https://github.com/example/project/runs/11",
+      "apiSource": "REST.commit_statuses",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "checks.summary",
+      "category": "check_summary",
+      "claim": "Summary of latest observed checks and collection completeness",
+      "value": {
+        "failureCount": 0,
+        "pendingCount": 1,
+        "successCount": 1,
+        "skippedCount": 0,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 2,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "GitNext.normalization.checkSummary",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "review.dismissed.22",
+      "category": "review",
+      "claim": "Dismissed review by other",
+      "value": "DISMISSED",
+      "sourceUrl": "https://github.com/example/project/pull/7#pullrequestreview-22",
+      "apiSource": "REST.pull.reviews",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "review.reviewer.latest",
+      "category": "review",
+      "claim": "Latest effective review by reviewer",
+      "value": "APPROVED",
+      "sourceUrl": "https://github.com/example/project/pull/7#pullrequestreview-21",
+      "apiSource": "REST.pull.reviews",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "reviews.reviewDecision",
+      "category": "review",
+      "claim": "GitHub aggregate pull request review decision",
+      "value": "APPROVED",
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "GraphQL.pullRequest.reviewDecision",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "reviews.unresolvedThreadCount",
+      "category": "review_thread",
+      "claim": "Known unresolved review thread count",
+      "value": {
+        "count": 1,
+        "complete": true
+      },
+      "sourceUrl": "https://github.com/example/project/pull/7",
+      "apiSource": "GraphQL.pullRequest.reviewThreads",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "link.issue.example%2Fproject%233",
+      "category": "links",
+      "claim": "GitHub explicitly linked issue example/project#3",
+      "value": {
+        "state": "OPEN",
+        "merged": null
+      },
+      "sourceUrl": "https://github.com/example/project/issues/3",
+      "apiSource": "GraphQL.pullRequest.closingIssuesReferences",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "commit.abc123",
+      "category": "commit",
+      "claim": "Commit explicitly present in pull request: abc123",
+      "value": "abc123",
+      "sourceUrl": "https://github.com/example/project/commit/abc123",
+      "apiSource": "REST.pull.commits",
+      "observedAt": "2026-01-03T00:00:00.000Z"
+    }
+  ],
+  "limitations": [
+    "Required check configuration is unknown."
+  ]
+}

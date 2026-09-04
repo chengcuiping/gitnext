@@ -1,0 +1,1818 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "03-slime-2331",
+  "url": "https://github.com/THUDM/slime/pull/2331",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-01T07:41:52Z",
+        "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-01T07:41:52.000Z",
+        "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-01T07:41:52Z",
+        "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-01T07:41:52Z",
+        "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-01T07:41:52Z",
+        "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "140b324668a262eae6e4f0c60237bb2260e9bc496013eb8dd69e52205e5a2e7a",
+    "decisionSha256": "305980d9425f207dad0845ddda9c7731cb81e6e1a9ed61f8d92f530e83693c70"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:39:26.629Z",
+    "source": {
+      "originalUrl": "https://github.com/THUDM/slime/pull/2331",
+      "canonicalUrl": "https://github.com/THUDM/slime/pull/2331",
+      "owner": "THUDM",
+      "repo": "slime",
+      "number": 2331,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/THUDM/slime"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Order pipeline weight-update process groups across rollout engines",
+      "authorLogin": "chengcuiping",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-08-26T07:22:10.000Z",
+      "updatedAt": "2026-09-01T07:41:52.000Z",
+      "closedAt": null,
+      "labels": [],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 1,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "main",
+      "headRef": "fix/weight-sync-process-group-ordering",
+      "baseSha": "a3f500977f33b82de6ac0414c0c43abfe656c3e0",
+      "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "fix/weight-sync-process-group-ordering",
+      "baseSha": "a3f500977f33b82de6ac0414c0c43abfe656c3e0",
+      "headSha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+      "aheadBy": 5,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:agent-test (0, test_agent/test_adapters.py)",
+          "name": "agent-test (0, test_agent/test_adapters.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251917",
+          "updatedAt": "2026-08-26T07:56:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_adapters.py).status"
+        },
+        {
+          "key": "check-run:github-actions:agent-test (0, test_agent/test_agent_rollout_cpu.py)",
+          "name": "agent-test (0, test_agent/test_agent_rollout_cpu.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251925",
+          "updatedAt": "2026-08-26T07:56:45.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_agent_rollout_cpu.py).status"
+        },
+        {
+          "key": "check-run:github-actions:agent-test (0, test_agent/test_harness.py)",
+          "name": "agent-test (0, test_agent/test_harness.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251951",
+          "updatedAt": "2026-08-26T07:56:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_harness.py).status"
+        },
+        {
+          "key": "check-run:github-actions:agent-test (0, test_agent/test_sandbox_exec_and_wait.py)",
+          "name": "agent-test (0, test_agent/test_sandbox_exec_and_wait.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251902",
+          "updatedAt": "2026-08-26T07:56:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_sandbox_exec_and_wait.py).status"
+        },
+        {
+          "key": "check-run:github-actions:agent-test (0, test_agent/test_trajectory_manager_branching.py)",
+          "name": "agent-test (0, test_agent/test_trajectory_manager_branching.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251677",
+          "updatedAt": "2026-08-26T07:56:44.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_trajectory_manager_branching.py).status"
+        },
+        {
+          "key": "check-run:github-actions:build-conda",
+          "name": "build-conda",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170511/job/98104253532",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild-conda.status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, observability/test_trace_utils.py)",
+          "name": "cpu-unittest (0, observability/test_trace_utils.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252143",
+          "updatedAt": "2026-08-26T07:56:57.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20observability%2Ftest_trace_utils.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_generate_contracts.py)",
+          "name": "cpu-unittest (0, plugin_contracts/test_plugin_generate_contracts.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252249",
+          "updatedAt": "2026-08-26T07:57:57.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_generate_contracts.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_path_loading_contracts.py)",
+          "name": "cpu-unittest (0, plugin_contracts/test_plugin_path_loading_contracts.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252326",
+          "updatedAt": "2026-08-26T07:58:01.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_path_loading_contracts.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_rollout_contracts.py)",
+          "name": "cpu-unittest (0, plugin_contracts/test_plugin_rollout_contracts.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252239",
+          "updatedAt": "2026-08-26T07:58:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_rollout_contracts.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_runtime_hook_contracts.py)",
+          "name": "cpu-unittest (0, plugin_contracts/test_plugin_runtime_hook_contracts.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252196",
+          "updatedAt": "2026-08-26T07:56:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_runtime_hook_contracts.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_accelerator.py)",
+          "name": "cpu-unittest (0, test_accelerator.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252175",
+          "updatedAt": "2026-08-26T07:56:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_accelerator.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_advantage_whiten_cp.py)",
+          "name": "cpu-unittest (0, test_advantage_whiten_cp.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252116",
+          "updatedAt": "2026-08-26T07:58:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_advantage_whiten_cp.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_block_fp8_zero_block.py)",
+          "name": "cpu-unittest (0, test_block_fp8_zero_block.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252187",
+          "updatedAt": "2026-08-26T07:57:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_block_fp8_zero_block.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_cispo_loss.py)",
+          "name": "cpu-unittest (0, test_cispo_loss.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252197",
+          "updatedAt": "2026-08-26T07:59:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_cispo_loss.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_cp_utils.py)",
+          "name": "cpu-unittest (0, test_cp_utils.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252248",
+          "updatedAt": "2026-08-26T07:59:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_cp_utils.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_deep_ep_tms_patch.py)",
+          "name": "cpu-unittest (0, test_deep_ep_tms_patch.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252189",
+          "updatedAt": "2026-08-26T07:56:59.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_deep_ep_tms_patch.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_discounted_returns.py)",
+          "name": "cpu-unittest (0, test_discounted_returns.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252145",
+          "updatedAt": "2026-08-26T07:57:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_discounted_returns.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_docs_consistency.py)",
+          "name": "cpu-unittest (0, test_docs_consistency.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252238",
+          "updatedAt": "2026-08-26T07:59:01.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_docs_consistency.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_dp_schedule.py)",
+          "name": "cpu-unittest (0, test_dp_schedule.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252146",
+          "updatedAt": "2026-08-26T07:56:46.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_dp_schedule.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_empty_colocated_weight_bucket.py)",
+          "name": "cpu-unittest (0, test_empty_colocated_weight_bucket.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252324",
+          "updatedAt": "2026-08-26T07:58:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_empty_colocated_weight_bucket.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_eval_config.py)",
+          "name": "cpu-unittest (0, test_eval_config.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252166",
+          "updatedAt": "2026-08-26T07:58:10.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_eval_config.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_expert_routing.py)",
+          "name": "cpu-unittest (0, test_expert_routing.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252222",
+          "updatedAt": "2026-08-26T07:56:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_expert_routing.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_external_sglang_engines.py)",
+          "name": "cpu-unittest (0, test_external_sglang_engines.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252213",
+          "updatedAt": "2026-08-26T07:57:47.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_external_sglang_engines.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_filter_long_prompt.py)",
+          "name": "cpu-unittest (0, test_filter_long_prompt.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252288",
+          "updatedAt": "2026-08-26T07:59:07.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_filter_long_prompt.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_fully_async_rollout.py)",
+          "name": "cpu-unittest (0, test_fully_async_rollout.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252084",
+          "updatedAt": "2026-08-26T07:56:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_fully_async_rollout.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_glm5_indexer_short_context.py)",
+          "name": "cpu-unittest (0, test_glm5_indexer_short_context.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252357",
+          "updatedAt": "2026-08-26T07:59:00.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_glm5_indexer_short_context.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_glm52_layerwise_comparison.py)",
+          "name": "cpu-unittest (0, test_glm52_layerwise_comparison.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252250",
+          "updatedAt": "2026-08-26T07:58:05.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_glm52_layerwise_comparison.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_hf_to_megatron.py)",
+          "name": "cpu-unittest (0, test_hf_to_megatron.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252269",
+          "updatedAt": "2026-08-26T07:59:50.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_hf_to_megatron.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_layerwise_alignment.py)",
+          "name": "cpu-unittest (0, test_layerwise_alignment.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252236",
+          "updatedAt": "2026-08-26T07:57:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_layerwise_alignment.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_logprob_response_spans.py)",
+          "name": "cpu-unittest (0, test_logprob_response_spans.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252120",
+          "updatedAt": "2026-08-26T07:56:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_logprob_response_spans.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_loss_cp_invariance.py)",
+          "name": "cpu-unittest (0, test_loss_cp_invariance.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252202",
+          "updatedAt": "2026-08-26T07:58:22.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_loss_cp_invariance.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_megatron_argument_validation.py)",
+          "name": "cpu-unittest (0, test_megatron_argument_validation.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252210",
+          "updatedAt": "2026-08-26T07:59:30.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_megatron_argument_validation.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_metric_report_dist.py)",
+          "name": "cpu-unittest (0, test_metric_report_dist.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252169",
+          "updatedAt": "2026-08-26T08:02:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_metric_report_dist.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_metric_report.py)",
+          "name": "cpu-unittest (0, test_metric_report.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252162",
+          "updatedAt": "2026-08-26T07:57:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_metric_report.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_model_provider_freeze.py)",
+          "name": "cpu-unittest (0, test_model_provider_freeze.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252234",
+          "updatedAt": "2026-08-26T07:59:05.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_model_provider_freeze.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_placement_group.py)",
+          "name": "cpu-unittest (0, test_placement_group.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252227",
+          "updatedAt": "2026-08-26T07:58:07.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_placement_group.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_policy_loss.py)",
+          "name": "cpu-unittest (0, test_policy_loss.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252072",
+          "updatedAt": "2026-08-26T07:57:15.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_policy_loss.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_ppo_kl_metric.py)",
+          "name": "cpu-unittest (0, test_ppo_kl_metric.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252164",
+          "updatedAt": "2026-08-26T07:57:11.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_ppo_kl_metric.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_ppo_logprob_entropy.py)",
+          "name": "cpu-unittest (0, test_ppo_logprob_entropy.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252168",
+          "updatedAt": "2026-08-26T07:58:20.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_ppo_logprob_entropy.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_process_rollout_data.py)",
+          "name": "cpu-unittest (0, test_process_rollout_data.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252289",
+          "updatedAt": "2026-08-26T07:58:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_process_rollout_data.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_qwen3_5_vl_native.py)",
+          "name": "cpu-unittest (0, test_qwen3_5_vl_native.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252221",
+          "updatedAt": "2026-08-26T07:57:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_qwen3_5_vl_native.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_qwen3_linear_attention_cu_seqlens.py)",
+          "name": "cpu-unittest (0, test_qwen3_linear_attention_cu_seqlens.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252198",
+          "updatedAt": "2026-08-26T07:58:06.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_qwen3_linear_attention_cu_seqlens.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_read_file_slicing.py)",
+          "name": "cpu-unittest (0, test_read_file_slicing.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252319",
+          "updatedAt": "2026-08-26T07:59:06.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_read_file_slicing.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_reloadable_process_group_memory_check.py)",
+          "name": "cpu-unittest (0, test_reloadable_process_group_memory_check.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252217",
+          "updatedAt": "2026-08-26T07:59:11.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_reloadable_process_group_memory_check.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_reloadable_process_group_world.py)",
+          "name": "cpu-unittest (0, test_reloadable_process_group_world.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252115",
+          "updatedAt": "2026-08-26T07:56:59.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_reloadable_process_group_world.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rm_deepscaler.py)",
+          "name": "cpu-unittest (0, test_rm_deepscaler.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252260",
+          "updatedAt": "2026-08-26T07:59:11.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_deepscaler.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rm_f1.py)",
+          "name": "cpu-unittest (0, test_rm_f1.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252160",
+          "updatedAt": "2026-08-26T07:56:57.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_f1.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rm_gpqa.py)",
+          "name": "cpu-unittest (0, test_rm_gpqa.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252129",
+          "updatedAt": "2026-08-26T07:58:02.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_gpqa.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rm_math_dapo.py)",
+          "name": "cpu-unittest (0, test_rm_math_dapo.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252141",
+          "updatedAt": "2026-08-26T07:56:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_math_dapo.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rm_math.py)",
+          "name": "cpu-unittest (0, test_rm_math.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252327",
+          "updatedAt": "2026-08-26T07:58:07.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_math.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rollout_data_utils.py)",
+          "name": "cpu-unittest (0, test_rollout_data_utils.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252253",
+          "updatedAt": "2026-08-26T07:59:09.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_data_utils.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rollout_metrics.py)",
+          "name": "cpu-unittest (0, test_rollout_metrics.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252645",
+          "updatedAt": "2026-08-26T07:59:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_metrics.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_rollout_sample_hooks.py)",
+          "name": "cpu-unittest (0, test_rollout_sample_hooks.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252185",
+          "updatedAt": "2026-08-26T07:58:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_sample_hooks.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_sample.py)",
+          "name": "cpu-unittest (0, test_sample.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252193",
+          "updatedAt": "2026-08-26T07:59:07.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_sample.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_stateless_adam.py)",
+          "name": "cpu-unittest (0, test_stateless_adam.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252235",
+          "updatedAt": "2026-08-26T07:58:19.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_stateless_adam.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_tau_bench_token_delta.py)",
+          "name": "cpu-unittest (0, test_tau_bench_token_delta.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252293",
+          "updatedAt": "2026-08-26T07:59:24.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_tau_bench_token_delta.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_train_data_utils.py)",
+          "name": "cpu-unittest (0, test_train_data_utils.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252139",
+          "updatedAt": "2026-08-26T07:57:54.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_train_data_utils.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_value_temperature.py)",
+          "name": "cpu-unittest (0, test_value_temperature.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252101",
+          "updatedAt": "2026-08-26T07:56:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_value_temperature.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, test_weight_update_group_ordering.py)",
+          "name": "cpu-unittest (0, test_weight_update_group_ordering.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252277",
+          "updatedAt": "2026-08-26T07:59:05.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_weight_update_group_ordering.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, utils/test_hf_checkpoint_saver.py)",
+          "name": "cpu-unittest (0, utils/test_hf_checkpoint_saver.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252259",
+          "updatedAt": "2026-08-26T07:57:59.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_hf_checkpoint_saver.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, utils/test_loss_mask_type_qwen35.py)",
+          "name": "cpu-unittest (0, utils/test_loss_mask_type_qwen35.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252311",
+          "updatedAt": "2026-08-26T07:59:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_loss_mask_type_qwen35.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, utils/test_megatron_role_config.py)",
+          "name": "cpu-unittest (0, utils/test_megatron_role_config.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252672",
+          "updatedAt": "2026-08-26T08:00:01.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_megatron_role_config.py).status"
+        },
+        {
+          "key": "check-run:github-actions:cpu-unittest (0, utils/test_megatron_server_arguments.py)",
+          "name": "cpu-unittest (0, utils/test_megatron_server_arguments.py)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252301",
+          "updatedAt": "2026-08-26T07:59:09.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_megatron_server_arguments.py).status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-changed",
+          "name": "e2e-test-changed",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252923",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-changed.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-changed-detect",
+          "name": "e2e-test-changed-detect",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252894",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-changed-detect.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-ckpt",
+          "name": "e2e-test-ckpt",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252769",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-ckpt.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-image",
+          "name": "e2e-test-image",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252840",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-image.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-megatron",
+          "name": "e2e-test-megatron",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252801",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-megatron.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-precision",
+          "name": "e2e-test-precision",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252824",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-precision.status"
+        },
+        {
+          "key": "check-run:github-actions:e2e-test-sglang-config",
+          "name": "e2e-test-sglang-config",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252592",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e-test-sglang-config.status"
+        },
+        {
+          "key": "check-run:github-actions:resolve-image",
+          "name": "resolve-image",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32945170511/job/98104253058",
+          "updatedAt": "2026-08-26T07:55:51.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aresolve-image.status"
+        },
+        {
+          "key": "check-run:github-actions:Run pre-commit",
+          "name": "Run pre-commit",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/THUDM/slime/actions/runs/32946042319/job/98106846062",
+          "updatedAt": "2026-08-26T08:07:19.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arun%20pre-commit.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 64,
+        "skippedCount": 9,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 73,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "REVIEW_REQUIRED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-01T07:41:52.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-08-26T07:55:20.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "a552d4f758e2fcd0a73551eac087da025d16cb44",
+          "url": "https://github.com/THUDM/slime/commit/a552d4f758e2fcd0a73551eac087da025d16cb44",
+          "evidenceId": "commit.a552d4f758e2fcd0a73551eac087da025d16cb44"
+        },
+        {
+          "sha": "f38fc297bbc5e2a0764cd25e1891321843444fe9",
+          "url": "https://github.com/THUDM/slime/commit/f38fc297bbc5e2a0764cd25e1891321843444fe9",
+          "evidenceId": "commit.f38fc297bbc5e2a0764cd25e1891321843444fe9"
+        },
+        {
+          "sha": "c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+          "url": "https://github.com/THUDM/slime/commit/c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+          "evidenceId": "commit.c4aa2bd1727698a93f3958d4188e569a0fdbce48"
+        },
+        {
+          "sha": "1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+          "url": "https://github.com/THUDM/slime/commit/1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+          "evidenceId": "commit.1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c"
+        },
+        {
+          "sha": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+          "url": "https://github.com/THUDM/slime/commit/36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+          "evidenceId": "commit.36b0cb018d5a522b6bb9bfe607e9acd0da76d514"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4847
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/THUDM/slime",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/THUDM/slime",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "BLOCKED",
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 5,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_adapters.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:agent-test (0, test_agent/test_adapters.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251917",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_agent_rollout_cpu.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:agent-test (0, test_agent/test_agent_rollout_cpu.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251925",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_harness.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:agent-test (0, test_agent/test_harness.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251951",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_sandbox_exec_and_wait.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:agent-test (0, test_agent/test_sandbox_exec_and_wait.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251902",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aagent-test%20(0%2C%20test_agent%2Ftest_trajectory_manager_branching.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:agent-test (0, test_agent/test_trajectory_manager_branching.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104251677",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild-conda.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:build-conda",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170511/job/98104253532",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20observability%2Ftest_trace_utils.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, observability/test_trace_utils.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252143",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_generate_contracts.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_generate_contracts.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252249",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_path_loading_contracts.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_path_loading_contracts.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252326",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_rollout_contracts.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_rollout_contracts.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252239",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20plugin_contracts%2Ftest_plugin_runtime_hook_contracts.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, plugin_contracts/test_plugin_runtime_hook_contracts.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252196",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_accelerator.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_accelerator.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252175",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_advantage_whiten_cp.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_advantage_whiten_cp.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252116",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_block_fp8_zero_block.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_block_fp8_zero_block.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252187",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_cispo_loss.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_cispo_loss.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252197",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_cp_utils.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_cp_utils.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252248",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_deep_ep_tms_patch.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_deep_ep_tms_patch.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252189",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_discounted_returns.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_discounted_returns.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252145",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_docs_consistency.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_docs_consistency.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252238",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_dp_schedule.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_dp_schedule.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252146",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_empty_colocated_weight_bucket.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_empty_colocated_weight_bucket.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252324",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_eval_config.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_eval_config.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252166",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_expert_routing.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_expert_routing.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252222",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_external_sglang_engines.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_external_sglang_engines.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252213",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_filter_long_prompt.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_filter_long_prompt.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252288",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_fully_async_rollout.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_fully_async_rollout.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252084",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_glm5_indexer_short_context.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_glm5_indexer_short_context.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252357",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_glm52_layerwise_comparison.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_glm52_layerwise_comparison.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252250",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_hf_to_megatron.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_hf_to_megatron.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252269",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_layerwise_alignment.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_layerwise_alignment.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252236",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_logprob_response_spans.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_logprob_response_spans.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252120",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_loss_cp_invariance.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_loss_cp_invariance.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252202",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_megatron_argument_validation.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_megatron_argument_validation.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252210",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_metric_report_dist.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_metric_report_dist.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252169",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_metric_report.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_metric_report.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252162",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_model_provider_freeze.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_model_provider_freeze.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252234",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_placement_group.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_placement_group.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252227",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_policy_loss.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_policy_loss.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252072",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_ppo_kl_metric.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_ppo_kl_metric.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252164",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_ppo_logprob_entropy.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_ppo_logprob_entropy.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252168",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_process_rollout_data.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_process_rollout_data.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252289",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_qwen3_5_vl_native.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_qwen3_5_vl_native.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252221",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_qwen3_linear_attention_cu_seqlens.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_qwen3_linear_attention_cu_seqlens.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252198",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_read_file_slicing.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_read_file_slicing.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252319",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_reloadable_process_group_memory_check.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_reloadable_process_group_memory_check.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252217",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_reloadable_process_group_world.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_reloadable_process_group_world.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252115",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_deepscaler.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rm_deepscaler.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252260",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_f1.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rm_f1.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252160",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_gpqa.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rm_gpqa.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252129",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_math_dapo.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rm_math_dapo.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252141",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rm_math.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rm_math.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252327",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_data_utils.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rollout_data_utils.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252253",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_metrics.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rollout_metrics.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252645",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_rollout_sample_hooks.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_rollout_sample_hooks.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252185",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_sample.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_sample.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252193",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_stateless_adam.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_stateless_adam.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252235",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_tau_bench_token_delta.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_tau_bench_token_delta.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252293",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_train_data_utils.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_train_data_utils.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252139",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_value_temperature.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_value_temperature.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252101",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20test_weight_update_group_ordering.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, test_weight_update_group_ordering.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252277",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_hf_checkpoint_saver.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, utils/test_hf_checkpoint_saver.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252259",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_loss_mask_type_qwen35.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, utils/test_loss_mask_type_qwen35.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252311",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_megatron_role_config.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, utils/test_megatron_role_config.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252672",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acpu-unittest%20(0%2C%20utils%2Ftest_megatron_server_arguments.py).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:cpu-unittest (0, utils/test_megatron_server_arguments.py)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252301",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-changed.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-changed",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252923",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-changed-detect.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-changed-detect",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252894",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-ckpt.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-ckpt",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252769",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-image.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-image",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252840",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-megatron.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-megatron",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252801",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-precision.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-precision",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252824",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e-test-sglang-config.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:e2e-test-sglang-config",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170460/job/98104252592",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aresolve-image.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:resolve-image",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32945170511/job/98104253058",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arun%20pre-commit.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Run pre-commit",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/THUDM/slime/actions/runs/32946042319/job/98106846062",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 64,
+          "skippedCount": 9,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 73,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "REVIEW_REQUIRED",
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/THUDM/slime/pull/2331",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "commit.a552d4f758e2fcd0a73551eac087da025d16cb44",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a552d4f758e2fcd0a73551eac087da025d16cb44",
+        "value": "a552d4f758e2fcd0a73551eac087da025d16cb44",
+        "sourceUrl": "https://github.com/THUDM/slime/commit/a552d4f758e2fcd0a73551eac087da025d16cb44",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "commit.f38fc297bbc5e2a0764cd25e1891321843444fe9",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f38fc297bbc5e2a0764cd25e1891321843444fe9",
+        "value": "f38fc297bbc5e2a0764cd25e1891321843444fe9",
+        "sourceUrl": "https://github.com/THUDM/slime/commit/f38fc297bbc5e2a0764cd25e1891321843444fe9",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "commit.c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+        "value": "c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+        "sourceUrl": "https://github.com/THUDM/slime/commit/c4aa2bd1727698a93f3958d4188e569a0fdbce48",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "commit.1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+        "value": "1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+        "sourceUrl": "https://github.com/THUDM/slime/commit/1e3e1850f6c7ff8a83ef46bf6b2d16fb09f03b4c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      },
+      {
+        "id": "commit.36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+        "value": "36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+        "sourceUrl": "https://github.com/THUDM/slime/commit/36b0cb018d5a522b6bb9bfe607e9acd0da76d514",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:39:26.629Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "WAIT",
+    "ruleId": "PR_010_REVIEW_REQUIRED",
+    "reasonCode": "REVIEW_REQUIRED",
+    "evidenceIds": [
+      "reviews.reviewDecision"
+    ],
+    "nextActionCode": "WAIT_FOR_REVIEW",
+    "responsibleParty": "REVIEWER",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": true,
+        "reasonCode": "REVIEW_REQUIRED"
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

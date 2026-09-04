@@ -1,0 +1,94 @@
+{
+  "source": {
+    "originalUrl": "https://github.com/example/project/pull/7?tab=checks",
+    "canonicalUrl": "https://github.com/example/project/pull/7",
+    "owner": "example",
+    "repo": "project",
+    "number": 7,
+    "kind": "PULL_REQUEST"
+  },
+  "fetchedAt": "2026-01-03T00:00:00.000Z",
+  "repository": {
+    "default_branch": "main",
+    "archived": false,
+    "disabled": false,
+    "visibility": "public",
+    "private": false,
+    "fork": false,
+    "html_url": "https://github.com/example/project"
+  },
+  "item": {
+    "state": "open",
+    "state_reason": null,
+    "title": "Normalize me",
+    "user": { "login": "author" },
+    "author_association": "CONTRIBUTOR",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-03T00:00:00Z",
+    "closed_at": null,
+    "labels": [{ "name": "bug" }],
+    "assignees": [],
+    "locked": false,
+    "comments": 2,
+    "html_url": "https://github.com/example/project/pull/7",
+    "draft": false,
+    "merged": false,
+    "merged_at": null,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "base": { "ref": "main", "sha": "base-sha" },
+    "head": { "ref": "feature", "sha": "head-sha", "repo": { "full_name": "example/project" } }
+  },
+  "compare": { "available": true, "data": { "status": "behind", "ahead_by": 2, "behind_by": 3 } },
+  "checkRuns": {
+    "available": true,
+    "data": {
+      "check_runs": [
+        { "id": 1, "name": "ci", "status": "completed", "conclusion": "failure", "details_url": "https://github.com/example/project/actions/runs/1", "started_at": "2026-01-01T01:00:00Z", "completed_at": "2026-01-01T01:05:00Z", "run_attempt": 1, "app": { "slug": "actions" } },
+        { "id": 2, "name": "ci", "status": "completed", "conclusion": "success", "details_url": "https://github.com/example/project/actions/runs/2", "started_at": "2026-01-02T01:00:00Z", "completed_at": "2026-01-02T01:05:00Z", "run_attempt": 2, "app": { "slug": "actions" } }
+      ]
+    }
+  },
+  "commitStatuses": {
+    "available": true,
+    "data": [
+      { "id": 10, "context": "lint", "state": "failure", "target_url": "https://github.com/example/project/runs/10", "created_at": "2026-01-01T02:00:00Z", "updated_at": "2026-01-01T02:00:00Z" },
+      { "id": 11, "context": "lint", "state": "pending", "target_url": "https://github.com/example/project/runs/11", "created_at": "2026-01-02T02:00:00Z", "updated_at": "2026-01-02T02:00:00Z" }
+    ]
+  },
+  "reviews": {
+    "available": true,
+    "data": [
+      { "id": 20, "state": "CHANGES_REQUESTED", "submitted_at": "2026-01-01T03:00:00Z", "html_url": "https://github.com/example/project/pull/7#pullrequestreview-20", "user": { "login": "reviewer" }, "author_association": "MEMBER" },
+      { "id": 21, "state": "APPROVED", "submitted_at": "2026-01-02T03:00:00Z", "html_url": "https://github.com/example/project/pull/7#pullrequestreview-21", "user": { "login": "reviewer" }, "author_association": "MEMBER" },
+      { "id": 22, "state": "DISMISSED", "submitted_at": "2026-01-02T04:00:00Z", "html_url": "https://github.com/example/project/pull/7#pullrequestreview-22", "user": { "login": "other" }, "author_association": "MEMBER" }
+    ]
+  },
+  "comments": {
+    "available": true,
+    "data": [
+      { "user": { "login": "author" }, "author_association": "CONTRIBUTOR", "created_at": "2026-01-02T05:00:00Z", "updated_at": "2026-01-02T05:00:00Z" },
+      { "user": { "login": "maintainer" }, "author_association": "MEMBER", "created_at": "2026-01-02T06:00:00Z", "updated_at": "2026-01-02T06:00:00Z" }
+    ]
+  },
+  "commits": {
+    "available": true,
+    "data": [
+      { "sha": "abc123", "html_url": "https://github.com/example/project/commit/abc123", "author": { "login": "author" }, "commit": { "author": { "date": "2026-01-02T07:00:00Z" }, "committer": { "date": "2026-01-02T07:00:00Z" } } }
+    ]
+  },
+  "graphql": {
+    "available": true,
+    "data": {
+      "repository": {
+        "pullRequest": {
+          "reviewDecision": "APPROVED",
+          "reviewThreads": { "nodes": [{ "id": "thread-1", "isResolved": false }, { "id": "thread-2", "isResolved": true }], "pageInfo": { "hasNextPage": false } },
+          "closingIssuesReferences": { "nodes": [{ "number": 3, "url": "https://github.com/example/project/issues/3", "state": "OPEN", "repository": { "nameWithOwner": "example/project" } }], "pageInfo": { "hasNextPage": false } }
+        }
+      }
+    }
+  },
+  "rateLimitRemaining": 99,
+  "limitations": []
+}

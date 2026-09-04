@@ -1,0 +1,1650 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "13-changes-site-kit-13486",
+  "url": "https://github.com/google/site-kit-wp/pull/13486",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:43:16Z",
+        "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:43:16.000Z",
+        "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:43:16Z",
+        "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:43:16Z",
+        "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:43:16Z",
+        "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "ad9c951af4b60c0729f5b02157463c31deb84c0b19ca642a01cc44ff9577a065",
+    "decisionSha256": "806600627f454aeb21b82328b6dd5efbc05781097b3dacc105b97d2ab91d3b7d"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:49:03.568Z",
+    "source": {
+      "originalUrl": "https://github.com/google/site-kit-wp/pull/13486",
+      "canonicalUrl": "https://github.com/google/site-kit-wp/pull/13486",
+      "owner": "google",
+      "repo": "site-kit-wp",
+      "number": 13486,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "develop",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/google/site-kit-wp"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "Implement policies step.",
+      "authorLogin": "JakePT",
+      "authorAssociation": "COLLABORATOR",
+      "createdAt": "2026-08-31T04:55:48.000Z",
+      "updatedAt": "2026-09-03T03:43:16.000Z",
+      "closedAt": null,
+      "labels": [],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 2,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "develop",
+      "headRef": "enhancement/13024-publication-policies",
+      "baseSha": "f841fc6b68d91689b1a7db4cb3efbd9f1e0a3a11",
+      "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "branches": {
+      "baseRef": "develop",
+      "headRef": "enhancement/13024-publication-policies",
+      "baseSha": "f841fc6b68d91689b1a7db4cb3efbd9f1e0a3a11",
+      "headSha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+      "aheadBy": 28,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "BLOCKED"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:[DRY RUN] Publish to WordPress.org",
+          "name": "[DRY RUN] Publish to WordPress.org",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513297595",
+          "updatedAt": "2026-09-03T03:36:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3A%5Bdry%20run%5D%20publish%20to%20wordpress.org.status"
+        },
+        {
+          "key": "check-run:github-actions:Add comment to PR",
+          "name": "Add comment to PR",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100514391487",
+          "updatedAt": "2026-09-03T03:43:17.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aadd%20comment%20to%20pr.status"
+        },
+        {
+          "key": "check-run:github-actions:Analyze (actions)",
+          "name": "Analyze (actions)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711751725/job/100512550297",
+          "updatedAt": "2026-09-03T03:33:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aanalyze%20(actions).status"
+        },
+        {
+          "key": "check-run:github-actions:Analyze (javascript)",
+          "name": "Analyze (javascript)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711751725/job/100512550501",
+          "updatedAt": "2026-09-03T03:34:10.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aanalyze%20(javascript).status"
+        },
+        {
+          "key": "check-run:github-actions:Build",
+          "name": "Build",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100512555252",
+          "updatedAt": "2026-09-03T03:36:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild.status"
+        },
+        {
+          "key": "check-run:github-actions:Build Storybook",
+          "name": "Build Storybook",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100512555428",
+          "updatedAt": "2026-09-03T03:35:33.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20storybook.status"
+        },
+        {
+          "key": "check-run:github-actions:Build Zips",
+          "name": "Build Zips",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100512555697",
+          "updatedAt": "2026-09-03T03:36:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20zips.status"
+        },
+        {
+          "key": "check-run:github-actions:Check",
+          "name": "Check",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753952/job/100512555369",
+          "updatedAt": "2026-09-03T03:38:12.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck.status"
+        },
+        {
+          "key": "check-run:github-actions:check-changes",
+          "name": "check-changes",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512551054",
+          "updatedAt": "2026-09-03T03:33:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck-changes.status"
+        },
+        {
+          "key": "check-run:github-actions:Cleanup temporary artifacts",
+          "name": "Cleanup temporary artifacts",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100514436475",
+          "updatedAt": "2026-09-03T03:43:29.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acleanup%20temporary%20artifacts.status"
+        },
+        {
+          "key": "check-run:github-actions:CSS Lint",
+          "name": "CSS Lint",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555377",
+          "updatedAt": "2026-09-03T03:34:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acss%20lint.status"
+        },
+        {
+          "key": "check-run:github-actions:Deploy Storybook",
+          "name": "Deploy Storybook",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100513048802",
+          "updatedAt": "2026-09-03T03:35:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adeploy%20storybook.status"
+        },
+        {
+          "key": "check-run:github-actions:E2E (WordPress 5.2.21, AMP 1.5.5)",
+          "name": "E2E (WordPress 5.2.21, AMP 1.5.5)",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555396",
+          "updatedAt": "2026-09-03T03:46:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%205.2.21%2C%20amp%201.5.5).status"
+        },
+        {
+          "key": "check-run:github-actions:E2E (WordPress latest)",
+          "name": "E2E (WordPress latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555532",
+          "updatedAt": "2026-09-03T03:50:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%20latest).status"
+        },
+        {
+          "key": "check-run:github-actions:E2E (WordPress nightly)",
+          "name": "E2E (WordPress nightly)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555234",
+          "updatedAt": "2026-09-03T03:49:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%20nightly).status"
+        },
+        {
+          "key": "check-run:github-actions:Issue must have a ZenHub release",
+          "name": "Issue must have a ZenHub release",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753926/job/100512573680",
+          "updatedAt": "2026-09-03T03:32:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aissue%20must%20have%20a%20zenhub%20release.status"
+        },
+        {
+          "key": "check-run:github-actions:JS Lint",
+          "name": "JS Lint",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555309",
+          "updatedAt": "2026-09-03T03:36:21.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ajs%20lint.status"
+        },
+        {
+          "key": "check-run:github-actions:JS Tests",
+          "name": "JS Tests",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555166",
+          "updatedAt": "2026-09-03T03:41:55.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Ajs%20tests.status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Lint",
+          "name": "PHP Lint",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555266",
+          "updatedAt": "2026-09-03T03:35:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20lint.status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Static Analysis",
+          "name": "PHP Static Analysis",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555466",
+          "updatedAt": "2026-09-03T03:33:57.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20static%20analysis.status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 7.4, WordPress 5.3.18)",
+          "name": "PHP Tests (PHP 7.4, WordPress 5.3.18)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555503",
+          "updatedAt": "2026-09-03T03:38:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%205.3.18).status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 7.4, WordPress latest, Multisite)",
+          "name": "PHP Tests (PHP 7.4, WordPress latest, Multisite)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555460",
+          "updatedAt": "2026-09-03T03:37:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20latest%2C%20multisite).status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 7.4, WordPress latest)",
+          "name": "PHP Tests (PHP 7.4, WordPress latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555434",
+          "updatedAt": "2026-09-03T03:36:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20latest).status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 7.4, WordPress nightly)",
+          "name": "PHP Tests (PHP 7.4, WordPress nightly)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555444",
+          "updatedAt": "2026-09-03T03:37:45.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20nightly).status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 8.1, WordPress latest)",
+          "name": "PHP Tests (PHP 8.1, WordPress latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555366",
+          "updatedAt": "2026-09-03T03:36:39.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%208.1%2C%20wordpress%20latest).status"
+        },
+        {
+          "key": "check-run:github-actions:PHP Tests (PHP 8.4, WordPress latest)",
+          "name": "PHP Tests (PHP 8.4, WordPress latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555449",
+          "updatedAt": "2026-09-03T03:39:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%208.4%2C%20wordpress%20latest).status"
+        },
+        {
+          "key": "check-run:github-actions:Publish to WordPress.org",
+          "name": "Publish to WordPress.org",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513297350",
+          "updatedAt": "2026-09-03T03:36:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apublish%20to%20wordpress.org.status"
+        },
+        {
+          "key": "check-run:github-actions:Remove Playwright reports",
+          "name": "Remove Playwright reports",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100512556619",
+          "updatedAt": "2026-09-03T03:32:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aremove%20playwright%20reports.status"
+        },
+        {
+          "key": "check-run:github-actions:Remove Storybook",
+          "name": "Remove Storybook",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100512555917",
+          "updatedAt": "2026-09-03T03:32:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aremove%20storybook.status"
+        },
+        {
+          "key": "check-run:github-actions:Remove Zips",
+          "name": "Remove Zips",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100512556173",
+          "updatedAt": "2026-09-03T03:32:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aremove%20zips.status"
+        },
+        {
+          "key": "check-run:github-actions:Run VR Tests",
+          "name": "Run VR Tests",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753978/job/100512606150",
+          "updatedAt": "2026-09-03T03:57:28.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arun%20vr%20tests.status"
+        },
+        {
+          "key": "check-run:github-actions:Test Storybook",
+          "name": "Test Storybook",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100513048787",
+          "updatedAt": "2026-09-03T03:39:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atest%20storybook.status"
+        },
+        {
+          "key": "check-run:github-actions:Type check",
+          "name": "Type check",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555313",
+          "updatedAt": "2026-09-03T03:34:36.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atype%20check.status"
+        },
+        {
+          "key": "check-run:github-actions:Upload to GCS",
+          "name": "Upload to GCS",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513296496",
+          "updatedAt": "2026-09-03T03:37:13.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aupload%20to%20gcs.status"
+        },
+        {
+          "key": "check-run:github-actions:WordPress 5.2.21",
+          "name": "WordPress 5.2.21",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246414",
+          "updatedAt": "2026-09-03T03:42:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Awordpress%205.2.21.status"
+        },
+        {
+          "key": "check-run:github-actions:WordPress latest",
+          "name": "WordPress latest",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246418",
+          "updatedAt": "2026-09-03T03:42:44.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Awordpress%20latest.status"
+        },
+        {
+          "key": "check-run:github-actions:WordPress nightly",
+          "name": "WordPress nightly",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246481",
+          "updatedAt": "2026-09-03T03:43:04.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Awordpress%20nightly.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-config",
+          "name": "zizmor-config",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512653927",
+          "updatedAt": "2026-09-03T03:33:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-config.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-output",
+          "name": "zizmor-output",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654993",
+          "updatedAt": "2026-09-03T03:33:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-output.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-scan",
+          "name": "zizmor-scan",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654662",
+          "updatedAt": "2026-09-03T03:33:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-scan.status"
+        },
+        {
+          "key": "check-run:github-actions:zizmor-upload",
+          "name": "zizmor-upload",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654698",
+          "updatedAt": "2026-09-03T03:33:23.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Azizmor-upload.status"
+        },
+        {
+          "key": "check-run:github-advanced-security:CodeQL",
+          "name": "CodeQL",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/google/site-kit-wp/runs/100512665384",
+          "updatedAt": "2026-09-03T03:33:29.000Z",
+          "evidenceId": "check.check-run%3Agithub-advanced-security%3Acodeql.status"
+        },
+        {
+          "key": "check-run:google-cla:cla/google",
+          "name": "cla/google",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://cla.developers.google.com/about",
+          "updatedAt": "2026-09-03T03:33:10.000Z",
+          "evidenceId": "check.check-run%3Agoogle-cla%3Acla%2Fgoogle.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 2,
+        "pendingCount": 0,
+        "successCount": 31,
+        "skippedCount": 10,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 43,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "CHANGES_REQUESTED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "gemini-code-assist[bot]",
+          "state": "COMMENTED",
+          "submittedAt": "2026-08-31T04:58:21.000Z",
+          "authorAssociation": "CONTRIBUTOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5063233152",
+          "evidenceId": "review.gemini-code-assist%5Bbot%5D.latest"
+        },
+        {
+          "reviewerLogin": "hussain-t",
+          "state": "CHANGES_REQUESTED",
+          "submittedAt": "2026-09-02T16:55:15.000Z",
+          "authorAssociation": "COLLABORATOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5092422139",
+          "evidenceId": "review.hussain-t.latest"
+        },
+        {
+          "reviewerLogin": "JakePT",
+          "state": "COMMENTED",
+          "submittedAt": "2026-08-31T05:29:30.000Z",
+          "authorAssociation": "COLLABORATOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5063376752",
+          "evidenceId": "review.jakept.latest"
+        }
+      ],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [
+        "hussain-t"
+      ],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 4,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-08-31T04:55:48.000Z",
+      "lastMaintainerActivityAt": "2026-09-02T16:55:15.000Z",
+      "lastReviewActivityAt": "2026-09-02T16:55:15.000Z",
+      "lastCommitAt": "2026-09-03T03:32:36.000Z"
+    },
+    "links": {
+      "linkedIssues": [
+        {
+          "owner": "google",
+          "repo": "site-kit-wp",
+          "number": 13024,
+          "url": "https://github.com/google/site-kit-wp/issues/13024",
+          "state": "OPEN",
+          "merged": null,
+          "evidenceId": "link.issue.google%2Fsite-kit-wp%2313024"
+        }
+      ],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "da8771260d4cc943476baf7e8fd9107958a7d759",
+          "url": "https://github.com/google/site-kit-wp/commit/da8771260d4cc943476baf7e8fd9107958a7d759",
+          "evidenceId": "commit.da8771260d4cc943476baf7e8fd9107958a7d759"
+        },
+        {
+          "sha": "70141b5b83a9628b7a9f15686d598fb2f7411d48",
+          "url": "https://github.com/google/site-kit-wp/commit/70141b5b83a9628b7a9f15686d598fb2f7411d48",
+          "evidenceId": "commit.70141b5b83a9628b7a9f15686d598fb2f7411d48"
+        },
+        {
+          "sha": "fc3a46695e7783de40b4ec4291619ccd3b639a89",
+          "url": "https://github.com/google/site-kit-wp/commit/fc3a46695e7783de40b4ec4291619ccd3b639a89",
+          "evidenceId": "commit.fc3a46695e7783de40b4ec4291619ccd3b639a89"
+        },
+        {
+          "sha": "3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+          "url": "https://github.com/google/site-kit-wp/commit/3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+          "evidenceId": "commit.3e082c6c52bcffb0999c1cd673d56b3c9f68e33e"
+        },
+        {
+          "sha": "4afecf73216d7560474a657c75777f61a3e4e358",
+          "url": "https://github.com/google/site-kit-wp/commit/4afecf73216d7560474a657c75777f61a3e4e358",
+          "evidenceId": "commit.4afecf73216d7560474a657c75777f61a3e4e358"
+        },
+        {
+          "sha": "9227d89042a2878b00110a7bb2badb55179af8ca",
+          "url": "https://github.com/google/site-kit-wp/commit/9227d89042a2878b00110a7bb2badb55179af8ca",
+          "evidenceId": "commit.9227d89042a2878b00110a7bb2badb55179af8ca"
+        },
+        {
+          "sha": "ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+          "url": "https://github.com/google/site-kit-wp/commit/ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+          "evidenceId": "commit.ed8529441f3ce290d19acbb8d9573ea98bacb5ee"
+        },
+        {
+          "sha": "4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+          "url": "https://github.com/google/site-kit-wp/commit/4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+          "evidenceId": "commit.4f9c81ba335af6a8406cf4698900f5d6d7d0909c"
+        },
+        {
+          "sha": "39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+          "url": "https://github.com/google/site-kit-wp/commit/39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+          "evidenceId": "commit.39514a6eaa884d54ce1f1643c6cd4862ca5c5477"
+        },
+        {
+          "sha": "acead8206d3bb102357449cbb06369769c24c4b5",
+          "url": "https://github.com/google/site-kit-wp/commit/acead8206d3bb102357449cbb06369769c24c4b5",
+          "evidenceId": "commit.acead8206d3bb102357449cbb06369769c24c4b5"
+        },
+        {
+          "sha": "01803f3629db19b3c71997494db63ea8a0a6980a",
+          "url": "https://github.com/google/site-kit-wp/commit/01803f3629db19b3c71997494db63ea8a0a6980a",
+          "evidenceId": "commit.01803f3629db19b3c71997494db63ea8a0a6980a"
+        },
+        {
+          "sha": "d3f9721b266582be9a0da6a437928fef0baaf219",
+          "url": "https://github.com/google/site-kit-wp/commit/d3f9721b266582be9a0da6a437928fef0baaf219",
+          "evidenceId": "commit.d3f9721b266582be9a0da6a437928fef0baaf219"
+        },
+        {
+          "sha": "59abaac2d90821d442e7538b6e87220253b80ae3",
+          "url": "https://github.com/google/site-kit-wp/commit/59abaac2d90821d442e7538b6e87220253b80ae3",
+          "evidenceId": "commit.59abaac2d90821d442e7538b6e87220253b80ae3"
+        },
+        {
+          "sha": "b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+          "url": "https://github.com/google/site-kit-wp/commit/b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+          "evidenceId": "commit.b7c5705c85b8e0557c64cd0212fcb502cd64fcfb"
+        },
+        {
+          "sha": "857d7457333dae49706710de9c22e31b121d04c9",
+          "url": "https://github.com/google/site-kit-wp/commit/857d7457333dae49706710de9c22e31b121d04c9",
+          "evidenceId": "commit.857d7457333dae49706710de9c22e31b121d04c9"
+        },
+        {
+          "sha": "fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+          "url": "https://github.com/google/site-kit-wp/commit/fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+          "evidenceId": "commit.fb048ae22b6e52405f10ea85cf0dcc64d00226d5"
+        },
+        {
+          "sha": "763798ec0cc3bb08e0c420ce60759181aa449ca2",
+          "url": "https://github.com/google/site-kit-wp/commit/763798ec0cc3bb08e0c420ce60759181aa449ca2",
+          "evidenceId": "commit.763798ec0cc3bb08e0c420ce60759181aa449ca2"
+        },
+        {
+          "sha": "f292c93ec1a8816c389c5ba1de6784926aac3be2",
+          "url": "https://github.com/google/site-kit-wp/commit/f292c93ec1a8816c389c5ba1de6784926aac3be2",
+          "evidenceId": "commit.f292c93ec1a8816c389c5ba1de6784926aac3be2"
+        },
+        {
+          "sha": "8e757b281cbdf1775582c4a726a6ba0008ef459e",
+          "url": "https://github.com/google/site-kit-wp/commit/8e757b281cbdf1775582c4a726a6ba0008ef459e",
+          "evidenceId": "commit.8e757b281cbdf1775582c4a726a6ba0008ef459e"
+        },
+        {
+          "sha": "04ee509effb9c3f57c32012ba985b3304d419e97",
+          "url": "https://github.com/google/site-kit-wp/commit/04ee509effb9c3f57c32012ba985b3304d419e97",
+          "evidenceId": "commit.04ee509effb9c3f57c32012ba985b3304d419e97"
+        },
+        {
+          "sha": "dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+          "url": "https://github.com/google/site-kit-wp/commit/dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+          "evidenceId": "commit.dbd4c08e1d0d8cec9599a2f696c940a91b4602fd"
+        },
+        {
+          "sha": "1e8129837737a8d2a44d2a0709491ee2f530c1df",
+          "url": "https://github.com/google/site-kit-wp/commit/1e8129837737a8d2a44d2a0709491ee2f530c1df",
+          "evidenceId": "commit.1e8129837737a8d2a44d2a0709491ee2f530c1df"
+        },
+        {
+          "sha": "156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+          "url": "https://github.com/google/site-kit-wp/commit/156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+          "evidenceId": "commit.156a90ba3ec2b2dd817db1db1d8bba4db1fa886d"
+        },
+        {
+          "sha": "984b48ebdd67f33a17dd48bee958413402fd681e",
+          "url": "https://github.com/google/site-kit-wp/commit/984b48ebdd67f33a17dd48bee958413402fd681e",
+          "evidenceId": "commit.984b48ebdd67f33a17dd48bee958413402fd681e"
+        },
+        {
+          "sha": "b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+          "url": "https://github.com/google/site-kit-wp/commit/b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+          "evidenceId": "commit.b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5"
+        },
+        {
+          "sha": "e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+          "url": "https://github.com/google/site-kit-wp/commit/e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+          "evidenceId": "commit.e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf"
+        },
+        {
+          "sha": "04e46401b11f1a10e15af728536722e790b8c4ff",
+          "url": "https://github.com/google/site-kit-wp/commit/04e46401b11f1a10e15af728536722e790b8c4ff",
+          "evidenceId": "commit.04e46401b11f1a10e15af728536722e790b8c4ff"
+        },
+        {
+          "sha": "0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+          "url": "https://github.com/google/site-kit-wp/commit/0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+          "evidenceId": "commit.0fa058c7cb374c9b019c7c4fec19a352a6026f37"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4738
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/google/site-kit-wp",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/google/site-kit-wp",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "BLOCKED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 28,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3A%5Bdry%20run%5D%20publish%20to%20wordpress.org.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:[DRY RUN] Publish to WordPress.org",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513297595",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aadd%20comment%20to%20pr.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Add comment to PR",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100514391487",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aanalyze%20(actions).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Analyze (actions)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711751725/job/100512550297",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aanalyze%20(javascript).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Analyze (javascript)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711751725/job/100512550501",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100512555252",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20storybook.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build Storybook",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100512555428",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20zips.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build Zips",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100512555697",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753952/job/100512555369",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck-changes.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:check-changes",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512551054",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acleanup%20temporary%20artifacts.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Cleanup temporary artifacts",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100514436475",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acss%20lint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:CSS Lint",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555377",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adeploy%20storybook.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Deploy Storybook",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100513048802",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%205.2.21%2C%20amp%201.5.5).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:E2E (WordPress 5.2.21, AMP 1.5.5)",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555396",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%20latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:E2E (WordPress latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555532",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%20nightly).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:E2E (WordPress nightly)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753935/job/100512555234",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aissue%20must%20have%20a%20zenhub%20release.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Issue must have a ZenHub release",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753926/job/100512573680",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ajs%20lint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:JS Lint",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555309",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Ajs%20tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:JS Tests",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555166",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20lint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Lint",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555266",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20static%20analysis.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Static Analysis",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555466",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%205.3.18).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 7.4, WordPress 5.3.18)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555503",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20latest%2C%20multisite).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 7.4, WordPress latest, Multisite)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555460",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 7.4, WordPress latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555434",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%207.4%2C%20wordpress%20nightly).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 7.4, WordPress nightly)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555444",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%208.1%2C%20wordpress%20latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 8.1, WordPress latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555366",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aphp%20tests%20(php%208.4%2C%20wordpress%20latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PHP Tests (PHP 8.4, WordPress latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753916/job/100512555449",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apublish%20to%20wordpress.org.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Publish to WordPress.org",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513297350",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aremove%20playwright%20reports.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Remove Playwright reports",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100512556619",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aremove%20storybook.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Remove Storybook",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100512555917",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aremove%20zips.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Remove Zips",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100512556173",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arun%20vr%20tests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Run VR Tests",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753978/job/100512606150",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atest%20storybook.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Test Storybook",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753959/job/100513048787",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atype%20check.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Type check",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753910/job/100512555313",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aupload%20to%20gcs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Upload to GCS",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753936/job/100513296496",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Awordpress%205.2.21.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:WordPress 5.2.21",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246414",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Awordpress%20latest.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:WordPress latest",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246418",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Awordpress%20nightly.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:WordPress nightly",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711753919/job/100513246481",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-config.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-config",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512653927",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-output.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-output",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654993",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-scan.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-scan",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654662",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Azizmor-upload.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:zizmor-upload",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/actions/runs/33711752766/job/100512654698",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-advanced-security%3Acodeql.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-advanced-security:CodeQL",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/google/site-kit-wp/runs/100512665384",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "check.check-run%3Agoogle-cla%3Acla%2Fgoogle.status",
+        "category": "check",
+        "claim": "Latest status for check-run:google-cla:cla/google",
+        "value": "SUCCESS",
+        "sourceUrl": "https://cla.developers.google.com/about",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 2,
+          "pendingCount": 0,
+          "successCount": 31,
+          "skippedCount": 10,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 43,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "review.gemini-code-assist%5Bbot%5D.latest",
+        "category": "review",
+        "claim": "Latest effective review by gemini-code-assist[bot]",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5063233152",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "review.hussain-t.latest",
+        "category": "review",
+        "claim": "Latest effective review by hussain-t",
+        "value": "CHANGES_REQUESTED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5092422139",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "review.jakept.latest",
+        "category": "review",
+        "claim": "Latest effective review by JakePT",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486#pullrequestreview-5063376752",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "CHANGES_REQUESTED",
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 4,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/google/site-kit-wp/pull/13486",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "link.issue.google%2Fsite-kit-wp%2313024",
+        "category": "links",
+        "claim": "GitHub explicitly linked issue google/site-kit-wp#13024",
+        "value": {
+          "state": "OPEN",
+          "merged": null
+        },
+        "sourceUrl": "https://github.com/google/site-kit-wp/issues/13024",
+        "apiSource": "GraphQL.pullRequest.closingIssuesReferences",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.da8771260d4cc943476baf7e8fd9107958a7d759",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: da8771260d4cc943476baf7e8fd9107958a7d759",
+        "value": "da8771260d4cc943476baf7e8fd9107958a7d759",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/da8771260d4cc943476baf7e8fd9107958a7d759",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.70141b5b83a9628b7a9f15686d598fb2f7411d48",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 70141b5b83a9628b7a9f15686d598fb2f7411d48",
+        "value": "70141b5b83a9628b7a9f15686d598fb2f7411d48",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/70141b5b83a9628b7a9f15686d598fb2f7411d48",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.fc3a46695e7783de40b4ec4291619ccd3b639a89",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: fc3a46695e7783de40b4ec4291619ccd3b639a89",
+        "value": "fc3a46695e7783de40b4ec4291619ccd3b639a89",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/fc3a46695e7783de40b4ec4291619ccd3b639a89",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+        "value": "3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/3e082c6c52bcffb0999c1cd673d56b3c9f68e33e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.4afecf73216d7560474a657c75777f61a3e4e358",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4afecf73216d7560474a657c75777f61a3e4e358",
+        "value": "4afecf73216d7560474a657c75777f61a3e4e358",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/4afecf73216d7560474a657c75777f61a3e4e358",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.9227d89042a2878b00110a7bb2badb55179af8ca",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 9227d89042a2878b00110a7bb2badb55179af8ca",
+        "value": "9227d89042a2878b00110a7bb2badb55179af8ca",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/9227d89042a2878b00110a7bb2badb55179af8ca",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+        "value": "ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/ed8529441f3ce290d19acbb8d9573ea98bacb5ee",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+        "value": "4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/4f9c81ba335af6a8406cf4698900f5d6d7d0909c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+        "value": "39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/39514a6eaa884d54ce1f1643c6cd4862ca5c5477",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.acead8206d3bb102357449cbb06369769c24c4b5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: acead8206d3bb102357449cbb06369769c24c4b5",
+        "value": "acead8206d3bb102357449cbb06369769c24c4b5",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/acead8206d3bb102357449cbb06369769c24c4b5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.01803f3629db19b3c71997494db63ea8a0a6980a",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 01803f3629db19b3c71997494db63ea8a0a6980a",
+        "value": "01803f3629db19b3c71997494db63ea8a0a6980a",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/01803f3629db19b3c71997494db63ea8a0a6980a",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.d3f9721b266582be9a0da6a437928fef0baaf219",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: d3f9721b266582be9a0da6a437928fef0baaf219",
+        "value": "d3f9721b266582be9a0da6a437928fef0baaf219",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/d3f9721b266582be9a0da6a437928fef0baaf219",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.59abaac2d90821d442e7538b6e87220253b80ae3",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 59abaac2d90821d442e7538b6e87220253b80ae3",
+        "value": "59abaac2d90821d442e7538b6e87220253b80ae3",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/59abaac2d90821d442e7538b6e87220253b80ae3",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+        "value": "b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/b7c5705c85b8e0557c64cd0212fcb502cd64fcfb",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.857d7457333dae49706710de9c22e31b121d04c9",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 857d7457333dae49706710de9c22e31b121d04c9",
+        "value": "857d7457333dae49706710de9c22e31b121d04c9",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/857d7457333dae49706710de9c22e31b121d04c9",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+        "value": "fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/fb048ae22b6e52405f10ea85cf0dcc64d00226d5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.763798ec0cc3bb08e0c420ce60759181aa449ca2",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 763798ec0cc3bb08e0c420ce60759181aa449ca2",
+        "value": "763798ec0cc3bb08e0c420ce60759181aa449ca2",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/763798ec0cc3bb08e0c420ce60759181aa449ca2",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.f292c93ec1a8816c389c5ba1de6784926aac3be2",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: f292c93ec1a8816c389c5ba1de6784926aac3be2",
+        "value": "f292c93ec1a8816c389c5ba1de6784926aac3be2",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/f292c93ec1a8816c389c5ba1de6784926aac3be2",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.8e757b281cbdf1775582c4a726a6ba0008ef459e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8e757b281cbdf1775582c4a726a6ba0008ef459e",
+        "value": "8e757b281cbdf1775582c4a726a6ba0008ef459e",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/8e757b281cbdf1775582c4a726a6ba0008ef459e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.04ee509effb9c3f57c32012ba985b3304d419e97",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 04ee509effb9c3f57c32012ba985b3304d419e97",
+        "value": "04ee509effb9c3f57c32012ba985b3304d419e97",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/04ee509effb9c3f57c32012ba985b3304d419e97",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+        "value": "dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/dbd4c08e1d0d8cec9599a2f696c940a91b4602fd",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.1e8129837737a8d2a44d2a0709491ee2f530c1df",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1e8129837737a8d2a44d2a0709491ee2f530c1df",
+        "value": "1e8129837737a8d2a44d2a0709491ee2f530c1df",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/1e8129837737a8d2a44d2a0709491ee2f530c1df",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+        "value": "156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/156a90ba3ec2b2dd817db1db1d8bba4db1fa886d",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.984b48ebdd67f33a17dd48bee958413402fd681e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 984b48ebdd67f33a17dd48bee958413402fd681e",
+        "value": "984b48ebdd67f33a17dd48bee958413402fd681e",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/984b48ebdd67f33a17dd48bee958413402fd681e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+        "value": "b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/b9873cbb9b17ecb134b3ba7916030a9d0dc15dd5",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+        "value": "e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/e39adb231c5d382f95ee77dcf5ef6cb0a35ffbaf",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.04e46401b11f1a10e15af728536722e790b8c4ff",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 04e46401b11f1a10e15af728536722e790b8c4ff",
+        "value": "04e46401b11f1a10e15af728536722e790b8c4ff",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/04e46401b11f1a10e15af728536722e790b8c4ff",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      },
+      {
+        "id": "commit.0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+        "value": "0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+        "sourceUrl": "https://github.com/google/site-kit-wp/commit/0fa058c7cb374c9b019c7c4fec19a352a6026f37",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:49:03.568Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "AUTHOR_ACTION_REQUIRED",
+    "ruleId": "PR_006_CHECK_FAILURE",
+    "reasonCode": "LATEST_CHECK_FAILED",
+    "evidenceIds": [
+      "check.check-run%3Agithub-actions%3Ae2e%20(wordpress%205.2.21%2C%20amp%201.5.5).status",
+      "check.check-run%3Agithub-actions%3Arun%20vr%20tests.status"
+    ],
+    "nextActionCode": "FIX_FAILED_CHECKS",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": true,
+        "reasonCode": "LATEST_CHECK_FAILED"
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": true,
+        "reasonCode": "LATEST_REVIEW_CHANGES_REQUESTED"
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": true,
+        "reasonCode": "UNRESOLVED_REVIEW_THREADS"
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,907 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "06-merged-t3code-9255",
+  "url": "https://github.com/pingdotgg/t3code/pull/9255",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:12:29Z",
+        "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:12:29.000Z",
+        "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:12:29Z",
+        "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:12:29Z",
+        "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:12:29Z",
+        "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "ccf1cab14e95f6580f662b36f3c22bd85c1bb1a4c2c436adfa7a1d8cf6b572b3",
+    "decisionSha256": "9a429be828664fbc342e7867fde60cab1e2c35cf97b4c3d1568f1e71d4424c53"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:42:37.843Z",
+    "source": {
+      "originalUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+      "canonicalUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "number": 9255,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/pingdotgg/t3code"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "fix(web): line up the titlebar wordmark label and version pill",
+      "authorLogin": "tristanmanchester",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2026-09-02T19:03:52.000Z",
+      "updatedAt": "2026-09-03T03:12:29.000Z",
+      "closedAt": "2026-09-03T03:11:45.000Z",
+      "labels": [
+        "vouch:unvouched",
+        "size:XS"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 2,
+      "draft": false,
+      "merged": true,
+      "mergedAt": "2026-09-03T03:11:45.000Z",
+      "baseRef": "main",
+      "headRef": "fix/titlebar-brand-alignment",
+      "baseSha": "aab4049646ffa8b9bcff92562992e6c3a8554bf0",
+      "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+      "headRepositoryAvailable": true,
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "fix/titlebar-brand-alignment",
+      "baseSha": "aab4049646ffa8b9bcff92562992e6c3a8554bf0",
+      "headSha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+      "aheadBy": 2,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:blacksmith-sh:[code]smith",
+          "name": "[code]smith",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://backend.blacksmith.sh/track/enable-autofix?expires=1790967920&installation_model_id=754&pr_number=9255&repository=pingdotgg%2Ft3code&return_to=https%3A%2F%2Fgithub.com%2Fpingdotgg%2Ft3code%2Fpull%2F9255&utm_campaign=pingdotgg%2Ft3code&utm_source=codesmith-check&signature=1adac05141716e87f0e4329a5990b0276ae1af33fc8aa660481aa8373defcc7c",
+          "updatedAt": "2026-09-02T19:05:20.000Z",
+          "evidenceId": "check.check-run%3Ablacksmith-sh%3A%5Bcode%5Dsmith.status"
+        },
+        {
+          "key": "check-run:cursor:Cursor Bugbot",
+          "name": "Cursor Bugbot",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://cursor.com/docs/bugbot",
+          "updatedAt": "2026-09-02T19:09:48.000Z",
+          "evidenceId": "check.check-run%3Acursor%3Acursor%20bugbot.status"
+        },
+        {
+          "key": "check-run:github-actions:Build macOS Apple Silicon preview",
+          "name": "Build macOS Apple Silicon preview",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685148",
+          "updatedAt": "2026-09-03T03:11:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20macos%20apple%20silicon%20preview.status"
+        },
+        {
+          "key": "check-run:github-actions:Check",
+          "name": "Check",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413150",
+          "updatedAt": "2026-09-03T02:55:37.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck.status"
+        },
+        {
+          "key": "check-run:github-actions:Collect PR targets",
+          "name": "Collect PR targets",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184811/job/100384910976",
+          "updatedAt": "2026-09-02T19:05:26.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acollect%20pr%20targets.status"
+        },
+        {
+          "key": "check-run:github-actions:Deploy web preview",
+          "name": "Deploy web preview",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186117/job/100505441692",
+          "updatedAt": "2026-09-03T02:54:30.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adeploy%20web%20preview.status"
+        },
+        {
+          "key": "check-run:github-actions:EAS Preview",
+          "name": "EAS Preview",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186119/job/100505399084",
+          "updatedAt": "2026-09-03T02:54:16.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeas%20preview.status"
+        },
+        {
+          "key": "check-run:github-actions:Label PR 9255",
+          "name": "Label PR 9255",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184811/job/100384939315",
+          "updatedAt": "2026-09-02T19:05:41.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alabel%20pr%209255.status"
+        },
+        {
+          "key": "check-run:github-actions:Label PR size",
+          "name": "Label PR size",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384960109",
+          "updatedAt": "2026-09-02T19:05:56.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alabel%20pr%20size.status"
+        },
+        {
+          "key": "check-run:github-actions:Mobile Native Changes",
+          "name": "Mobile Native Changes",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505412964",
+          "updatedAt": "2026-09-03T02:54:33.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amobile%20native%20changes.status"
+        },
+        {
+          "key": "check-run:github-actions:Mobile Native Static Analysis",
+          "name": "Mobile Native Static Analysis",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505449598",
+          "updatedAt": "2026-09-03T02:54:33.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amobile%20native%20static%20analysis.status"
+        },
+        {
+          "key": "check-run:github-actions:Prepare PR size config",
+          "name": "Prepare PR size config",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384911075",
+          "updatedAt": "2026-09-02T19:05:30.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aprepare%20pr%20size%20config.status"
+        },
+        {
+          "key": "check-run:github-actions:Publish anonymous download",
+          "name": "Publish anonymous download",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685631",
+          "updatedAt": "2026-09-03T03:11:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apublish%20anonymous%20download.status"
+        },
+        {
+          "key": "check-run:github-actions:Release Smoke",
+          "name": "Release Smoke",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413230",
+          "updatedAt": "2026-09-03T02:55:09.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arelease%20smoke.status"
+        },
+        {
+          "key": "check-run:github-actions:Remove preview download",
+          "name": "Remove preview download",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685701",
+          "updatedAt": "2026-09-03T03:11:49.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aremove%20preview%20download.status"
+        },
+        {
+          "key": "check-run:github-actions:Rust",
+          "name": "Rust",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413191",
+          "updatedAt": "2026-09-03T02:54:47.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Arust.status"
+        },
+        {
+          "key": "check-run:github-actions:Sync PR size label definitions",
+          "name": "Sync PR size label definitions",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384961915",
+          "updatedAt": "2026-09-02T19:05:30.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Async%20pr%20size%20label%20definitions.status"
+        },
+        {
+          "key": "check-run:github-actions:Test",
+          "name": "Test",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413096",
+          "updatedAt": "2026-09-03T02:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atest.status"
+        },
+        {
+          "key": "check-run:github-actions:Test Server 1",
+          "name": "Test Server 1",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413121",
+          "updatedAt": "2026-09-03T02:55:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atest%20server%201.status"
+        },
+        {
+          "key": "check-run:github-actions:Test Server 2",
+          "name": "Test Server 2",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413219",
+          "updatedAt": "2026-09-03T02:55:45.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atest%20server%202.status"
+        },
+        {
+          "key": "check-run:github-actions:Test Server 3",
+          "name": "Test Server 3",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413213",
+          "updatedAt": "2026-09-03T02:55:42.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atest%20server%203.status"
+        },
+        {
+          "key": "check-run:macroscopeapp:Macroscope - Effect Service Conventions",
+          "name": "Macroscope - Effect Service Conventions",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/pull/9255/checks?check_run_id=100384928976",
+          "updatedAt": "2026-09-02T19:05:37.000Z",
+          "evidenceId": "check.check-run%3Amacroscopeapp%3Amacroscope%20-%20effect%20service%20conventions.status"
+        },
+        {
+          "key": "check-run:macroscopeapp:Macroscope - UI Consistency",
+          "name": "Macroscope - UI Consistency",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/pingdotgg/t3code/pull/9255/checks?check_run_id=100384932326",
+          "updatedAt": "2026-09-02T19:07:55.000Z",
+          "evidenceId": "check.check-run%3Amacroscopeapp%3Amacroscope%20-%20ui%20consistency.status"
+        },
+        {
+          "key": "commit-status:CodeRabbit",
+          "name": "CodeRabbit",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": null,
+          "updatedAt": "2026-09-02T19:05:25.000Z",
+          "evidenceId": "check.commit-status%3Acoderabbit.status"
+        },
+        {
+          "key": "commit-status:Vercel – t3code-marketing",
+          "name": "Vercel – t3code-marketing",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://vercel.com/pinglabs/t3code-marketing/GLYZeWsPWQMMjbczHJ4rQL9SG3Am",
+          "updatedAt": "2026-09-02T19:05:23.000Z",
+          "evidenceId": "check.commit-status%3Avercel%20%E2%80%93%20t3code-marketing.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 17,
+        "skippedCount": 8,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 25,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": "APPROVED",
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "macroscopeapp[bot]",
+          "state": "APPROVED",
+          "submittedAt": "2026-09-02T19:07:52.000Z",
+          "authorAssociation": "CONTRIBUTOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/pingdotgg/t3code/pull/9255#pullrequestreview-5093927353",
+          "evidenceId": "review.macroscopeapp%5Bbot%5D.latest"
+        }
+      ],
+      "approvedReviewers": [
+        "macroscopeapp[bot]"
+      ],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-02T19:03:52.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": "2026-09-02T19:07:52.000Z",
+      "lastCommitAt": "2026-09-02T19:05:17.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+          "url": "https://github.com/pingdotgg/t3code/commit/0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+          "evidenceId": "commit.0231b8cd6a10a39865e4b1dc2c185b3b2c248366"
+        },
+        {
+          "sha": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+          "url": "https://github.com/pingdotgg/t3code/commit/3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+          "evidenceId": "commit.3d846e5a1d27a0ab28e8b55b0fa9954961bb113e"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4814
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/pingdotgg/t3code",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/pingdotgg/t3code",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "label.vouch%3Aunvouched",
+        "category": "label",
+        "claim": "GitHub label: vouch:unvouched",
+        "value": "vouch:unvouched",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "label.size%3Axs",
+        "category": "label",
+        "claim": "GitHub label: size:XS",
+        "value": "size:XS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": true,
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": null,
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "UNKNOWN",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 2,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Ablacksmith-sh%3A%5Bcode%5Dsmith.status",
+        "category": "check",
+        "claim": "Latest status for check-run:blacksmith-sh:[code]smith",
+        "value": "SKIPPED",
+        "sourceUrl": "https://backend.blacksmith.sh/track/enable-autofix?expires=1790967920&installation_model_id=754&pr_number=9255&repository=pingdotgg%2Ft3code&return_to=https%3A%2F%2Fgithub.com%2Fpingdotgg%2Ft3code%2Fpull%2F9255&utm_campaign=pingdotgg%2Ft3code&utm_source=codesmith-check&signature=1adac05141716e87f0e4329a5990b0276ae1af33fc8aa660481aa8373defcc7c",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Acursor%3Acursor%20bugbot.status",
+        "category": "check",
+        "claim": "Latest status for check-run:cursor:Cursor Bugbot",
+        "value": "SUCCESS",
+        "sourceUrl": "https://cursor.com/docs/bugbot",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20macos%20apple%20silicon%20preview.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build macOS Apple Silicon preview",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685148",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413150",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acollect%20pr%20targets.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Collect PR targets",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184811/job/100384910976",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adeploy%20web%20preview.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Deploy web preview",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186117/job/100505441692",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeas%20preview.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:EAS Preview",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186119/job/100505399084",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alabel%20pr%209255.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Label PR 9255",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184811/job/100384939315",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alabel%20pr%20size.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Label PR size",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384960109",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amobile%20native%20changes.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Mobile Native Changes",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505412964",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amobile%20native%20static%20analysis.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Mobile Native Static Analysis",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505449598",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aprepare%20pr%20size%20config.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Prepare PR size config",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384911075",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apublish%20anonymous%20download.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Publish anonymous download",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685631",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arelease%20smoke.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Release Smoke",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413230",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aremove%20preview%20download.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Remove preview download",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33710484880/job/100508685701",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Arust.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Rust",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413191",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Async%20pr%20size%20label%20definitions.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Sync PR size label definitions",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671184788/job/100384961915",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atest.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Test",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413096",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atest%20server%201.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Test Server 1",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413121",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atest%20server%202.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Test Server 2",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413219",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atest%20server%203.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Test Server 3",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/actions/runs/33671186156/job/100505413213",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Amacroscopeapp%3Amacroscope%20-%20effect%20service%20conventions.status",
+        "category": "check",
+        "claim": "Latest status for check-run:macroscopeapp:Macroscope - Effect Service Conventions",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255/checks?check_run_id=100384928976",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.check-run%3Amacroscopeapp%3Amacroscope%20-%20ui%20consistency.status",
+        "category": "check",
+        "claim": "Latest status for check-run:macroscopeapp:Macroscope - UI Consistency",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255/checks?check_run_id=100384932326",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.commit-status%3Acoderabbit.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:CodeRabbit",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "check.commit-status%3Avercel%20%E2%80%93%20t3code-marketing.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:Vercel – t3code-marketing",
+        "value": "SUCCESS",
+        "sourceUrl": "https://vercel.com/pinglabs/t3code-marketing/GLYZeWsPWQMMjbczHJ4rQL9SG3Am",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 17,
+          "skippedCount": 8,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 25,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "review.macroscopeapp%5Bbot%5D.latest",
+        "category": "review",
+        "claim": "Latest effective review by macroscopeapp[bot]",
+        "value": "APPROVED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255#pullrequestreview-5093927353",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": "APPROVED",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/pingdotgg/t3code/pull/9255",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "commit.0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+        "value": "0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/commit/0231b8cd6a10a39865e4b1dc2c185b3b2c248366",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      },
+      {
+        "id": "commit.3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+        "value": "3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+        "sourceUrl": "https://github.com/pingdotgg/t3code/commit/3d846e5a1d27a0ab28e8b55b0fa9954961bb113e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:42:37.843Z"
+      }
+    ],
+    "limitations": [
+      "GitHub mergeability remained UNKNOWN after bounded retries.",
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_001_MERGED",
+    "reasonCode": "PR_ALREADY_MERGED",
+    "evidenceIds": [
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_PR_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": true,
+        "reasonCode": "PR_ALREADY_MERGED"
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

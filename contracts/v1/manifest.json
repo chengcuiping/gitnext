@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "gitnext-contract-manifest/1",
+  "contractName": "GitNext deterministic facts and decision contract",
+  "contractVersion": "1.0.0",
+  "status": "FROZEN",
+  "sourceCandidateCommit": "72e0e1ba6b52c4eed00e11f31fadd76522b2a6a3",
+  "humanApproval": {
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "commit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "approvedCases": 23,
+    "rejectedCases": 0
+  },
+  "schemas": {
+    "facts": "facts.schema.json",
+    "decision": "decision.schema.json"
+  },
+  "rules": "rules.json",
+  "definitions": "definitions.json",
+  "goldenCorpusIndex": "golden-corpus/index.json",
+  "knownLimitations": "known-limitations.md",
+  "releaseNotes": "release-notes.md",
+  "hashing": {
+    "algorithm": "SHA-256",
+    "scope": "Every contract payload file except manifest.json, which cannot contain its own stable digest.",
+    "files": [
+      {
+        "path": "decision.schema.json",
+        "sha256": "f19f0bc3f55a8487c7bae3921463bd4ffc87992fc677276e292c63aeb1550a9a",
+        "bytes": 2094
+      },
+      {
+        "path": "definitions.json",
+        "sha256": "5e4a91c562b163c62c7f71dddeb2be1914a67d1c8de3daebd712212734388821",
+        "bytes": 1995
+      },
+      {
+        "path": "facts.schema.json",
+        "sha256": "083e89bea0335ede5b2a0b84dc174abfd1f6471265397f6ac9b16e2be1b9121a",
+        "bytes": 35953
+      },
+      {
+        "path": "golden-corpus/cases/01-vllm-54166.json",
+        "sha256": "6cd7c24719050cda5f2828577ce642e5f97279a166fc1e2a52bf5353d971955c",
+        "bytes": 23301
+      },
+      {
+        "path": "golden-corpus/cases/02-megatron-lm-6706.json",
+        "sha256": "dc0af1be99254450f7297f3753cca4689691caf9c728b71cb79e1ab7b12eb1d8",
+        "bytes": 15073
+      },
+      {
+        "path": "golden-corpus/cases/03-slime-2331.json",
+        "sha256": "7f67ba5af636376ef5a0155c19b3b82d7fcf461e0f2d2c6669d9d3b57c20a086",
+        "bytes": 89013
+      },
+      {
+        "path": "golden-corpus/cases/04-sglang-33959.json",
+        "sha256": "f0a99d65c982132f070d19fb228e57db1f7ed280d3924c2e33994a8753c43083",
+        "bytes": 106090
+      },
+      {
+        "path": "golden-corpus/cases/05-merged-rex-web-1606.json",
+        "sha256": "d6401022a9c719bad22f49bea7f3e1ff04b59bdb5621fc8ee0698ced87cc69e2",
+        "bytes": 13109
+      },
+      {
+        "path": "golden-corpus/cases/06-merged-t3code-9255.json",
+        "sha256": "2b8cea0719d0f40ae08ee6954dbd1412310186e23484d8186b3549ff8a8554c6",
+        "bytes": 37116
+      },
+      {
+        "path": "golden-corpus/cases/07-closed-k8s-anywhere-1396.json",
+        "sha256": "78877953ee37a459697dd01c0bff990754f1f96b4e52d9c262e7bf6d7c9db9d9",
+        "bytes": 19704
+      },
+      {
+        "path": "golden-corpus/cases/08-closed-mnemom-docs-443.json",
+        "sha256": "5a6aaba69018f338cf3221f806761d416be289e689bd2433143b8b356b09dccb",
+        "bytes": 26024
+      },
+      {
+        "path": "golden-corpus/cases/09-draft-nixpkgs-554783.json",
+        "sha256": "bb428be2e3ad553ca0211fdb273ce1697fd46d77bacd15182b530e934a5bc104",
+        "bytes": 48026
+      },
+      {
+        "path": "golden-corpus/cases/10-draft-netcatty-3251.json",
+        "sha256": "60f1dcf3c1a02439b61e4425394169cb15c3733d8300fb804b7d5891153ad47d",
+        "bytes": 49375
+      },
+      {
+        "path": "golden-corpus/cases/11-failed-flutter-192218.json",
+        "sha256": "35598817bcfca2ab9aa4dc65afa49529fefba78b9d46a55c1432526fbd3dc19a",
+        "bytes": 24615
+      },
+      {
+        "path": "golden-corpus/cases/12-pending-goplus-lib-27.json",
+        "sha256": "ac2bc6f3ac238ff8bf8102c01329f45eab505b695d77824d99b094efb113dff6",
+        "bytes": 22054
+      },
+      {
+        "path": "golden-corpus/cases/13-changes-site-kit-13486.json",
+        "sha256": "2b7a889437047a149a83f7116f1e6e9438e81351bfbaa341910cd5b75bb00ee6",
+        "bytes": 74465
+      },
+      {
+        "path": "golden-corpus/cases/14-conflict-mlx-lm-1.json",
+        "sha256": "a8a0fd796b065df8e4ed457d7f719cb9b69372b9e2c3dd16c6f82fd3bc0d66de",
+        "bytes": 71849
+      },
+      {
+        "path": "golden-corpus/cases/15-review-required-helm-642.json",
+        "sha256": "b919d0d0f8d0b12a54c48c2116bba0ed409fe08de8841fc86efae7608611ed1d",
+        "bytes": 14886
+      },
+      {
+        "path": "golden-corpus/cases/16-issue-node-53361.json",
+        "sha256": "836d2234eb0d67288b2501fa313826343ae6c129e3b462477dedf698ad09cb6f",
+        "bytes": 7108
+      },
+      {
+        "path": "golden-corpus/cases/17-issue-node-62939.json",
+        "sha256": "32508eed95a424b5f16df0aea183f349a23a2f7564935fd65bd4fc4e6b335c10",
+        "bytes": 7108
+      },
+      {
+        "path": "golden-corpus/cases/18-needs-info-kaiden-2775.json",
+        "sha256": "2c6f01242c6e5908269779db8f23f12c671a9d721c886b3a8b9704f80a96ca62",
+        "bytes": 9039
+      },
+      {
+        "path": "golden-corpus/cases/19-needs-info-claude-code-91666.json",
+        "sha256": "f58e2f2035e9d6bb52cbf739eeabb2cbf9e13735369f1cd859cf645f55da5e5d",
+        "bytes": 8360
+      },
+      {
+        "path": "golden-corpus/cases/20-duplicate-vscode-325350.json",
+        "sha256": "36b9018ea7d7757f13dbbded73c1ba678f3e47cb39dd9eea5039118ea3618fb9",
+        "bytes": 7320
+      },
+      {
+        "path": "golden-corpus/cases/21-duplicate-hello-world-1.json",
+        "sha256": "73a5741c05cf298210338e54dbf30758aad1dd06ac96e8794decb163b38c8d0a",
+        "bytes": 7265
+      },
+      {
+        "path": "golden-corpus/cases/22-archived-atom-25723.json",
+        "sha256": "86bff24f670d44d8e28b785fa109e17dbf7615a89756a6d4153af630bab2e7c5",
+        "bytes": 6743
+      },
+      {
+        "path": "golden-corpus/cases/23-closed-rust-162013.json",
+        "sha256": "662921c395bd4b7b2691756c931fcb5655d3b7d0238bae206be41a460fb73daf",
+        "bytes": 8505
+      },
+      {
+        "path": "golden-corpus/index.json",
+        "sha256": "ef6acd10f7cd6000b295326803a7809e628985e64b91fd2b006f9f511bb42d48",
+        "bytes": 14542
+      },
+      {
+        "path": "known-limitations.md",
+        "sha256": "4cd3ef15f0774f8f1aee41d660eaeeb8e3625fae0fe47e8e48ca27f39467116e",
+        "bytes": 1424
+      },
+      {
+        "path": "release-notes.md",
+        "sha256": "6d15a35aa8648e89fb21ce5fa3a0d68139a02bbef09628000973eae02b19d0c7",
+        "bytes": 700
+      },
+      {
+        "path": "rules.json",
+        "sha256": "e1a43733ecb14cee385d6bf11dbea5cb1706e70a014ff60b176dcc330bb14e04",
+        "bytes": 4247
+      }
+    ]
+  },
+  "githubRequestsPerformed": false,
+  "githubWritesPerformed": false
+}

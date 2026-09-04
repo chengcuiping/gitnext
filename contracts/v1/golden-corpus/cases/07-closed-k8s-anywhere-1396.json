@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "07-closed-k8s-anywhere-1396",
+  "url": "https://github.com/tooming/k8s-anywhere/pull/1396",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:11:47Z",
+        "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:11:47.000Z",
+        "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:11:47Z",
+        "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:11:47Z",
+        "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:11:47Z",
+        "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "93c99c7516f778b99a5c0576d433f01a122325ca63bb801e3d11208c4df0b4a3",
+    "decisionSha256": "9a429be828664fbc342e7867fde60cab1e2c35cf97b4c3d1568f1e71d4424c53"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:43:33.411Z",
+    "source": {
+      "originalUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+      "canonicalUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+      "owner": "tooming",
+      "repo": "k8s-anywhere",
+      "number": 1396,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/tooming/k8s-anywhere"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "docs: KEDA + Velero full GHSA sweep — both pins confirmed clean",
+      "authorLogin": "tooming",
+      "authorAssociation": "OWNER",
+      "createdAt": "2026-09-03T03:04:48.000Z",
+      "updatedAt": "2026-09-03T03:11:47.000Z",
+      "closedAt": "2026-09-03T03:11:44.000Z",
+      "labels": [],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 1,
+      "draft": false,
+      "merged": true,
+      "mergedAt": "2026-09-03T03:11:44.000Z",
+      "baseRef": "main",
+      "headRef": "auto/keda-velero-full-ghsa-sweep-clean",
+      "baseSha": "1e70ef31ac4c53b2c506cf46c4a328f133d5d80e",
+      "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+      "headRepositoryAvailable": true,
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "auto/keda-velero-full-ghsa-sweep-clean",
+      "baseSha": "1e70ef31ac4c53b2c506cf46c4a328f133d5d80e",
+      "headSha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+      "aheadBy": 2,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:delete-branch",
+          "name": "delete-branch",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710484012/job/100508701869",
+          "updatedAt": "2026-09-03T03:11:48.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adelete-branch.status"
+        },
+        {
+          "key": "check-run:github-actions:drift",
+          "name": "drift",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403206",
+          "updatedAt": "2026-09-03T03:06:02.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Adrift.status"
+        },
+        {
+          "key": "check-run:github-actions:kustomize",
+          "name": "kustomize",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403001",
+          "updatedAt": "2026-09-03T03:05:17.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Akustomize.status"
+        },
+        {
+          "key": "check-run:github-actions:lint",
+          "name": "lint",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403192",
+          "updatedAt": "2026-09-03T03:05:30.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint.status"
+        },
+        {
+          "key": "check-run:github-actions:manifests",
+          "name": "manifests",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403357",
+          "updatedAt": "2026-09-03T03:05:16.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amanifests.status"
+        },
+        {
+          "key": "check-run:github-actions:terraform",
+          "name": "terraform",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403227",
+          "updatedAt": "2026-09-03T03:05:40.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aterraform.status"
+        },
+        {
+          "key": "check-run:github-actions:unit",
+          "name": "unit",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403257",
+          "updatedAt": "2026-09-03T03:08:43.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aunit.status"
+        },
+        {
+          "key": "check-run:github-actions:up-to-date",
+          "name": "up-to-date",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055518/job/100507402726",
+          "updatedAt": "2026-09-03T03:05:17.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aup-to-date.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 7,
+        "skippedCount": 1,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 8,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-09-03T03:11:42.000Z",
+      "lastMaintainerActivityAt": "2026-09-03T03:11:42.000Z",
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-09-03T03:05:00.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "8446533bebcacf08822741746b4594353a02e15b",
+          "url": "https://github.com/tooming/k8s-anywhere/commit/8446533bebcacf08822741746b4594353a02e15b",
+          "evidenceId": "commit.8446533bebcacf08822741746b4594353a02e15b"
+        },
+        {
+          "sha": "2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+          "url": "https://github.com/tooming/k8s-anywhere/commit/2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+          "evidenceId": "commit.2846e741dc6d4e0098b2739e561a909d30f0f7ed"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4802
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": true,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": null,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "UNKNOWN",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 2,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adelete-branch.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:delete-branch",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710484012/job/100508701869",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Adrift.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:drift",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403206",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Akustomize.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:kustomize",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403001",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:lint",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403192",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amanifests.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:manifests",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403357",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aterraform.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:terraform",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403227",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aunit.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:unit",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055593/job/100507403257",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aup-to-date.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:up-to-date",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/actions/runs/33710055518/job/100507402726",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 7,
+          "skippedCount": 1,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 8,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/pull/1396",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "commit.8446533bebcacf08822741746b4594353a02e15b",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 8446533bebcacf08822741746b4594353a02e15b",
+        "value": "8446533bebcacf08822741746b4594353a02e15b",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/commit/8446533bebcacf08822741746b4594353a02e15b",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      },
+      {
+        "id": "commit.2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+        "value": "2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+        "sourceUrl": "https://github.com/tooming/k8s-anywhere/commit/2846e741dc6d4e0098b2739e561a909d30f0f7ed",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:43:33.411Z"
+      }
+    ],
+    "limitations": [
+      "GitHub mergeability remained UNKNOWN after bounded retries.",
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_001_MERGED",
+    "reasonCode": "PR_ALREADY_MERGED",
+    "evidenceIds": [
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_PR_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": true,
+        "reasonCode": "PR_ALREADY_MERGED"
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

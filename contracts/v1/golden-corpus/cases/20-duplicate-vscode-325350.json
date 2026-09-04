@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "20-duplicate-vscode-325350",
+  "url": "https://github.com/microsoft/vscode/issues/325350",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-08-28T02:02:30Z"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-08-28T02:02:30.000Z"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-08-28T02:02:30Z"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-08-28T02:02:30Z"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "f1b9025ff8fe864b93087b152a8b34f35ccb199b4ee065fefc2ddf52ef94c409",
+    "decisionSha256": "35b8a14beb858d45ff6445293480e00a88613b4d7a51b88d1d000b9db26f0f2c"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:52:55.785Z",
+    "source": {
+      "originalUrl": "https://github.com/microsoft/vscode/issues/325350",
+      "canonicalUrl": "https://github.com/microsoft/vscode/issues/325350",
+      "owner": "microsoft",
+      "repo": "vscode",
+      "number": 325350,
+      "kind": "ISSUE"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/microsoft/vscode"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": "completed",
+      "title": "\"Create PR\" button hover has icon syntax",
+      "authorLogin": "roblourens",
+      "authorAssociation": "MEMBER",
+      "createdAt": "2026-07-10T19:10:02.000Z",
+      "updatedAt": "2026-08-28T02:02:30.000Z",
+      "closedAt": "2026-07-13T08:52:22.000Z",
+      "labels": [
+        "duplicate"
+      ],
+      "assignees": [
+        "lszomoru"
+      ],
+      "locked": true,
+      "commentsCount": 1,
+      "draft": null,
+      "merged": null,
+      "mergedAt": null,
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "headRepositoryAvailable": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "branches": {
+      "baseRef": null,
+      "headRef": null,
+      "baseSha": null,
+      "headSha": null,
+      "aheadBy": null,
+      "behindBy": null,
+      "compareStatus": null,
+      "mergeable": null,
+      "mergeStateStatus": null
+    },
+    "checks": {
+      "items": null,
+      "requirednessKnown": false,
+      "summary": null,
+      "summaryEvidenceId": null
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": null,
+      "restReviewHistoryComplete": false,
+      "latestReviewPerReviewer": null,
+      "approvedReviewers": null,
+      "changesRequestedReviewers": null,
+      "dismissedReviews": null,
+      "unresolvedThreadCount": null,
+      "unresolvedThreadsAvailable": false,
+      "unresolvedThreadsComplete": false,
+      "unresolvedThreadsEvidenceId": null
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-07-10T19:10:02.000Z",
+      "lastMaintainerActivityAt": "2026-07-13T08:52:22.000Z",
+      "lastReviewActivityAt": null,
+      "lastCommitAt": null
+    },
+    "links": {
+      "linkedIssues": null,
+      "linkedPullRequests": [],
+      "linkedCommits": null,
+      "closingPullRequests": [],
+      "explicitDuplicateLabels": [
+        "duplicate"
+      ]
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "NOT_APPLICABLE",
+      "checkRuns": "NOT_APPLICABLE",
+      "commitStatuses": "NOT_APPLICABLE",
+      "pullRequestCommits": "NOT_APPLICABLE",
+      "pullRequestReviews": "NOT_APPLICABLE",
+      "reviewThreads": "NOT_APPLICABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4969
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/microsoft/vscode/issues/325350",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      },
+      {
+        "id": "item.stateReason",
+        "category": "item",
+        "claim": "GitHub item state reason",
+        "value": "completed",
+        "sourceUrl": "https://github.com/microsoft/vscode/issues/325350",
+        "apiSource": "REST.item.state_reason",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/microsoft/vscode",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/microsoft/vscode",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      },
+      {
+        "id": "label.duplicate",
+        "category": "label",
+        "claim": "GitHub label: duplicate",
+        "value": "duplicate",
+        "sourceUrl": "https://github.com/microsoft/vscode/issues/325350",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [
+          "lszomoru"
+        ],
+        "sourceUrl": "https://github.com/microsoft/vscode/issues/325350",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:52:55.785Z"
+      }
+    ],
+    "limitations": []
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "ISSUE_001_CLOSED",
+    "reasonCode": "ISSUE_CLOSED",
+    "evidenceIds": [
+      "item.state"
+    ],
+    "nextActionCode": "STOP_ISSUE_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "ISSUE_001_CLOSED",
+        "matched": true,
+        "reasonCode": "ISSUE_CLOSED"
+      },
+      {
+        "ruleId": "ISSUE_002_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_003_EXPLICIT_DUPLICATE",
+        "matched": true,
+        "reasonCode": "EXPLICIT_DUPLICATE_LABEL"
+      },
+      {
+        "ruleId": "ISSUE_004_LINKED_MERGED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_005_NEEDS_INFO",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_006_OPEN_LINKED_PR",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "ISSUE_007_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_ISSUE_EVIDENCE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "gitnext-contract-definitions/1",
+  "contractVersion": "1.0.0",
+  "productBoundary": "GitNext does not determine that a pull request can be merged or is ready to merge. It provides conservative next-step advice from visible GitHub facts.",
+  "verdicts": {
+    "AUTHOR_ACTION_REQUIRED": "Visible evidence identifies an author-side next action; it does not assign fault.",
+    "SYNC_OR_FIX_BRANCH": "GitHub explicitly reports a branch conflict that needs synchronization or resolution.",
+    "WAIT": "The next visible action belongs elsewhere or no known author blocker is present; this is not merge readiness.",
+    "DONE_OR_STOP": "The tracked work is complete, closed, duplicated, or belongs to an inactive repository.",
+    "INSUFFICIENT_EVIDENCE": "Visible facts do not justify a stronger conclusion."
+  },
+  "responsibleParties": {
+    "AUTHOR": "The pull request or issue author is the next responsible party.",
+    "MAINTAINER": "A repository maintainer is the next responsible party.",
+    "REVIEWER": "A reviewer is the next responsible party.",
+    "CI": "Automated checks are still the next dependency.",
+    "ASSIGNEE_OR_CONTRIBUTOR": "An explicitly linked assignee or contributor workflow is pending.",
+    "NONE": "No further action is recommended for this item.",
+    "UNKNOWN": "The available facts do not identify a responsible party."
+  },
+  "availabilityStates": {
+    "AVAILABLE": "The source was collected completely within the contract's bound.",
+    "NOT_APPLICABLE": "The source does not apply to this item kind and is not a limitation.",
+    "UNAVAILABLE": "The source could not be collected or validated.",
+    "RATE_LIMITED": "The source was unavailable because of an API rate limit.",
+    "FORBIDDEN": "The source was unavailable because access was forbidden.",
+    "TRUNCATED": "The source was collected only to the explicit bounded limit."
+  },
+  "evidence": {
+    "maximumDecisionEvidenceIds": 10,
+    "danglingEvidenceIdsAllowed": false
+  }
+}

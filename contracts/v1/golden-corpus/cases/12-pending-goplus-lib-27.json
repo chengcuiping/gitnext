@@ -1,0 +1,592 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "12-pending-goplus-lib-27",
+  "url": "https://github.com/goplus/lib/pull/27",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:47:22Z",
+        "headSha": "181589449d09e29263c11d696cb47eebb88145fb"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:47:22.000Z",
+        "headSha": "181589449d09e29263c11d696cb47eebb88145fb"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:47:22Z",
+        "headSha": "181589449d09e29263c11d696cb47eebb88145fb"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:47:22Z",
+        "headSha": "181589449d09e29263c11d696cb47eebb88145fb"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:47:22Z",
+        "headSha": "181589449d09e29263c11d696cb47eebb88145fb"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "b6a92c1e46562e0b65c641ca1513a696ce843ca9656344d078614523035038ad",
+    "decisionSha256": "48bae7f3e75cb9e17449dee3fe332335932c512b055ce1ddf038f077f3f85d1d"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:48:01.010Z",
+    "source": {
+      "originalUrl": "https://github.com/goplus/lib/pull/27",
+      "canonicalUrl": "https://github.com/goplus/lib/pull/27",
+      "owner": "goplus",
+      "repo": "lib",
+      "number": 27,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "main",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/goplus/lib"
+    },
+    "item": {
+      "state": "OPEN",
+      "stateReason": null,
+      "title": "cpp/llvm: use selected LLVM metadata and qualify LLVM 22",
+      "authorLogin": "zhouguangyuan0718",
+      "authorAssociation": "NONE",
+      "createdAt": "2026-08-28T15:34:36.000Z",
+      "updatedAt": "2026-09-03T03:47:22.000Z",
+      "closedAt": null,
+      "labels": [],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 0,
+      "draft": false,
+      "merged": false,
+      "mergedAt": null,
+      "baseRef": "main",
+      "headRef": "codex/windows-msvc-llvm21-interop-20260828",
+      "baseSha": "e1337ddea030af4c969a3f39fae0157fe4164047",
+      "headSha": "181589449d09e29263c11d696cb47eebb88145fb",
+      "headRepositoryAvailable": true,
+      "mergeable": true,
+      "mergeStateStatus": "CLEAN"
+    },
+    "branches": {
+      "baseRef": "main",
+      "headRef": "codex/windows-msvc-llvm21-interop-20260828",
+      "baseSha": "e1337ddea030af4c969a3f39fae0157fe4164047",
+      "headSha": "181589449d09e29263c11d696cb47eebb88145fb",
+      "aheadBy": 7,
+      "behindBy": 0,
+      "compareStatus": "AHEAD",
+      "mergeable": true,
+      "mergeStateStatus": "CLEAN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:build",
+          "name": "build",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508134888",
+          "updatedAt": "2026-09-03T03:09:18.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild.status"
+        },
+        {
+          "key": "check-run:github-actions:llgo-test (macos-latest)",
+          "name": "llgo-test (macos-latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135039",
+          "updatedAt": "2026-09-03T03:13:06.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Allgo-test%20(macos-latest).status"
+        },
+        {
+          "key": "check-run:github-actions:llgo-test (ubuntu-latest)",
+          "name": "llgo-test (ubuntu-latest)",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135124",
+          "updatedAt": "2026-09-03T03:11:05.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Allgo-test%20(ubuntu-latest).status"
+        },
+        {
+          "key": "check-run:github-actions:Windows LLVM 22 demangle bridge",
+          "name": "Windows LLVM 22 demangle bridge",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135157",
+          "updatedAt": "2026-09-03T03:10:12.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Awindows%20llvm%2022%20demangle%20bridge.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 0,
+        "pendingCount": 0,
+        "successCount": 4,
+        "skippedCount": 0,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 4,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [
+        {
+          "reviewerLogin": "cpunion",
+          "state": "APPROVED",
+          "submittedAt": "2026-09-03T03:47:22.000Z",
+          "authorAssociation": "CONTRIBUTOR",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5097541779",
+          "evidenceId": "review.cpunion.latest"
+        },
+        {
+          "reviewerLogin": "fennoai[bot]",
+          "state": "COMMENTED",
+          "submittedAt": "2026-08-28T15:42:09.000Z",
+          "authorAssociation": "NONE",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5052656605",
+          "evidenceId": "review.fennoai%5Bbot%5D.latest"
+        },
+        {
+          "reviewerLogin": "zhouguangyuan0718",
+          "state": "COMMENTED",
+          "submittedAt": "2026-09-03T03:18:07.000Z",
+          "authorAssociation": "NONE",
+          "dismissed": false,
+          "htmlUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5097399086",
+          "evidenceId": "review.zhouguangyuan0718.latest"
+        }
+      ],
+      "approvedReviewers": [
+        "cpunion"
+      ],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 4,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-08-28T15:34:36.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": "2026-09-03T03:47:22.000Z",
+      "lastCommitAt": "2026-09-03T03:08:31.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+          "url": "https://github.com/goplus/lib/commit/5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+          "evidenceId": "commit.5762a8b8a78f336e077f5803b3f2572eb1084ff8"
+        },
+        {
+          "sha": "a8f1f8266c99ed9f05484cdb49beb2059225c813",
+          "url": "https://github.com/goplus/lib/commit/a8f1f8266c99ed9f05484cdb49beb2059225c813",
+          "evidenceId": "commit.a8f1f8266c99ed9f05484cdb49beb2059225c813"
+        },
+        {
+          "sha": "06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+          "url": "https://github.com/goplus/lib/commit/06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+          "evidenceId": "commit.06fc743d39294e19ad1cbfb58f6adee8faeccb1e"
+        },
+        {
+          "sha": "b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+          "url": "https://github.com/goplus/lib/commit/b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+          "evidenceId": "commit.b2be7caaef7e191659230cd0e4b48a9ddd5dd969"
+        },
+        {
+          "sha": "bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+          "url": "https://github.com/goplus/lib/commit/bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+          "evidenceId": "commit.bdf7a1381373d3b8fc679c32bfb02da227fd93a6"
+        },
+        {
+          "sha": "1b2357ac6c91a1de236e65a9803068d6a67d841c",
+          "url": "https://github.com/goplus/lib/commit/1b2357ac6c91a1de236e65a9803068d6a67d841c",
+          "evidenceId": "commit.1b2357ac6c91a1de236e65a9803068d6a67d841c"
+        },
+        {
+          "sha": "181589449d09e29263c11d696cb47eebb88145fb",
+          "url": "https://github.com/goplus/lib/commit/181589449d09e29263c11d696cb47eebb88145fb",
+          "evidenceId": "commit.181589449d09e29263c11d696cb47eebb88145fb"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4748
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "OPEN",
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/goplus/lib",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/goplus/lib",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": false,
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": true,
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "CLEAN",
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 7,
+          "behindBy": 0,
+          "compareStatus": "AHEAD"
+        },
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:build",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508134888",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Allgo-test%20(macos-latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:llgo-test (macos-latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135039",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Allgo-test%20(ubuntu-latest).status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:llgo-test (ubuntu-latest)",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135124",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Awindows%20llvm%2022%20demangle%20bridge.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Windows LLVM 22 demangle bridge",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/goplus/lib/actions/runs/33710302776/job/100508135157",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 0,
+          "pendingCount": 0,
+          "successCount": 4,
+          "skippedCount": 0,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 4,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "review.cpunion.latest",
+        "category": "review",
+        "claim": "Latest effective review by cpunion",
+        "value": "APPROVED",
+        "sourceUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5097541779",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "review.fennoai%5Bbot%5D.latest",
+        "category": "review",
+        "claim": "Latest effective review by fennoai[bot]",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5052656605",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "review.zhouguangyuan0718.latest",
+        "category": "review",
+        "claim": "Latest effective review by zhouguangyuan0718",
+        "value": "COMMENTED",
+        "sourceUrl": "https://github.com/goplus/lib/pull/27#pullrequestreview-5097399086",
+        "apiSource": "REST.pull.reviews",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 4,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/goplus/lib/pull/27",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+        "value": "5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+        "sourceUrl": "https://github.com/goplus/lib/commit/5762a8b8a78f336e077f5803b3f2572eb1084ff8",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.a8f1f8266c99ed9f05484cdb49beb2059225c813",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: a8f1f8266c99ed9f05484cdb49beb2059225c813",
+        "value": "a8f1f8266c99ed9f05484cdb49beb2059225c813",
+        "sourceUrl": "https://github.com/goplus/lib/commit/a8f1f8266c99ed9f05484cdb49beb2059225c813",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+        "value": "06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+        "sourceUrl": "https://github.com/goplus/lib/commit/06fc743d39294e19ad1cbfb58f6adee8faeccb1e",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+        "value": "b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+        "sourceUrl": "https://github.com/goplus/lib/commit/b2be7caaef7e191659230cd0e4b48a9ddd5dd969",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+        "value": "bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+        "sourceUrl": "https://github.com/goplus/lib/commit/bdf7a1381373d3b8fc679c32bfb02da227fd93a6",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.1b2357ac6c91a1de236e65a9803068d6a67d841c",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 1b2357ac6c91a1de236e65a9803068d6a67d841c",
+        "value": "1b2357ac6c91a1de236e65a9803068d6a67d841c",
+        "sourceUrl": "https://github.com/goplus/lib/commit/1b2357ac6c91a1de236e65a9803068d6a67d841c",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      },
+      {
+        "id": "commit.181589449d09e29263c11d696cb47eebb88145fb",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 181589449d09e29263c11d696cb47eebb88145fb",
+        "value": "181589449d09e29263c11d696cb47eebb88145fb",
+        "sourceUrl": "https://github.com/goplus/lib/commit/181589449d09e29263c11d696cb47eebb88145fb",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:48:01.010Z"
+      }
+    ],
+    "limitations": [
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "AUTHOR_ACTION_REQUIRED",
+    "ruleId": "PR_008_UNRESOLVED_THREAD",
+    "reasonCode": "UNRESOLVED_REVIEW_THREADS",
+    "evidenceIds": [
+      "reviews.unresolvedThreadCount"
+    ],
+    "nextActionCode": "RESOLVE_REVIEW_THREADS",
+    "responsibleParty": "AUTHOR",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": true,
+        "reasonCode": "UNRESOLVED_REVIEW_THREADS"
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

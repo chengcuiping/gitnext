@@ -1,0 +1,1120 @@
+{
+  "schemaVersion": "gitnext-v1-golden-case/1",
+  "contractVersion": "1.0.0",
+  "caseId": "09-draft-nixpkgs-554783",
+  "url": "https://github.com/NixOS/nixpkgs/pull/554783",
+  "snapshot": {
+    "stable": true,
+    "status": "STABLE",
+    "observations": {
+      "before": {
+        "itemUpdatedAt": "2026-09-03T03:12:04Z",
+        "headSha": "733dfa763084449eea12593775be6f19f7dae289"
+      },
+      "gitNext": {
+        "itemUpdatedAt": "2026-09-03T03:12:04.000Z",
+        "headSha": "733dfa763084449eea12593775be6f19f7dae289"
+      },
+      "ghCrossCheck": {
+        "itemUpdatedAt": "2026-09-03T03:12:04Z",
+        "headSha": "733dfa763084449eea12593775be6f19f7dae289"
+      },
+      "restRecheck": {
+        "itemUpdatedAt": "2026-09-03T03:12:04Z",
+        "headSha": "733dfa763084449eea12593775be6f19f7dae289"
+      },
+      "after": {
+        "itemUpdatedAt": "2026-09-03T03:12:04Z",
+        "headSha": "733dfa763084449eea12593775be6f19f7dae289"
+      }
+    }
+  },
+  "approval": {
+    "humanApproved": true,
+    "reviewer": "chengcuiping",
+    "reviewedAt": "2026-09-03T08:11:25.205Z",
+    "humanApprovalCommit": "aef20a769d183600f4569df92e683a4c9e39cf49",
+    "notes": "Human-reviewed against the frozen snapshot, independent gh cross-check, deterministic rule semantics, evidence, and documented limitations; approved by chengcuiping. Explained check difference categories: F. These differences do not affect the verdict; the reviewer accepts the documented limitation."
+  },
+  "candidateSemanticHashes": {
+    "factsSha256": "c0768ec6fff0f2cd9cd08135b90a66818392a84d9926c70785e7ec505ea48611",
+    "decisionSha256": "bd062f3796d7be11d4db760f7cc1c1e105304bb5d121520a77df9e20478169b9"
+  },
+  "facts": {
+    "schemaVersion": "1.0.0",
+    "fetchedAt": "2026-09-03T06:45:20.126Z",
+    "source": {
+      "originalUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+      "canonicalUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+      "owner": "NixOS",
+      "repo": "nixpkgs",
+      "number": 554783,
+      "kind": "PULL_REQUEST"
+    },
+    "repository": {
+      "defaultBranch": "master",
+      "archived": false,
+      "disabled": false,
+      "visibility": "public",
+      "fork": false,
+      "htmlUrl": "https://github.com/NixOS/nixpkgs"
+    },
+    "item": {
+      "state": "CLOSED",
+      "stateReason": null,
+      "title": "python3Packages.lunatone-rest-api-client: 0.9.2 -> 0.10.0",
+      "authorLogin": "r-ryantm",
+      "authorAssociation": "CONTRIBUTOR",
+      "createdAt": "2026-08-20T18:46:18.000Z",
+      "updatedAt": "2026-09-03T03:12:04.000Z",
+      "closedAt": "2026-09-03T03:12:04.000Z",
+      "labels": [
+        "6.topic: python",
+        "8.has: package (update)",
+        "10.rebuild-linux: 1-10",
+        "10.rebuild-darwin: 1-10"
+      ],
+      "assignees": [],
+      "locked": false,
+      "commentsCount": 0,
+      "draft": false,
+      "merged": true,
+      "mergedAt": "2026-09-03T03:12:04.000Z",
+      "baseRef": "wip-home-assistant",
+      "headRef": "auto-update/python3Packages.lunatone-rest-api-client",
+      "baseSha": "a686aeb36d7a7e22d8c6da0f2e55b67abf1ff7dd",
+      "headSha": "733dfa763084449eea12593775be6f19f7dae289",
+      "headRepositoryAvailable": true,
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "branches": {
+      "baseRef": "wip-home-assistant",
+      "headRef": "auto-update/python3Packages.lunatone-rest-api-client",
+      "baseSha": "a686aeb36d7a7e22d8c6da0f2e55b67abf1ff7dd",
+      "headSha": "733dfa763084449eea12593775be6f19f7dae289",
+      "aheadBy": 1,
+      "behindBy": 7630,
+      "compareStatus": "DIVERGED",
+      "mergeable": null,
+      "mergeStateStatus": "UNKNOWN"
+    },
+    "checks": {
+      "items": [
+        {
+          "key": "check-run:github-actions:Backport Pull Request",
+          "name": "Backport Pull Request",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710503530/job/100508741279",
+          "updatedAt": "2026-09-03T03:12:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abackport%20pull%20request.status"
+        },
+        {
+          "key": "check-run:github-actions:Bot",
+          "name": "Bot",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765943",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abot.status"
+        },
+        {
+          "key": "check-run:github-actions:Bot / run",
+          "name": "Bot / run",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543388526",
+          "updatedAt": "2026-08-20T18:52:01.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abot%20%2F%20run.status"
+        },
+        {
+          "key": "check-run:github-actions:Build",
+          "name": "Build",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765348",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild.status"
+        },
+        {
+          "key": "check-run:github-actions:Build / aarch64-darwin: shell",
+          "name": "Build / aarch64-darwin: shell",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084744",
+          "updatedAt": "2026-08-20T18:48:11.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20%2F%20aarch64-darwin%3A%20shell.status"
+        },
+        {
+          "key": "check-run:github-actions:Build / aarch64-linux: shell, docs",
+          "name": "Build / aarch64-linux: shell, docs",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084573",
+          "updatedAt": "2026-08-20T18:47:29.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20%2F%20aarch64-linux%3A%20shell%2C%20docs.status"
+        },
+        {
+          "key": "check-run:github-actions:Build / x86_64-linux: shell, docs, lib, tarball",
+          "name": "Build / x86_64-linux: shell, docs, lib, tarball",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084786",
+          "updatedAt": "2026-08-20T18:49:46.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Abuild%20%2F%20x86_64-linux%3A%20shell%2C%20docs%2C%20lib%2C%20tarball.status"
+        },
+        {
+          "key": "check-run:github-actions:Check",
+          "name": "Check",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765408",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck.status"
+        },
+        {
+          "key": "check-run:github-actions:Check / commits",
+          "name": "Check / commits",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084702",
+          "updatedAt": "2026-08-20T18:47:15.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20%2F%20commits.status"
+        },
+        {
+          "key": "check-run:github-actions:Check / github-script",
+          "name": "Check / github-script",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084920",
+          "updatedAt": "2026-08-20T18:47:27.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20%2F%20github-script.status"
+        },
+        {
+          "key": "check-run:github-actions:Check / manual-file-edits",
+          "name": "Check / manual-file-edits",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084775",
+          "updatedAt": "2026-08-20T18:47:02.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20%2F%20manual-file-edits.status"
+        },
+        {
+          "key": "check-run:github-actions:Check / owners",
+          "name": "Check / owners",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084793",
+          "updatedAt": "2026-08-20T18:47:21.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Acheck%20%2F%20owners.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval",
+          "name": "Eval",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765250",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / aarch64-darwin",
+          "name": "Eval / aarch64-darwin",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085823",
+          "updatedAt": "2026-08-20T18:49:46.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20aarch64-darwin.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / aarch64-linux",
+          "name": "Eval / aarch64-linux",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085673",
+          "updatedAt": "2026-08-20T18:50:22.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20aarch64-linux.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / compare",
+          "name": "Eval / compare",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543199467",
+          "updatedAt": "2026-08-20T18:51:15.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20compare.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / misc",
+          "name": "Eval / misc",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084890",
+          "updatedAt": "2026-08-20T18:48:20.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20misc.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / report",
+          "name": "Eval / report",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543201254",
+          "updatedAt": "2026-08-20T18:50:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20report.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / versions",
+          "name": "Eval / versions",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542086170",
+          "updatedAt": "2026-08-20T18:46:50.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20versions.status"
+        },
+        {
+          "key": "check-run:github-actions:Eval / x86_64-linux",
+          "name": "Eval / x86_64-linux",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085717",
+          "updatedAt": "2026-08-20T18:50:38.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aeval%20%2F%20x86_64-linux.status"
+        },
+        {
+          "key": "check-run:github-actions:Lint",
+          "name": "Lint",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765526",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint.status"
+        },
+        {
+          "key": "check-run:github-actions:Lint / commits",
+          "name": "Lint / commits",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084636",
+          "updatedAt": "2026-08-20T18:47:15.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint%20%2F%20commits.status"
+        },
+        {
+          "key": "check-run:github-actions:Lint / nixpkgs-vet",
+          "name": "Lint / nixpkgs-vet",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084659",
+          "updatedAt": "2026-08-20T18:48:27.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint%20%2F%20nixpkgs-vet.status"
+        },
+        {
+          "key": "check-run:github-actions:Lint / parse",
+          "name": "Lint / parse",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084730",
+          "updatedAt": "2026-08-20T18:47:58.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint%20%2F%20parse.status"
+        },
+        {
+          "key": "check-run:github-actions:Lint / treefmt",
+          "name": "Lint / treefmt",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084593",
+          "updatedAt": "2026-08-20T18:48:52.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Alint%20%2F%20treefmt.status"
+        },
+        {
+          "key": "check-run:github-actions:Merge Group",
+          "name": "Merge Group",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496477/job/100508758554",
+          "updatedAt": "2026-09-03T03:12:12.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Amerge%20group.status"
+        },
+        {
+          "key": "check-run:github-actions:PR",
+          "name": "PR",
+          "provider": "CHECK_RUN",
+          "status": "SKIPPED",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496477/job/100508758760",
+          "updatedAt": "2026-09-03T03:12:12.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Apr.status"
+        },
+        {
+          "key": "check-run:github-actions:prepare",
+          "name": "prepare",
+          "provider": "CHECK_RUN",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508721986",
+          "updatedAt": "2026-09-03T03:12:14.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aprepare.status"
+        },
+        {
+          "key": "check-run:github-actions:Trigger jobs",
+          "name": "Trigger jobs",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710485733/job/100508686924",
+          "updatedAt": "2026-09-03T03:12:00.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Atrigger%20jobs.status"
+        },
+        {
+          "key": "check-run:github-actions:unlock",
+          "name": "unlock",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765086",
+          "updatedAt": "2026-09-03T03:12:21.000Z",
+          "evidenceId": "check.check-run%3Agithub-actions%3Aunlock.status"
+        },
+        {
+          "key": "check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-darwin",
+          "name": "python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-darwin",
+          "provider": "CHECK_RUN",
+          "status": "PENDING",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783",
+          "updatedAt": "2026-08-23T14:41:46.000Z",
+          "evidenceId": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20aarch64-darwin.status"
+        },
+        {
+          "key": "check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-linux",
+          "name": "python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-linux",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783&attempt_id=76752beb-91bc-4685-b46d-a4885cf697b4",
+          "updatedAt": "2026-08-23T15:01:11.000Z",
+          "evidenceId": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20aarch64-linux.status"
+        },
+        {
+          "key": "check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-darwin",
+          "name": "python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-darwin",
+          "provider": "CHECK_RUN",
+          "status": "PENDING",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783",
+          "updatedAt": "2026-08-23T14:41:46.000Z",
+          "evidenceId": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20x86_64-darwin.status"
+        },
+        {
+          "key": "check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-linux",
+          "name": "python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-linux",
+          "provider": "CHECK_RUN",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783&attempt_id=1444abea-9a24-4c2c-a09e-b9ddc5d6a937",
+          "updatedAt": "2026-08-23T18:25:54.000Z",
+          "evidenceId": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20x86_64-linux.status"
+        },
+        {
+          "key": "commit-status:Eval Summary",
+          "name": "Eval Summary",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541?pr=554783",
+          "updatedAt": "2026-08-20T18:51:11.000Z",
+          "evidenceId": "check.commit-status%3Aeval%20summary.status"
+        },
+        {
+          "key": "commit-status:no PR failures",
+          "name": "no PR failures",
+          "provider": "COMMIT_STATUS",
+          "status": "FAILURE",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942?pr=554783",
+          "updatedAt": "2026-09-03T03:12:19.000Z",
+          "evidenceId": "check.commit-status%3Ano%20pr%20failures.status"
+        },
+        {
+          "key": "commit-status:ofborg-eval",
+          "name": "ofborg-eval",
+          "provider": "COMMIT_STATUS",
+          "status": "SUCCESS",
+          "requiredness": "UNKNOWN",
+          "detailsUrl": null,
+          "updatedAt": "2026-08-23T14:41:45.000Z",
+          "evidenceId": "check.commit-status%3Aofborg-eval.status"
+        }
+      ],
+      "requirednessKnown": false,
+      "summary": {
+        "failureCount": 2,
+        "pendingCount": 2,
+        "successCount": 24,
+        "skippedCount": 9,
+        "neutralCount": 0,
+        "cancelledCount": 0,
+        "unknownCount": 0,
+        "observedCheckCount": 37,
+        "collectionComplete": true,
+        "truncated": false
+      },
+      "summaryEvidenceId": "checks.summary"
+    },
+    "reviews": {
+      "reviewDecision": null,
+      "reviewDecisionEvidenceId": "reviews.reviewDecision",
+      "restReviewHistoryComplete": true,
+      "latestReviewPerReviewer": [],
+      "approvedReviewers": [],
+      "changesRequestedReviewers": [],
+      "dismissedReviews": [],
+      "unresolvedThreadCount": 0,
+      "unresolvedThreadsAvailable": true,
+      "unresolvedThreadsComplete": true,
+      "unresolvedThreadsEvidenceId": "reviews.unresolvedThreadCount"
+    },
+    "activity": {
+      "lastAuthorActivityAt": "2026-08-20T18:46:18.000Z",
+      "lastMaintainerActivityAt": null,
+      "lastReviewActivityAt": null,
+      "lastCommitAt": "2026-08-20T18:38:48.000Z"
+    },
+    "links": {
+      "linkedIssues": [],
+      "linkedPullRequests": null,
+      "linkedCommits": [
+        {
+          "sha": "733dfa763084449eea12593775be6f19f7dae289",
+          "url": "https://github.com/NixOS/nixpkgs/commit/733dfa763084449eea12593775be6f19f7dae289",
+          "evidenceId": "commit.733dfa763084449eea12593775be6f19f7dae289"
+        }
+      ],
+      "closingPullRequests": null,
+      "explicitDuplicateLabels": []
+    },
+    "availability": {
+      "rest": "AVAILABLE",
+      "graphql": "AVAILABLE",
+      "branchComparison": "AVAILABLE",
+      "checkRuns": "AVAILABLE",
+      "commitStatuses": "AVAILABLE",
+      "pullRequestCommits": "AVAILABLE",
+      "pullRequestReviews": "AVAILABLE",
+      "reviewThreads": "AVAILABLE",
+      "comments": "AVAILABLE",
+      "rateLimitRemaining": 4780
+    },
+    "evidence": [
+      {
+        "id": "item.state",
+        "category": "item",
+        "claim": "GitHub item state",
+        "value": "CLOSED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.state",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "repository.archived",
+        "category": "repository",
+        "claim": "Repository archived state",
+        "value": false,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs",
+        "apiSource": "REST.repository.archived",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "repository.disabled",
+        "category": "repository",
+        "claim": "Repository disabled state",
+        "value": false,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs",
+        "apiSource": "REST.repository.disabled",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "label.6.topic%3A%20python",
+        "category": "label",
+        "claim": "GitHub label: 6.topic: python",
+        "value": "6.topic: python",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "label.8.has%3A%20package%20(update)",
+        "category": "label",
+        "claim": "GitHub label: 8.has: package (update)",
+        "value": "8.has: package (update)",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "label.10.rebuild-linux%3A%201-10",
+        "category": "label",
+        "claim": "GitHub label: 10.rebuild-linux: 1-10",
+        "value": "10.rebuild-linux: 1-10",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "label.10.rebuild-darwin%3A%201-10",
+        "category": "label",
+        "claim": "GitHub label: 10.rebuild-darwin: 1-10",
+        "value": "10.rebuild-darwin: 1-10",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.labels",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "item.assignees",
+        "category": "item",
+        "claim": "GitHub item assignees",
+        "value": [],
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.item.assignees",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "item.merged",
+        "category": "item",
+        "claim": "Pull request merged state",
+        "value": true,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.pull.merged",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "item.draft",
+        "category": "item",
+        "claim": "Pull request draft state",
+        "value": false,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.pull.draft",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "branches.mergeable",
+        "category": "branches",
+        "claim": "GitHub computed mergeability",
+        "value": null,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.pull.mergeable",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "branches.mergeStateStatus",
+        "category": "branches",
+        "claim": "GitHub merge state status",
+        "value": "UNKNOWN",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.pull.mergeable_state",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "branches.compare",
+        "category": "branches",
+        "claim": "GitHub branch comparison",
+        "value": {
+          "aheadBy": 1,
+          "behindBy": 7630,
+          "compareStatus": "DIVERGED"
+        },
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.compare",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abackport%20pull%20request.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Backport Pull Request",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710503530/job/100508741279",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abot.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Bot",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765943",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abot%20%2F%20run.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Bot / run",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543388526",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765348",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20%2F%20aarch64-darwin%3A%20shell.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build / aarch64-darwin: shell",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084744",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20%2F%20aarch64-linux%3A%20shell%2C%20docs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build / aarch64-linux: shell, docs",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084573",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Abuild%20%2F%20x86_64-linux%3A%20shell%2C%20docs%2C%20lib%2C%20tarball.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Build / x86_64-linux: shell, docs, lib, tarball",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084786",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765408",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20%2F%20commits.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check / commits",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084702",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20%2F%20github-script.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check / github-script",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084920",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20%2F%20manual-file-edits.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check / manual-file-edits",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084775",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Acheck%20%2F%20owners.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Check / owners",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084793",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765250",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20aarch64-darwin.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / aarch64-darwin",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085823",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20aarch64-linux.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / aarch64-linux",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085673",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20compare.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / compare",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543199467",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20misc.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / misc",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084890",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20report.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / report",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96543201254",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20versions.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / versions",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542086170",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aeval%20%2F%20x86_64-linux.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Eval / x86_64-linux",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542085717",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Lint",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765526",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint%20%2F%20commits.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Lint / commits",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084636",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint%20%2F%20nixpkgs-vet.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Lint / nixpkgs-vet",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084659",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint%20%2F%20parse.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Lint / parse",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084730",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Alint%20%2F%20treefmt.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Lint / treefmt",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541/job/96542084593",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Amerge%20group.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Merge Group",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496477/job/100508758554",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Apr.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:PR",
+        "value": "SKIPPED",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496477/job/100508758760",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aprepare.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:prepare",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508721986",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Atrigger%20jobs.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:Trigger jobs",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710485733/job/100508686924",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Agithub-actions%3Aunlock.status",
+        "category": "check",
+        "claim": "Latest status for check-run:github-actions:unlock",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942/job/100508765086",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20aarch64-darwin.status",
+        "category": "check",
+        "claim": "Latest status for check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-darwin",
+        "value": "PENDING",
+        "sourceUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20aarch64-linux.status",
+        "category": "check",
+        "claim": "Latest status for check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on aarch64-linux",
+        "value": "SUCCESS",
+        "sourceUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783&attempt_id=76752beb-91bc-4685-b46d-a4885cf697b4",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20x86_64-darwin.status",
+        "category": "check",
+        "claim": "Latest status for check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-darwin",
+        "value": "PENDING",
+        "sourceUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.check-run%3Aofborg%3Apython3packages.lunatone-rest-api-client%2C%20python3packages.lunatone-rest-api-client.passthru.tests%20on%20x86_64-linux.status",
+        "category": "check",
+        "claim": "Latest status for check-run:ofborg:python3Packages.lunatone-rest-api-client, python3Packages.lunatone-rest-api-client.passthru.tests on x86_64-linux",
+        "value": "SUCCESS",
+        "sourceUrl": "https://logs.ofborg.org/?key=nixos/nixpkgs.554783&attempt_id=1444abea-9a24-4c2c-a09e-b9ddc5d6a937",
+        "apiSource": "REST.check_runs",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.commit-status%3Aeval%20summary.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:Eval Summary",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/32405019541?pr=554783",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.commit-status%3Ano%20pr%20failures.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:no PR failures",
+        "value": "FAILURE",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/actions/runs/33710496942?pr=554783",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "check.commit-status%3Aofborg-eval.status",
+        "category": "check",
+        "claim": "Latest status for commit-status:ofborg-eval",
+        "value": "SUCCESS",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "REST.commit_statuses",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "checks.summary",
+        "category": "check_summary",
+        "claim": "Summary of latest observed checks and collection completeness",
+        "value": {
+          "failureCount": 2,
+          "pendingCount": 2,
+          "successCount": 24,
+          "skippedCount": 9,
+          "neutralCount": 0,
+          "cancelledCount": 0,
+          "unknownCount": 0,
+          "observedCheckCount": 37,
+          "collectionComplete": true,
+          "truncated": false
+        },
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "GitNext.normalization.checkSummary",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "reviews.reviewDecision",
+        "category": "review",
+        "claim": "GitHub aggregate pull request review decision",
+        "value": null,
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "GraphQL.pullRequest.reviewDecision",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "reviews.unresolvedThreadCount",
+        "category": "review_thread",
+        "claim": "Known unresolved review thread count",
+        "value": {
+          "count": 0,
+          "complete": true
+        },
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/pull/554783",
+        "apiSource": "GraphQL.pullRequest.reviewThreads",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      },
+      {
+        "id": "commit.733dfa763084449eea12593775be6f19f7dae289",
+        "category": "commit",
+        "claim": "Commit explicitly present in pull request: 733dfa763084449eea12593775be6f19f7dae289",
+        "value": "733dfa763084449eea12593775be6f19f7dae289",
+        "sourceUrl": "https://github.com/NixOS/nixpkgs/commit/733dfa763084449eea12593775be6f19f7dae289",
+        "apiSource": "REST.pull.commits",
+        "observedAt": "2026-09-03T06:45:20.126Z"
+      }
+    ],
+    "limitations": [
+      "GitHub mergeability remained UNKNOWN after bounded retries.",
+      "Required check configuration is unknown."
+    ]
+  },
+  "decision": {
+    "schemaVersion": "1.0.0",
+    "verdict": "DONE_OR_STOP",
+    "ruleId": "PR_001_MERGED",
+    "reasonCode": "PR_ALREADY_MERGED",
+    "evidenceIds": [
+      "item.merged"
+    ],
+    "nextActionCode": "STOP_PR_WORK",
+    "responsibleParty": "NONE",
+    "confidence": "HIGH",
+    "limitations": [],
+    "trace": [
+      {
+        "ruleId": "PR_001_MERGED",
+        "matched": true,
+        "reasonCode": "PR_ALREADY_MERGED"
+      },
+      {
+        "ruleId": "PR_002_CLOSED_UNMERGED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_003_REPOSITORY_INACTIVE",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_004_DRAFT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_005_BRANCH_CONFLICT",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_006_CHECK_FAILURE",
+        "matched": true,
+        "reasonCode": "LATEST_CHECK_FAILED"
+      },
+      {
+        "ruleId": "PR_007_CHANGES_REQUESTED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_008_UNRESOLVED_THREAD",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_009_CHECK_PENDING",
+        "matched": true,
+        "reasonCode": "WAITING_FOR_CI"
+      },
+      {
+        "ruleId": "PR_010_REVIEW_REQUIRED",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_011_NO_KNOWN_AUTHOR_BLOCKER",
+        "matched": false,
+        "reasonCode": null
+      },
+      {
+        "ruleId": "PR_012_INSUFFICIENT_EVIDENCE",
+        "matched": true,
+        "reasonCode": "INSUFFICIENT_PR_EVIDENCE"
+      }
+    ]
+  }
+}

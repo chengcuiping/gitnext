@@ -1,0 +1,1 @@
+"""Validated GitNext domain models."""
